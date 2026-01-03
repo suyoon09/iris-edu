@@ -1,0 +1,142 @@
+{
+  "university_id": "nyu",
+  "basic_info": {
+    "name": "New York University",
+    "name_short": "NYU",
+    "location": {
+      "city": "New York",
+      "state": "New York",
+      "region": "Northeast",
+      "nearest_korean_community": "Koreatown Manhattan (32nd St)",
+      "distance_to_korean_community": "15 min by subway",
+      "climate": "Four seasons, cold winters (-3°C to 5°C), hot humid summers (25-32°C)"
+    },
+    "type": "Private Research",
+    "founded": 1831,
+    "website": "https://www.nyu.edu"
+  },
+  "enrollment": {
+    "total_undergraduate": 29000,
+    "total_graduate": 26000,
+    "international_percentage": 21.0,
+    "korean_student_estimate": 900,
+    "student_faculty_ratio": "9:1"
+  },
+  "admission_stats": {
+    "acceptance_rate": 12.2,
+    "early_action_rate": null,
+    "early_decision_rate": 28.0,
+    "regular_decision_rate": 9.5,
+    "yield_rate": 40,
+    "total_applicants": 105000,
+    "total_admitted": 12810,
+    "international_applicants": 22000,
+    "international_admitted": 2800,
+    "profile_ranges": {
+      "gpa_unweighted": { "25th": 3.75, "median": 3.88, "75th": 3.96 },
+      "sat_total": { "25th": 1420, "median": 1490, "75th": 1550 },
+      "sat_math": { "25th": 720, "median": 760, "75th": 800 },
+      "sat_reading": { "25th": 690, "median": 730, "75th": 760 },
+      "act_composite": { "25th": 32, "median": 34, "75th": 35 }
+    }
+  },
+  "application_requirements": {
+    "deadline_early": "November 1",
+    "deadline_regular": "January 5",
+    "application_platform": "Common App",
+    "application_fee": 80,
+    "fee_waiver_available": true,
+    "required_documents": [
+      { "item": "Transcript", "notes": "Official transcripts" },
+      { "item": "Recommendations", "count": 1, "notes": "One counselor required, teacher optional" },
+      { "item": "Essays", "count": 1, "notes": "NYU-specific 'Why NYU' essay" },
+      { "item": "Interview", "required": false, "notes": "Not offered" }
+    ],
+    "test_policy": "Test-optional permanently",
+    "english_proficiency": {
+      "required_for_international": true,
+      "minimum_toefl": 100,
+      "minimum_ielts": 7.5,
+      "duolingo_accepted": true,
+      "minimum_duolingo": 125,
+      "waiver_conditions": "English-medium instruction for 4+ years"
+    }
+  },
+  "academic_programs": {
+    "notable_majors": [
+      "Business (Stern)",
+      "Film and Television (Tisch)",
+      "Drama (Tisch)",
+      "Economics",
+      "Computer Science",
+      "Politics",
+      "Journalism"
+    ],
+    "unique_programs": [
+      "Stern School of Business",
+      "Tisch School of the Arts",
+      "NYU Abu Dhabi / NYU Shanghai",
+      "Global Network University",
+      "Gallatin School of Individualized Study"
+    ],
+    "curriculum_structure": "School-specific requirements + Major + Core"
+  },
+  "korean_student_specific": {
+    "korean_student_organizations": [
+      "Korean American Student Association (KASA)",
+      "NYU Korean Language Exchange",
+      "NYU Korean Christian Fellowship",
+      "Stern Korean Business Association"
+    ],
+    "korean_food_access": "Excellent - Koreatown Manhattan (15 min), Flushing (40 min), endless options",
+    "korean_church_proximity": "Multiple Korean churches in Manhattan and Queens",
+    "historical_admit_patterns": {
+      "korean_high_schools_commonly_admitted": [
+        "Seoul International School",
+        "Korea International School",
+        "대원외국어고등학교",
+        "외대부속외국어고등학교",
+        "경기외국어고등학교"
+      ],
+      "common_profiles": "Urban-oriented, arts/business focused, independent, globally-minded"
+    },
+    "korean_specific_advice": [
+      "Stern extremely competitive for business-focused Korean students",
+      "Tisch arts programs world-class - requires portfolio/audition",
+      "ED1/ED2 rates much higher - consider if NYU is top choice",
+      "NYC is your campus - show how you'll take advantage",
+      "Large Korean community can be supportive but also competitive",
+      "Cost is high without aid - research financial options carefully"
+    ],
+    "common_korean_applicant_mistakes": [
+      "'Why NYU' essay focusing only on NYC without specific NYU programs",
+      "Applying to Stern without quantitative preparation",
+      "Not showing readiness for independent urban life",
+      "Underestimating Tisch competitiveness"
+    ]
+  },
+  "cost_and_aid": {
+    "tuition": 60438,
+    "room_and_board": 21780,
+    "total_cost_of_attendance": 90000,
+    "financial_aid_for_international": true,
+    "need_blind_for_international": false,
+    "average_aid_package": 42000,
+    "percentage_receiving_aid": 55
+  },
+  "campus_life": {
+    "housing_guarantee": "Not guaranteed after freshman year",
+    "popular_dorms": ["Brittany Hall", "Third North", "Palladium", "Lipton"],
+    "dining_options": "Dining halls, meal swipes at NYC restaurants, endless options",
+    "safety_rating": "Good - NYU Public Safety, urban campus security",
+    "nearby_attractions": "All of NYC - Broadway, museums, restaurants, cultural events"
+  },
+  "career_outcomes": {
+    "employment_rate_6_months": 91,
+    "average_starting_salary": 75000,
+    "top_employers": ["Goldman Sachs", "Google", "JP Morgan", "EY", "NBC/Media"],
+    "graduate_school_rate": 35,
+    "korean_alumni_network": "Very large NYU Korean Alumni network in NYC and Korea"
+  },
+  "last_updated": "2024-12-01"
+}

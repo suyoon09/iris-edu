@@ -1,0 +1,140 @@
+{
+  "university_id": "northwestern",
+  "basic_info": {
+    "name": "Northwestern University",
+    "name_short": "Northwestern",
+    "location": {
+      "city": "Evanston",
+      "state": "Illinois",
+      "region": "Midwest",
+      "nearest_korean_community": "Chicago Koreatown (Lawrence Ave)",
+      "distance_to_korean_community": "25 min",
+      "climate": "Four seasons, very cold winters (-10°C to -2°C), warm summers (20-28°C)"
+    },
+    "type": "Private Research",
+    "founded": 1851,
+    "website": "https://www.northwestern.edu"
+  },
+  "enrollment": {
+    "total_undergraduate": 8900,
+    "total_graduate": 13000,
+    "international_percentage": 12.8,
+    "korean_student_estimate": 200,
+    "student_faculty_ratio": "6:1"
+  },
+  "admission_stats": {
+    "acceptance_rate": 7.01,
+    "early_action_rate": null,
+    "early_decision_rate": 20.2,
+    "regular_decision_rate": 5.2,
+    "yield_rate": 58,
+    "total_applicants": 52225,
+    "total_admitted": 3660,
+    "international_applicants": 7500,
+    "international_admitted": 350,
+    "profile_ranges": {
+      "gpa_unweighted": { "25th": 3.90, "median": 3.96, "75th": 4.0 },
+      "sat_total": { "25th": 1470, "median": 1520, "75th": 1560 },
+      "sat_math": { "25th": 760, "median": 785, "75th": 800 },
+      "sat_reading": { "25th": 710, "median": 745, "75th": 770 },
+      "act_composite": { "25th": 33, "median": 34, "75th": 35 }
+    }
+  },
+  "application_requirements": {
+    "deadline_early": "November 1",
+    "deadline_regular": "January 3",
+    "application_platform": "Common App or Coalition App",
+    "application_fee": 75,
+    "fee_waiver_available": true,
+    "required_documents": [
+      { "item": "Transcript", "notes": "Official transcripts" },
+      { "item": "Recommendations", "count": 2, "notes": "One counselor, one teacher" },
+      { "item": "Essays", "count": 2, "notes": "Northwestern-specific essays" },
+      { "item": "Interview", "required": false, "notes": "Alumni interview if available" }
+    ],
+    "test_policy": "Test-optional through 2025-26",
+    "english_proficiency": {
+      "required_for_international": true,
+      "minimum_toefl": 105,
+      "minimum_ielts": 7.5,
+      "duolingo_accepted": true,
+      "minimum_duolingo": 130,
+      "waiver_conditions": "English-medium instruction for 4+ years"
+    }
+  },
+  "academic_programs": {
+    "notable_majors": [
+      "Journalism (Medill)",
+      "Theatre",
+      "Economics",
+      "Engineering",
+      "Computer Science",
+      "Integrated Marketing Communications",
+      "Communication Studies"
+    ],
+    "unique_programs": [
+      "Medill School of Journalism (top-ranked)",
+      "School of Communication (theatre/film)",
+      "Integrated Marketing Communications",
+      "Dual degree programs",
+      "Chicago campus programs"
+    ],
+    "curriculum_structure": "School-specific requirements + Major + Distribution"
+  },
+  "korean_student_specific": {
+    "korean_student_organizations": [
+      "Korean American Students Association (KASA)",
+      "Northwestern Korean Christian Fellowship",
+      "NU Asian American Association"
+    ],
+    "korean_food_access": "Good - Chicago Koreatown accessible (25 min), H Mart in Niles (20 min)",
+    "korean_church_proximity": "Korean churches in Evanston/Chicago area (15-30 min)",
+    "historical_admit_patterns": {
+      "korean_high_schools_commonly_admitted": [
+        "Seoul International School",
+        "Korea International School",
+        "대원외국어고등학교",
+        "외대부속외국어고등학교"
+      ],
+      "common_profiles": "Media/communications interest, interdisciplinary thinkers, strong writers"
+    },
+    "korean_specific_advice": [
+      "Medill journalism program is world-class - great for media-focused students",
+      "ED rate significantly higher than RD - consider ED if top choice",
+      "Northwestern values interdisciplinary approach across schools",
+      "Show interest in Chicago as resource",
+      "Theatre/Communications programs are elite - not just a backup",
+      "'Why Northwestern' essay should show specific knowledge"
+    ],
+    "common_korean_applicant_mistakes": [
+      "Not showing genuine interest in Northwestern's unique programs",
+      "Essays too generic without specific 'Why Northwestern'",
+      "Overlooking Medill and Communication school strengths",
+      "Not demonstrating interdisciplinary interests"
+    ]
+  },
+  "cost_and_aid": {
+    "tuition": 63468,
+    "room_and_board": 20328,
+    "total_cost_of_attendance": 88000,
+    "financial_aid_for_international": true,
+    "need_blind_for_international": false,
+    "average_aid_package": 56000,
+    "percentage_receiving_aid": 48
+  },
+  "campus_life": {
+    "housing_guarantee": "2 years",
+    "popular_dorms": ["Willard", "Shepard", "Elder", "Allison"],
+    "dining_options": "Multiple dining halls, Norris Center, Chicago restaurants",
+    "safety_rating": "High - NU Police, SafeRide",
+    "nearby_attractions": "Chicago (30 min), Lake Michigan beaches, museums"
+  },
+  "career_outcomes": {
+    "employment_rate_6_months": 93,
+    "average_starting_salary": 78000,
+    "top_employers": ["McKinsey", "Google", "Goldman Sachs", "NBC/media companies", "P&G"],
+    "graduate_school_rate": 42,
+    "korean_alumni_network": "Active Northwestern Korean Alumni, strong in media/consulting"
+  },
+  "last_updated": "2024-12-01"
+}

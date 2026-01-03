@@ -1,0 +1,146 @@
+{
+  "university_id": "stanford",
+  "basic_info": {
+    "name": "Stanford University",
+    "name_short": "Stanford",
+    "location": {
+      "city": "Stanford",
+      "state": "California",
+      "region": "West Coast",
+      "nearest_korean_community": "Santa Clara Koreatown",
+      "distance_to_korean_community": "15 min",
+      "climate": "Mediterranean climate, mild year-round (10-25°C), sunny most days"
+    },
+    "type": "Private Research",
+    "founded": 1885,
+    "website": "https://www.stanford.edu"
+  },
+  "enrollment": {
+    "total_undergraduate": 7800,
+    "total_graduate": 9500,
+    "international_percentage": 12.8,
+    "korean_student_estimate": 180,
+    "student_faculty_ratio": "5:1"
+  },
+  "admission_stats": {
+    "acceptance_rate": 3.68,
+    "early_action_rate": null,
+    "early_decision_rate": null,
+    "regular_decision_rate": 3.68,
+    "yield_rate": 82,
+    "total_applicants": 56378,
+    "total_admitted": 2075,
+    "international_applicants": 8500,
+    "international_admitted": 220,
+    "profile_ranges": {
+      "gpa_unweighted": { "25th": 3.95, "median": 4.0, "75th": 4.0 },
+      "sat_total": { "25th": 1500, "median": 1540, "75th": 1570 },
+      "sat_math": { "25th": 770, "median": 790, "75th": 800 },
+      "sat_reading": { "25th": 720, "median": 750, "75th": 780 },
+      "act_composite": { "25th": 33, "median": 35, "75th": 36 }
+    }
+  },
+  "application_requirements": {
+    "deadline_early": null,
+    "deadline_regular": "January 5",
+    "application_platform": "Common App or Coalition App",
+    "application_fee": 90,
+    "fee_waiver_available": true,
+    "required_documents": [
+      { "item": "Transcript", "notes": "Official transcripts from all schools attended" },
+      { "item": "Recommendations", "count": 2, "notes": "Two teacher recommendations from junior/senior year teachers" },
+      { "item": "Counselor Letter", "required": true },
+      { "item": "Essays", "count": 3, "notes": "Stanford-specific short essays (100-250 words each)" },
+      { "item": "Interview", "required": false, "notes": "Optional alumni interview if available" }
+    ],
+    "test_policy": "Test-optional through 2025-26 admission cycle",
+    "english_proficiency": {
+      "required_for_international": true,
+      "minimum_toefl": 100,
+      "minimum_ielts": 7.5,
+      "duolingo_accepted": false,
+      "minimum_duolingo": null,
+      "waiver_conditions": "Native English speaker or 3+ years at English-medium school"
+    }
+  },
+  "academic_programs": {
+    "notable_majors": [
+      "Computer Science",
+      "Human Biology",
+      "Economics",
+      "Engineering (all disciplines)",
+      "Political Science",
+      "Psychology",
+      "Biology",
+      "Symbolic Systems"
+    ],
+    "unique_programs": [
+      "Stanford Introductory Studies",
+      "Entrepreneurship and Innovation programs",
+      "Stanford in Washington/New York/overseas",
+      "Coterm (5-year BS/MS)",
+      "Bing Overseas Studies Program"
+    ],
+    "curriculum_structure": "Ways of Thinking/Ways of Doing requirements + Major requirements + Electives"
+  },
+  "korean_student_specific": {
+    "korean_student_organizations": [
+      "Korean American Students Association (KASA)",
+      "Stanford Korean Christian Fellowship",
+      "Stanford Korean Graduate Student Association"
+    ],
+    "korean_food_access": "Korean restaurants in Palo Alto (5 min), H Mart in San Jose (20 min), 99 Ranch Market nearby",
+    "korean_church_proximity": "Palo Alto Korean Church (10 min), Korean Presbyterian Church (15 min)",
+    "historical_admit_patterns": {
+      "korean_high_schools_commonly_admitted": [
+        "Seoul International School",
+        "Korea International School",
+        "대원외국어고등학교",
+        "민족사관고등학교",
+        "경기과학고등학교"
+      ],
+      "common_profiles": "Entrepreneurs, founders, researchers with published work, athletes, artists with national/international recognition"
+    },
+    "korean_specific_advice": [
+      "Stanford loves entrepreneurs - show initiative in starting something new",
+      "'Intellectual vitality' is key - demonstrate genuine curiosity across multiple fields",
+      "The 'What matters to you and why' essay is critical - be authentic and specific",
+      "Show how you'll contribute to Stanford's collaborative, innovative culture",
+      "West Coast schools value personality and fit differently than East Coast - be yourself",
+      "International perspective valued - use Korean background as an asset",
+      "Demonstrate impact, not just participation - what changed because of you?"
+    ],
+    "common_korean_applicant_mistakes": [
+      "Essays too similar to MIT/Harvard applications - not showing 'Why Stanford'",
+      "Overemphasis on achievements without showing personality and curiosity",
+      "Not demonstrating entrepreneurial mindset or initiative",
+      "'What matters to you' essay too abstract or philosophical without personal connection",
+      "Failing to show how Korean background shapes unique perspective",
+      "Not showing 'fit' with Stanford's casual, collaborative culture"
+    ]
+  },
+  "cost_and_aid": {
+    "tuition": 61731,
+    "room_and_board": 20955,
+    "total_cost_of_attendance": 87225,
+    "financial_aid_for_international": true,
+    "need_blind_for_international": false,
+    "average_aid_package": 64000,
+    "percentage_receiving_aid": 52
+  },
+  "campus_life": {
+    "housing_guarantee": "4 years guaranteed",
+    "popular_dorms": ["Roble Hall", "Stern Hall", "FloMo", "Wilbur Hall"],
+    "dining_options": "8 dining halls with diverse options, late-night dining, student-run cafes",
+    "safety_rating": "High - Campus security, well-lit campus, emergency phones",
+    "nearby_attractions": "San Francisco (1 hour), Silicon Valley companies, Pacific Coast beaches, hiking trails"
+  },
+  "career_outcomes": {
+    "employment_rate_6_months": 94,
+    "average_starting_salary": 112000,
+    "top_employers": ["Google", "Apple", "Meta", "Microsoft", "McKinsey", "Goldman Sachs", "Startups"],
+    "graduate_school_rate": 38,
+    "korean_alumni_network": "Active Stanford Korean Alumni Association with Silicon Valley connections"
+  },
+  "last_updated": "2024-12-01"
+}

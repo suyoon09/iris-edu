@@ -1,0 +1,142 @@
+{
+  "university_id": "princeton",
+  "basic_info": {
+    "name": "Princeton University",
+    "name_short": "Princeton",
+    "location": {
+      "city": "Princeton",
+      "state": "New Jersey",
+      "region": "Northeast",
+      "nearest_korean_community": "Fort Lee / Palisades Park, NJ",
+      "distance_to_korean_community": "60 min by car",
+      "climate": "Four seasons, cold winters (-3°C to 5°C), warm summers (22-30°C)"
+    },
+    "type": "Private Research",
+    "founded": 1746,
+    "website": "https://www.princeton.edu"
+  },
+  "enrollment": {
+    "total_undergraduate": 5400,
+    "total_graduate": 3200,
+    "international_percentage": 12.5,
+    "korean_student_estimate": 110,
+    "student_faculty_ratio": "4:1"
+  },
+  "admission_stats": {
+    "acceptance_rate": 4.38,
+    "early_action_rate": 13.9,
+    "early_decision_rate": null,
+    "regular_decision_rate": 3.2,
+    "yield_rate": 72,
+    "total_applicants": 39644,
+    "total_admitted": 1736,
+    "international_applicants": 5800,
+    "international_admitted": 130,
+    "profile_ranges": {
+      "gpa_unweighted": { "25th": 3.91, "median": 3.97, "75th": 4.0 },
+      "sat_total": { "25th": 1500, "median": 1540, "75th": 1580 },
+      "sat_math": { "25th": 760, "median": 790, "75th": 800 },
+      "sat_reading": { "25th": 730, "median": 760, "75th": 780 },
+      "act_composite": { "25th": 33, "median": 35, "75th": 36 }
+    }
+  },
+  "application_requirements": {
+    "deadline_early": "November 1",
+    "deadline_regular": "January 1",
+    "application_platform": "Common App or Coalition App",
+    "application_fee": 70,
+    "fee_waiver_available": true,
+    "required_documents": [
+      { "item": "Transcript", "notes": "Official transcripts" },
+      { "item": "Recommendations", "count": 2, "notes": "Two teacher recommendations" },
+      { "item": "Counselor Letter", "required": true },
+      { "item": "Essays", "count": 2, "notes": "Princeton-specific essays" },
+      { "item": "Interview", "required": false, "notes": "Alumni interview if available" }
+    ],
+    "test_policy": "Test-optional for 2024-25",
+    "english_proficiency": {
+      "required_for_international": true,
+      "minimum_toefl": 100,
+      "minimum_ielts": 7.0,
+      "duolingo_accepted": true,
+      "minimum_duolingo": 120,
+      "waiver_conditions": "Primary language English or 4+ years in English-medium school"
+    }
+  },
+  "academic_programs": {
+    "notable_majors": [
+      "Computer Science",
+      "Economics",
+      "Public Policy",
+      "Politics",
+      "History",
+      "Mathematics",
+      "Molecular Biology",
+      "Operations Research"
+    ],
+    "unique_programs": [
+      "Junior Paper and Senior Thesis (required)",
+      "Residential college system",
+      "Princeton in Africa/Asia/Latin America",
+      "Undergraduate research focus",
+      "Honor code tradition"
+    ],
+    "curriculum_structure": "Distribution requirements + Major concentration + Independent work"
+  },
+  "korean_student_specific": {
+    "korean_student_organizations": [
+      "Korean American Students Association (KASA)",
+      "Princeton Korean Christian Fellowship",
+      "Princeton Asian American Students Association"
+    ],
+    "korean_food_access": "Limited in Princeton - Korean restaurants in nearby Edison (25 min), Fort Lee area (1 hour)",
+    "korean_church_proximity": "Korean churches in Edison/Piscataway area (25-30 min)",
+    "historical_admit_patterns": {
+      "korean_high_schools_commonly_admitted": [
+        "Seoul International School",
+        "민족사관고등학교",
+        "대원외국어고등학교",
+        "한국과학영재학교"
+      ],
+      "common_profiles": "Strong independent thinkers, research-oriented, genuine intellectual curiosity"
+    },
+    "korean_specific_advice": [
+      "Princeton emphasizes independent work - show ability to drive your own projects",
+      "Senior thesis tradition means research experience valued highly",
+      "Smaller, more close-knit community - show you'd thrive in intimate setting",
+      "Honor code culture important - demonstrate integrity",
+      "SCEA (Single Choice Early Action) - must be top choice if applying early",
+      "Beautiful campus life - show appreciation for traditional college experience"
+    ],
+    "common_korean_applicant_mistakes": [
+      "Not demonstrating fit with Princeton's independent work focus",
+      "Essays too focused on achievements rather than intellectual journey",
+      "Not showing why suburban campus environment appeals to you",
+      "Applying SCEA without Princeton being genuine first choice"
+    ]
+  },
+  "cost_and_aid": {
+    "tuition": 62400,
+    "room_and_board": 19620,
+    "total_cost_of_attendance": 86700,
+    "financial_aid_for_international": true,
+    "need_blind_for_international": false,
+    "average_aid_package": 62000,
+    "percentage_receiving_aid": 60
+  },
+  "campus_life": {
+    "housing_guarantee": "4 years",
+    "popular_dorms": ["Forbes College", "Whitman College", "Butler College"],
+    "dining_options": "Residential college dining halls, eating clubs for upperclassmen",
+    "safety_rating": "Very high - small town, Campus Public Safety",
+    "nearby_attractions": "NYC (1 hour), Philadelphia (1 hour), Campus museums"
+  },
+  "career_outcomes": {
+    "employment_rate_6_months": 90,
+    "average_starting_salary": 88000,
+    "top_employers": ["Goldman Sachs", "Google", "McKinsey", "Morgan Stanley", "Jane Street"],
+    "graduate_school_rate": 55,
+    "korean_alumni_network": "Active Princeton Korean Alumni group with focus on academia and finance"
+  },
+  "last_updated": "2024-12-01"
+}

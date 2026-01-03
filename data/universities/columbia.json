@@ -1,0 +1,143 @@
+{
+  "university_id": "columbia",
+  "basic_info": {
+    "name": "Columbia University",
+    "name_short": "Columbia",
+    "location": {
+      "city": "New York",
+      "state": "New York",
+      "region": "Northeast",
+      "nearest_korean_community": "Flushing, Queens / Koreatown Manhattan",
+      "distance_to_korean_community": "30 min by subway",
+      "climate": "Four seasons, cold winters (-3°C to 5°C), hot humid summers (25-32°C)"
+    },
+    "type": "Private Research",
+    "founded": 1754,
+    "website": "https://www.columbia.edu"
+  },
+  "enrollment": {
+    "total_undergraduate": 8200,
+    "total_graduate": 24000,
+    "international_percentage": 19.0,
+    "korean_student_estimate": 280,
+    "student_faculty_ratio": "6:1"
+  },
+  "admission_stats": {
+    "acceptance_rate": 3.93,
+    "early_action_rate": null,
+    "early_decision_rate": 10.3,
+    "regular_decision_rate": 2.9,
+    "yield_rate": 65,
+    "total_applicants": 60377,
+    "total_admitted": 2372,
+    "international_applicants": 10500,
+    "international_admitted": 250,
+    "profile_ranges": {
+      "gpa_unweighted": { "25th": 3.91, "median": 3.97, "75th": 4.0 },
+      "sat_total": { "25th": 1500, "median": 1545, "75th": 1580 },
+      "sat_math": { "25th": 760, "median": 790, "75th": 800 },
+      "sat_reading": { "25th": 730, "median": 760, "75th": 790 },
+      "act_composite": { "25th": 34, "median": 35, "75th": 36 }
+    }
+  },
+  "application_requirements": {
+    "deadline_early": "November 1",
+    "deadline_regular": "January 1",
+    "application_platform": "Common App or Coalition App",
+    "application_fee": 85,
+    "fee_waiver_available": true,
+    "required_documents": [
+      { "item": "Transcript", "notes": "Official transcripts" },
+      { "item": "Recommendations", "count": 2, "notes": "Two teacher recommendations" },
+      { "item": "Counselor Letter", "required": true },
+      { "item": "Essays", "count": 4, "notes": "Columbia-specific essays including famous list questions" },
+      { "item": "Interview", "required": false, "notes": "Alumni interview if available" }
+    ],
+    "test_policy": "Test-optional through 2025-26",
+    "english_proficiency": {
+      "required_for_international": true,
+      "minimum_toefl": 100,
+      "minimum_ielts": 7.0,
+      "duolingo_accepted": true,
+      "minimum_duolingo": 125,
+      "waiver_conditions": "4+ years in English-medium school"
+    }
+  },
+  "academic_programs": {
+    "notable_majors": [
+      "Economics",
+      "Political Science",
+      "Computer Science",
+      "History",
+      "English",
+      "Psychology",
+      "Neuroscience",
+      "Applied Mathematics"
+    ],
+    "unique_programs": [
+      "Core Curriculum (required great books program)",
+      "Global Centers worldwide",
+      "3-2 Engineering program with liberal arts colleges",
+      "Dual BA with Sciences Po and other international universities"
+    ],
+    "curriculum_structure": "Core Curriculum (Western canon) + Major + Electives"
+  },
+  "korean_student_specific": {
+    "korean_student_organizations": [
+      "Korean Students Association (KSA)",
+      "Columbia Korean Christian Fellowship",
+      "Columbia Korean American Students Conference"
+    ],
+    "korean_food_access": "Excellent - Koreatown Manhattan (30 min), Flushing (40 min), many Korean restaurants near campus",
+    "korean_church_proximity": "Multiple Korean churches in Manhattan and Queens",
+    "historical_admit_patterns": {
+      "korean_high_schools_commonly_admitted": [
+        "Seoul International School",
+        "Korea International School",
+        "대원외국어고등학교",
+        "민족사관고등학교",
+        "외대부속외국어고등학교"
+      ],
+      "common_profiles": "Urban sophisticates, globally-minded students, strong writers with Core Curriculum fit"
+    },
+    "korean_specific_advice": [
+      "Show genuine interest in Columbia's Core Curriculum - it's central to identity",
+      "The list essays should reveal personality - be creative and specific",
+      "NYC is a resource - demonstrate how you'll use the city",
+      "Strong humanities foundation valued alongside any major",
+      "ED rate much higher than RD - consider ED if Columbia is top choice",
+      "Global perspective and multicultural engagement valued highly"
+    ],
+    "common_korean_applicant_mistakes": [
+      "Not showing genuine interest in the Core Curriculum",
+      "List essays too generic or playing it safe",
+      "Not demonstrating why NYC location matters to you",
+      "Failing to show intellectual engagement with ideas",
+      "Essays too similar to other Ivy applications"
+    ]
+  },
+  "cost_and_aid": {
+    "tuition": 65524,
+    "room_and_board": 18156,
+    "total_cost_of_attendance": 90386,
+    "financial_aid_for_international": true,
+    "need_blind_for_international": false,
+    "average_aid_package": 62000,
+    "percentage_receiving_aid": 50
+  },
+  "campus_life": {
+    "housing_guarantee": "4 years",
+    "popular_dorms": ["John Jay", "Carman", "Hartley", "Wallach"],
+    "dining_options": "Multiple dining halls, JJ's Place, NYC restaurants",
+    "safety_rating": "Good - Columbia Public Safety, well-lit campus",
+    "nearby_attractions": "All of NYC, Central Park, Broadway, Museums, Brooklyn"
+  },
+  "career_outcomes": {
+    "employment_rate_6_months": 93,
+    "average_starting_salary": 85000,
+    "top_employers": ["Goldman Sachs", "Morgan Stanley", "Google", "McKinsey", "JP Morgan"],
+    "graduate_school_rate": 45,
+    "korean_alumni_network": "Very strong Columbia Korean Alumni Association, especially in finance"
+  },
+  "last_updated": "2024-12-01"
+}

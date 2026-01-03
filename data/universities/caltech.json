@@ -1,0 +1,139 @@
+{
+  "university_id": "caltech",
+  "basic_info": {
+    "name": "California Institute of Technology",
+    "name_short": "Caltech",
+    "location": {
+      "city": "Pasadena",
+      "state": "California",
+      "region": "West Coast",
+      "nearest_korean_community": "Koreatown Los Angeles",
+      "distance_to_korean_community": "20 min",
+      "climate": "Mediterranean, mild year-round (12-30°C), very sunny"
+    },
+    "type": "Private Research",
+    "founded": 1891,
+    "website": "https://www.caltech.edu"
+  },
+  "enrollment": {
+    "total_undergraduate": 990,
+    "total_graduate": 1350,
+    "international_percentage": 11.0,
+    "korean_student_estimate": 35,
+    "student_faculty_ratio": "3:1"
+  },
+  "admission_stats": {
+    "acceptance_rate": 2.7,
+    "early_action_rate": 5.6,
+    "early_decision_rate": null,
+    "regular_decision_rate": 2.2,
+    "yield_rate": 55,
+    "total_applicants": 16626,
+    "total_admitted": 449,
+    "international_applicants": 4500,
+    "international_admitted": 45,
+    "profile_ranges": {
+      "gpa_unweighted": { "25th": 3.98, "median": 4.0, "75th": 4.0 },
+      "sat_total": { "25th": 1530, "median": 1570, "75th": 1580 },
+      "sat_math": { "25th": 790, "median": 800, "75th": 800 },
+      "sat_reading": { "25th": 740, "median": 770, "75th": 790 },
+      "act_composite": { "25th": 35, "median": 36, "75th": 36 }
+    }
+  },
+  "application_requirements": {
+    "deadline_early": "November 1",
+    "deadline_regular": "January 3",
+    "application_platform": "Common App or Coalition App or QuestBridge",
+    "application_fee": 75,
+    "fee_waiver_available": true,
+    "required_documents": [
+      { "item": "Transcript", "notes": "Official transcripts" },
+      { "item": "Recommendations", "count": 2, "notes": "Math/science teacher + one other" },
+      { "item": "Essays", "count": 3, "notes": "Caltech-specific essays" },
+      { "item": "Interview", "required": false, "notes": "Optional alumni interview" }
+    ],
+    "test_policy": "Test required (SAT/ACT)",
+    "english_proficiency": {
+      "required_for_international": true,
+      "minimum_toefl": 100,
+      "minimum_ielts": 7.0,
+      "duolingo_accepted": false,
+      "minimum_duolingo": null,
+      "waiver_conditions": "English is primary language"
+    }
+  },
+  "academic_programs": {
+    "notable_majors": [
+      "Physics",
+      "Mathematics",
+      "Computer Science",
+      "Electrical Engineering",
+      "Mechanical Engineering",
+      "Chemistry",
+      "Biology"
+    ],
+    "unique_programs": [
+      "SURF (Summer Undergraduate Research Fellowships)",
+      "JPL (Jet Propulsion Laboratory) access",
+      "Honor Code system",
+      "House system",
+      "Cross-registration with Art Center"
+    ],
+    "curriculum_structure": "Core curriculum (heavy math/physics) + Option (major) + Humanities requirements"
+  },
+  "korean_student_specific": {
+    "korean_student_organizations": [
+      "Caltech Korean Association",
+      "Asian Pacific American Students Association"
+    ],
+    "korean_food_access": "Good - LA Koreatown (20 min), Korean restaurants in Pasadena area",
+    "korean_church_proximity": "Korean churches in Pasadena and LA area (15-30 min)",
+    "historical_admit_patterns": {
+      "korean_high_schools_commonly_admitted": [
+        "한국과학영재학교",
+        "경기과학고등학교",
+        "서울과학고등학교",
+        "민족사관고등학교"
+      ],
+      "common_profiles": "Science olympiad medalists (IPhO, IMO, ICO), genuine research passion, extremely strong math"
+    },
+    "korean_specific_advice": [
+      "Caltech is the most academically intense - workload is legendary",
+      "Very small school - every admit must genuinely love science",
+      "Research experience essential, not just competitions",
+      "Honor Code culture is serious - must embrace collaboration over competition",
+      "Not for students who want a 'college experience' - purely academic focus",
+      "Perfect for future scientists/researchers, not pre-professional"
+    ],
+    "common_korean_applicant_mistakes": [
+      "Applying because of rankings without genuine research interest",
+      "Overemphasizing olympiad medals without showing curiosity",
+      "Not demonstrating fit with tiny, intense academic community",
+      "Essays too focused on achievements rather than scientific questions"
+    ]
+  },
+  "cost_and_aid": {
+    "tuition": 62796,
+    "room_and_board": 19476,
+    "total_cost_of_attendance": 86000,
+    "financial_aid_for_international": true,
+    "need_blind_for_international": true,
+    "average_aid_package": 62000,
+    "percentage_receiving_aid": 58
+  },
+  "campus_life": {
+    "housing_guarantee": "4 years",
+    "popular_dorms": ["Houses system - Dabney, Fleming, Lloyd, etc."],
+    "dining_options": "House dining, campus cafes",
+    "safety_rating": "Very high - small campus, Caltech Security",
+    "nearby_attractions": "LA, beaches, mountains, JPL, Hollywood"
+  },
+  "career_outcomes": {
+    "employment_rate_6_months": 88,
+    "average_starting_salary": 105000,
+    "top_employers": ["Google", "SpaceX", "JPL/NASA", "Palantir", "Academia"],
+    "graduate_school_rate": 65,
+    "korean_alumni_network": "Small but close-knit Caltech Korean Alumni"
+  },
+  "last_updated": "2024-12-01"
+}

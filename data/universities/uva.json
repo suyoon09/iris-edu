@@ -1,0 +1,104 @@
+{
+  "university_id": "uva",
+  "basic_info": {
+    "name": "University Name",
+    "name_short": "Short",
+    "location": {
+      "city": "City",
+      "state": "State",
+      "region": "Region",
+      "nearest_korean_community": "TBD",
+      "distance_to_korean_community": "TBD",
+      "climate": "TBD"
+    },
+    "type": "Private Research",
+    "founded": 1900,
+    "website": "https://example.edu"
+  },
+  "enrollment": {
+    "total_undergraduate": 5000,
+    "total_graduate": 5000,
+    "international_percentage": 10.0,
+    "korean_student_estimate": 100,
+    "student_faculty_ratio": "10:1"
+  },
+  "admission_stats": {
+    "acceptance_rate": 10.0,
+    "early_action_rate": null,
+    "early_decision_rate": null,
+    "regular_decision_rate": 10.0,
+    "yield_rate": 50,
+    "total_applicants": 30000,
+    "total_admitted": 3000,
+    "international_applicants": 5000,
+    "international_admitted": 300,
+    "profile_ranges": {
+      "gpa_unweighted": { "25th": 3.8, "median": 3.9, "75th": 4.0 },
+      "sat_total": { "25th": 1400, "median": 1480, "75th": 1550 },
+      "sat_math": { "25th": 700, "median": 750, "75th": 790 },
+      "sat_reading": { "25th": 680, "median": 730, "75th": 770 },
+      "act_composite": { "25th": 31, "median": 33, "75th": 35 }
+    }
+  },
+  "application_requirements": {
+    "deadline_early": "November 1",
+    "deadline_regular": "January 1",
+    "application_platform": "Common App",
+    "application_fee": 75,
+    "fee_waiver_available": true,
+    "required_documents": [
+      { "item": "Transcript", "notes": "Official" },
+      { "item": "Recommendations", "count": 2 },
+      { "item": "Essays", "count": 2 }
+    ],
+    "test_policy": "Test-optional",
+    "english_proficiency": {
+      "required_for_international": true,
+      "minimum_toefl": 100,
+      "minimum_ielts": 7.0,
+      "duolingo_accepted": true,
+      "minimum_duolingo": 120,
+      "waiver_conditions": "4+ years English instruction"
+    }
+  },
+  "academic_programs": {
+    "notable_majors": ["Computer Science", "Economics", "Biology"],
+    "unique_programs": ["TBD"],
+    "curriculum_structure": "Core + Major + Electives"
+  },
+  "korean_student_specific": {
+    "korean_student_organizations": ["Korean Students Association"],
+    "korean_food_access": "TBD",
+    "korean_church_proximity": "TBD",
+    "historical_admit_patterns": {
+      "korean_high_schools_commonly_admitted": [],
+      "common_profiles": "TBD"
+    },
+    "korean_specific_advice": [],
+    "common_korean_applicant_mistakes": []
+  },
+  "cost_and_aid": {
+    "tuition": 60000,
+    "room_and_board": 18000,
+    "total_cost_of_attendance": 82000,
+    "financial_aid_for_international": true,
+    "need_blind_for_international": false,
+    "average_aid_package": 50000,
+    "percentage_receiving_aid": 50
+  },
+  "campus_life": {
+    "housing_guarantee": "4 years",
+    "popular_dorms": [],
+    "dining_options": "Multiple dining halls",
+    "safety_rating": "Good",
+    "nearby_attractions": "TBD"
+  },
+  "career_outcomes": {
+    "employment_rate_6_months": 90,
+    "average_starting_salary": 70000,
+    "top_employers": [],
+    "graduate_school_rate": 40,
+    "korean_alumni_network": "TBD"
+  },
+  "last_updated": "2024-12-01"
+}

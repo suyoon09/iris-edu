@@ -1,0 +1,141 @@
+{
+  "university_id": "berkeley",
+  "basic_info": {
+    "name": "University of California, Berkeley",
+    "name_short": "UC Berkeley",
+    "location": {
+      "city": "Berkeley",
+      "state": "California",
+      "region": "West Coast",
+      "nearest_korean_community": "Oakland Koreatown",
+      "distance_to_korean_community": "15 min",
+      "climate": "Mediterranean, mild year-round (10-22°C), some fog"
+    },
+    "type": "Public Research",
+    "founded": 1868,
+    "website": "https://www.berkeley.edu"
+  },
+  "enrollment": {
+    "total_undergraduate": 32000,
+    "total_graduate": 12000,
+    "international_percentage": 14.5,
+    "korean_student_estimate": 650,
+    "student_faculty_ratio": "20:1"
+  },
+  "admission_stats": {
+    "acceptance_rate": 11.4,
+    "early_action_rate": null,
+    "early_decision_rate": null,
+    "regular_decision_rate": 11.4,
+    "yield_rate": 46,
+    "total_applicants": 128192,
+    "total_admitted": 14614,
+    "international_applicants": 18000,
+    "international_admitted": 1200,
+    "profile_ranges": {
+      "gpa_unweighted": { "25th": 3.89, "median": 3.94, "75th": 4.0 },
+      "sat_total": { "25th": 1330, "median": 1440, "75th": 1530 },
+      "sat_math": { "25th": 680, "median": 750, "75th": 800 },
+      "sat_reading": { "25th": 650, "median": 700, "75th": 750 },
+      "act_composite": { "25th": 29, "median": 33, "75th": 35 }
+    }
+  },
+  "application_requirements": {
+    "deadline_early": null,
+    "deadline_regular": "November 30",
+    "application_platform": "UC Application",
+    "application_fee": 80,
+    "fee_waiver_available": true,
+    "required_documents": [
+      { "item": "Transcript", "notes": "Self-reported, verified upon admission" },
+      { "item": "Essays", "count": 4, "notes": "PIQs - Personal Insight Questions (350 words each)" },
+      { "item": "Activities", "notes": "Listed in UC application" }
+    ],
+    "test_policy": "Test-free (no SAT/ACT considered)",
+    "english_proficiency": {
+      "required_for_international": true,
+      "minimum_toefl": 80,
+      "minimum_ielts": 6.5,
+      "duolingo_accepted": true,
+      "minimum_duolingo": 115,
+      "waiver_conditions": "3+ years in English-medium school"
+    }
+  },
+  "academic_programs": {
+    "notable_majors": [
+      "EECS (Electrical Engineering and Computer Sciences)",
+      "Computer Science (L&S)",
+      "Economics",
+      "Data Science",
+      "Molecular and Cell Biology",
+      "Political Science",
+      "Business Administration (Haas)"
+    ],
+    "unique_programs": [
+      "Haas School of Business (undergraduate)",
+      "EECS direct admit",
+      "Data Science major",
+      "Berkeley Connect mentorship",
+      "DeCal student-taught courses"
+    ],
+    "curriculum_structure": "College requirements + Major + Breadth requirements"
+  },
+  "korean_student_specific": {
+    "korean_student_organizations": [
+      "Korean American Student Association (KASA)",
+      "Korean Student Association (KSA)",
+      "Berkeley Korean Christian Fellowship",
+      "Korean Pre-Medical Association"
+    ],
+    "korean_food_access": "Excellent - Oakland Koreatown (15 min), Korean restaurants on Telegraph Ave, H Mart in El Cerrito",
+    "korean_church_proximity": "Multiple Korean churches in Berkeley/Oakland area (10-20 min)",
+    "historical_admit_patterns": {
+      "korean_high_schools_commonly_admitted": [
+        "Seoul International School",
+        "Korea International School",
+        "대원외국어고등학교",
+        "외대부속외국어고등학교",
+        "International schools in Bay Area"
+      ],
+      "common_profiles": "Strong academics, leadership in community organizations, demonstrated resilience"
+    },
+    "korean_specific_advice": [
+      "Berkeley is test-free - focus on GPA and PIQ essays",
+      "PIQs should tell compelling personal stories, not just list achievements",
+      "EECS/CS extremely competitive - consider L&S CS path",
+      "Large campus - show you can thrive in big environment",
+      "Public school culture different from privates - emphasize self-reliance",
+      "Cost-effective option with strong outcomes"
+    ],
+    "common_korean_applicant_mistakes": [
+      "PIQ essays too focused on achievements rather than personal growth",
+      "Not showing fit with Berkeley's diverse, activist culture",
+      "Assuming EECS admission without backup plan",
+      "Not highlighting leadership or community impact"
+    ]
+  },
+  "cost_and_aid": {
+    "tuition": 44467,
+    "room_and_board": 20530,
+    "total_cost_of_attendance": 75000,
+    "financial_aid_for_international": false,
+    "need_blind_for_international": false,
+    "average_aid_package": 24000,
+    "percentage_receiving_aid": 55
+  },
+  "campus_life": {
+    "housing_guarantee": "2 years for freshmen",
+    "popular_dorms": ["Unit 1", "Unit 2", "Unit 3", "Clark Kerr"],
+    "dining_options": "Multiple dining commons, Crossroads, cafes",
+    "safety_rating": "Moderate - UCPD, evening escorts, urban campus",
+    "nearby_attractions": "San Francisco (30 min), Silicon Valley, hiking, beaches"
+  },
+  "career_outcomes": {
+    "employment_rate_6_months": 92,
+    "average_starting_salary": 95000,
+    "top_employers": ["Google", "Apple", "Meta", "Amazon", "Microsoft", "Startups"],
+    "graduate_school_rate": 35,
+    "korean_alumni_network": "Very large Berkeley Korean Alumni in Bay Area tech"
+  },
+  "last_updated": "2024-12-01"
+}

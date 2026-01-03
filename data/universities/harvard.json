@@ -1,0 +1,147 @@
+{
+  "university_id": "harvard",
+  "basic_info": {
+    "name": "Harvard University",
+    "name_short": "Harvard",
+    "location": {
+      "city": "Cambridge",
+      "state": "Massachusetts",
+      "region": "Northeast",
+      "nearest_korean_community": "Boston Koreatown (Allston)",
+      "distance_to_korean_community": "10 min",
+      "climate": "Four seasons, cold winters (-5°C to 2°C), warm summers (20-28°C)"
+    },
+    "type": "Private Research",
+    "founded": 1636,
+    "website": "https://www.harvard.edu"
+  },
+  "enrollment": {
+    "total_undergraduate": 7100,
+    "total_graduate": 14500,
+    "international_percentage": 12.3,
+    "korean_student_estimate": 150,
+    "student_faculty_ratio": "6:1"
+  },
+  "admission_stats": {
+    "acceptance_rate": 3.41,
+    "early_action_rate": 7.56,
+    "early_decision_rate": null,
+    "regular_decision_rate": 2.8,
+    "yield_rate": 84,
+    "total_applicants": 57435,
+    "total_admitted": 1959,
+    "international_applicants": 8200,
+    "international_admitted": 180,
+    "profile_ranges": {
+      "gpa_unweighted": { "25th": 3.95, "median": 4.0, "75th": 4.0 },
+      "sat_total": { "25th": 1480, "median": 1530, "75th": 1580 },
+      "sat_math": { "25th": 750, "median": 780, "75th": 800 },
+      "sat_reading": { "25th": 730, "median": 760, "75th": 790 },
+      "act_composite": { "25th": 33, "median": 35, "75th": 36 }
+    }
+  },
+  "application_requirements": {
+    "deadline_early": "November 1",
+    "deadline_regular": "January 1",
+    "application_platform": "Common App or Coalition App",
+    "application_fee": 85,
+    "fee_waiver_available": true,
+    "required_documents": [
+      { "item": "Transcript", "notes": "Official transcripts" },
+      { "item": "Recommendations", "count": 2, "notes": "Two teacher recommendations" },
+      { "item": "Counselor Letter", "required": true },
+      { "item": "Essays", "count": 1, "notes": "Harvard supplement (optional but recommended)" },
+      { "item": "Interview", "required": false, "notes": "Alumni interview if available" }
+    ],
+    "test_policy": "Test-optional through 2026",
+    "english_proficiency": {
+      "required_for_international": false,
+      "minimum_toefl": null,
+      "minimum_ielts": null,
+      "duolingo_accepted": false,
+      "minimum_duolingo": null,
+      "waiver_conditions": "No formal English test requirement - proficiency shown through application"
+    }
+  },
+  "academic_programs": {
+    "notable_majors": [
+      "Economics",
+      "Government",
+      "Computer Science",
+      "Social Studies",
+      "History",
+      "Psychology",
+      "Neurobiology",
+      "Applied Mathematics"
+    ],
+    "unique_programs": [
+      "General Education curriculum",
+      "Freshman seminars with renowned professors",
+      "Harvard College Research Program",
+      "Cross-registration with MIT",
+      "Study abroad programs worldwide"
+    ],
+    "curriculum_structure": "Gen Ed requirements + Concentration (major) + Electives + Distribution requirements"
+  },
+  "korean_student_specific": {
+    "korean_student_organizations": [
+      "Harvard Korean Association (HKA)",
+      "Harvard Korean Society",
+      "Harvard Asian American Association",
+      "Harvard Korean Christian Fellowship"
+    ],
+    "korean_food_access": "H Mart in Cambridge (15 min), Korean restaurants in Allston (15 min), Korean bakeries in Harvard Square area",
+    "korean_church_proximity": "Boston Hankook Church (20 min), Cambridge Korean Church (15 min)",
+    "historical_admit_patterns": {
+      "korean_high_schools_commonly_admitted": [
+        "Seoul International School",
+        "Korea International School",
+        "대원외국어고등학교",
+        "민족사관고등학교",
+        "외대부속외국어고등학교"
+      ],
+      "common_profiles": "Well-rounded students with national/international recognition, unique intellectual interests, strong leadership"
+    },
+    "korean_specific_advice": [
+      "Harvard values 'T-shaped' students - deep expertise + broad interests",
+      "Show genuine intellectual curiosity and love of learning",
+      "Leadership with impact at scale is highly valued",
+      "The optional supplement essay is effectively required - treat it seriously",
+      "Interview is important - prepare to discuss intellectual interests in depth",
+      "Demonstrate how you'll contribute to residential House community",
+      "Show awareness of global issues, especially US-Korea relations if relevant"
+    ],
+    "common_korean_applicant_mistakes": [
+      "Profile too focused on STEM without showing humanities interests",
+      "Not taking the 'optional' essay seriously",
+      "Achievements impressive but lacking personal narrative or 'why'",
+      "Interview preparation too rehearsed - need genuine conversation",
+      "Not demonstrating potential for leadership at Harvard and beyond",
+      "Failing to show what questions drive them intellectually"
+    ]
+  },
+  "cost_and_aid": {
+    "tuition": 59076,
+    "room_and_board": 21130,
+    "total_cost_of_attendance": 85060,
+    "financial_aid_for_international": true,
+    "need_blind_for_international": true,
+    "average_aid_package": 59000,
+    "percentage_receiving_aid": 55
+  },
+  "campus_life": {
+    "housing_guarantee": "4 years guaranteed (House system)",
+    "popular_dorms": ["Adams House", "Eliot House", "Leverett House", "Dunster House"],
+    "dining_options": "House dining halls, Harvard Square restaurants, Annenberg (freshman dining)",
+    "safety_rating": "High - Harvard University Police, emergency services",
+    "nearby_attractions": "Boston, MIT, Charles River, Museums, Fenway Park, Historical sites"
+  },
+  "career_outcomes": {
+    "employment_rate_6_months": 92,
+    "average_starting_salary": 95000,
+    "top_employers": ["McKinsey", "Goldman Sachs", "Google", "Morgan Stanley", "BCG", "Bain"],
+    "graduate_school_rate": 48,
+    "korean_alumni_network": "Very strong Harvard Korean Alumni Association with global chapters"
+  },
+  "last_updated": "2024-12-01"
+}

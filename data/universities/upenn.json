@@ -1,0 +1,141 @@
+{
+  "university_id": "upenn",
+  "basic_info": {
+    "name": "University of Pennsylvania",
+    "name_short": "UPenn",
+    "location": {
+      "city": "Philadelphia",
+      "state": "Pennsylvania",
+      "region": "Northeast",
+      "nearest_korean_community": "Koreatown Philadelphia (Olney)",
+      "distance_to_korean_community": "25 min",
+      "climate": "Four seasons, cold winters (-2°C to 6°C), hot humid summers (24-31°C)"
+    },
+    "type": "Private Research",
+    "founded": 1740,
+    "website": "https://www.upenn.edu"
+  },
+  "enrollment": {
+    "total_undergraduate": 10000,
+    "total_graduate": 14000,
+    "international_percentage": 14.2,
+    "korean_student_estimate": 250,
+    "student_faculty_ratio": "6:1"
+  },
+  "admission_stats": {
+    "acceptance_rate": 5.68,
+    "early_action_rate": null,
+    "early_decision_rate": 15.6,
+    "regular_decision_rate": 4.1,
+    "yield_rate": 68,
+    "total_applicants": 59465,
+    "total_admitted": 3377,
+    "international_applicants": 9000,
+    "international_admitted": 220,
+    "profile_ranges": {
+      "gpa_unweighted": { "25th": 3.90, "median": 3.96, "75th": 4.0 },
+      "sat_total": { "25th": 1500, "median": 1540, "75th": 1570 },
+      "sat_math": { "25th": 760, "median": 790, "75th": 800 },
+      "sat_reading": { "25th": 720, "median": 755, "75th": 780 },
+      "act_composite": { "25th": 33, "median": 35, "75th": 36 }
+    }
+  },
+  "application_requirements": {
+    "deadline_early": "November 1",
+    "deadline_regular": "January 5",
+    "application_platform": "Common App",
+    "application_fee": 75,
+    "fee_waiver_available": true,
+    "required_documents": [
+      { "item": "Transcript", "notes": "Official transcripts" },
+      { "item": "Recommendations", "count": 2, "notes": "Two teacher recommendations" },
+      { "item": "Counselor Letter", "required": true },
+      { "item": "Essays", "count": 2, "notes": "Penn-specific essays" },
+      { "item": "Interview", "required": false, "notes": "Alumni interview if available" }
+    ],
+    "test_policy": "Test-optional for 2024-25",
+    "english_proficiency": {
+      "required_for_international": true,
+      "minimum_toefl": 100,
+      "minimum_ielts": 7.0,
+      "duolingo_accepted": true,
+      "minimum_duolingo": 120,
+      "waiver_conditions": "English-medium instruction for 4+ years"
+    }
+  },
+  "academic_programs": {
+    "notable_majors": [
+      "Finance (Wharton)",
+      "Economics",
+      "Nursing",
+      "Engineering",
+      "Political Science",
+      "Biology",
+      "Computer Science"
+    ],
+    "unique_programs": [
+      "Wharton School (undergraduate business)",
+      "Dual degree programs across schools",
+      "Huntsman Program in International Studies & Business",
+      "M&T Program (Management & Technology)",
+      "Jerome Fisher Program in Management & Technology"
+    ],
+    "curriculum_structure": "School-specific requirements + Major + Electives"
+  },
+  "korean_student_specific": {
+    "korean_student_organizations": [
+      "Korean Students Association (KSA)",
+      "Penn Korean Christian Fellowship",
+      "Wharton Korean Club"
+    ],
+    "korean_food_access": "Good - Korean restaurants in Olney (25 min), H Mart accessible, Koreatown growing",
+    "korean_church_proximity": "Korean churches in Philadelphia area (20-30 min)",
+    "historical_admit_patterns": {
+      "korean_high_schools_commonly_admitted": [
+        "Seoul International School",
+        "대원외국어고등학교",
+        "민족사관고등학교",
+        "Korea International School"
+      ],
+      "common_profiles": "Pre-professional oriented, business-minded, leadership experience, dual degree interests"
+    },
+    "korean_specific_advice": [
+      "Penn values pre-professional ambition - be clear about career goals",
+      "Wharton is extremely competitive - need strong quantitative background",
+      "Dual degree programs are unique - show interdisciplinary interests",
+      "ED rate much higher than RD - consider ED if Penn is top choice",
+      "'Why Penn' essay should show specific knowledge of Penn culture",
+      "Show how you'll use Penn's resources across its four schools"
+    ],
+    "common_korean_applicant_mistakes": [
+      "Applying to Wharton without genuine interest in business",
+      "'Why Penn' essay too generic",
+      "Not demonstrating pre-professional direction",
+      "Overemphasis on prestige without showing fit"
+    ]
+  },
+  "cost_and_aid": {
+    "tuition": 63452,
+    "room_and_board": 18748,
+    "total_cost_of_attendance": 87860,
+    "financial_aid_for_international": true,
+    "need_blind_for_international": false,
+    "average_aid_package": 58000,
+    "percentage_receiving_aid": 46
+  },
+  "campus_life": {
+    "housing_guarantee": "4 years",
+    "popular_dorms": ["The Quad", "Hill College House", "Kings Court"],
+    "dining_options": "Multiple dining halls, food trucks, Locust Walk eateries",
+    "safety_rating": "Good - Penn Police, escort services",
+    "nearby_attractions": "Philadelphia historic sites, NYC (2 hours), great food scene"
+  },
+  "career_outcomes": {
+    "employment_rate_6_months": 95,
+    "average_starting_salary": 95000,
+    "top_employers": ["Goldman Sachs", "McKinsey", "BCG", "JP Morgan", "Google"],
+    "graduate_school_rate": 38,
+    "korean_alumni_network": "Very strong, especially Wharton Korean Alumni"
+  },
+  "last_updated": "2024-12-01"
+}

@@ -1,0 +1,146 @@
+{
+  "university_id": "yale",
+  "basic_info": {
+    "name": "Yale University",
+    "name_short": "Yale",
+    "location": {
+      "city": "New Haven",
+      "state": "Connecticut",
+      "region": "Northeast",
+      "nearest_korean_community": "Flushing, NY",
+      "distance_to_korean_community": "90 min by train",
+      "climate": "Four seasons, cold winters (-5°C to 3°C), warm humid summers (22-30°C)"
+    },
+    "type": "Private Research",
+    "founded": 1701,
+    "website": "https://www.yale.edu"
+  },
+  "enrollment": {
+    "total_undergraduate": 6500,
+    "total_graduate": 7500,
+    "international_percentage": 11.8,
+    "korean_student_estimate": 130,
+    "student_faculty_ratio": "6:1"
+  },
+  "admission_stats": {
+    "acceptance_rate": 4.57,
+    "early_action_rate": 10.2,
+    "early_decision_rate": null,
+    "regular_decision_rate": 3.4,
+    "yield_rate": 72,
+    "total_applicants": 52250,
+    "total_admitted": 2387,
+    "international_applicants": 7800,
+    "international_admitted": 170,
+    "profile_ranges": {
+      "gpa_unweighted": { "25th": 3.92, "median": 3.98, "75th": 4.0 },
+      "sat_total": { "25th": 1470, "median": 1530, "75th": 1570 },
+      "sat_math": { "25th": 750, "median": 780, "75th": 800 },
+      "sat_reading": { "25th": 730, "median": 760, "75th": 780 },
+      "act_composite": { "25th": 33, "median": 35, "75th": 36 }
+    }
+  },
+  "application_requirements": {
+    "deadline_early": "November 1",
+    "deadline_regular": "January 2",
+    "application_platform": "Common App or Coalition App or QuestBridge",
+    "application_fee": 80,
+    "fee_waiver_available": true,
+    "required_documents": [
+      { "item": "Transcript", "notes": "Official transcripts" },
+      { "item": "Recommendations", "count": 2, "notes": "Two teacher recommendations from academic subjects" },
+      { "item": "Counselor Letter", "required": true },
+      { "item": "Essays", "count": 3, "notes": "Yale-specific short essays plus Common App essay" },
+      { "item": "Interview", "required": false, "notes": "Alumni interview if available - highly encouraged" }
+    ],
+    "test_policy": "Test-optional for 2024-25 and 2025-26 cycles",
+    "english_proficiency": {
+      "required_for_international": true,
+      "minimum_toefl": 100,
+      "minimum_ielts": 7.0,
+      "duolingo_accepted": true,
+      "minimum_duolingo": 120,
+      "waiver_conditions": "Primary language is English or 4 years in English-medium school"
+    }
+  },
+  "academic_programs": {
+    "notable_majors": [
+      "Economics",
+      "Political Science",
+      "History",
+      "English",
+      "Psychology",
+      "Molecular, Cellular & Developmental Biology",
+      "Computer Science",
+      "Global Affairs"
+    ],
+    "unique_programs": [
+      "Residential college system",
+      "Directed Studies (Great Books program)",
+      "Yale-NUS College (Singapore)",
+      "Freshman seminar program",
+      "Grand Strategy program"
+    ],
+    "curriculum_structure": "Distributional requirements + Skills requirements + Major + Electives"
+  },
+  "korean_student_specific": {
+    "korean_student_organizations": [
+      "Korean American Students at Yale (KASY)",
+      "Yale Korean Christian Fellowship",
+      "Yale Asian American Students Alliance"
+    ],
+    "korean_food_access": "Limited in New Haven - some Korean restaurants downtown (15 min walk), better access in NYC (1.5 hours)",
+    "korean_church_proximity": "Korean Church of New Haven (15 min), better options in NYC area",
+    "historical_admit_patterns": {
+      "korean_high_schools_commonly_admitted": [
+        "Seoul International School",
+        "Korea International School",
+        "대원외국어고등학교",
+        "민족사관고등학교",
+        "용인외국어고등학교"
+      ],
+      "common_profiles": "Strong writers, debate/Model UN stars, community leaders, humanities-oriented students with genuine intellectual curiosity"
+    },
+    "korean_specific_advice": [
+      "Yale especially values strong writers - essays are crucial",
+      "Show genuine engagement with ideas, not just achievements",
+      "Political engagement and global awareness valued highly",
+      "The 'Why Yale' essay should show specific knowledge of residential college culture",
+      "Arts and humanities strengths appreciated more than at some peers",
+      "Interview is important - prepare thoughtful questions about Yale",
+      "Demonstrate how you'll engage with Yale's collaborative, discussion-based culture"
+    ],
+    "common_korean_applicant_mistakes": [
+      "Essays too achievement-focused without showing intellectual depth",
+      "Not demonstrating awareness of Yale's unique residential college system",
+      "Overemphasis on STEM without showing humanities appreciation",
+      "Generic 'Why Yale' essay that could apply to any school",
+      "Not showing authentic voice in writing",
+      "Interview too formal - Yale values genuine conversation"
+    ]
+  },
+  "cost_and_aid": {
+    "tuition": 64700,
+    "room_and_board": 19680,
+    "total_cost_of_attendance": 89475,
+    "financial_aid_for_international": true,
+    "need_blind_for_international": false,
+    "average_aid_package": 61000,
+    "percentage_receiving_aid": 52
+  },
+  "campus_life": {
+    "housing_guarantee": "4 years in residential colleges",
+    "popular_dorms": ["Branford College", "Berkeley College", "Pierson College", "Silliman College"],
+    "dining_options": "Residential college dining halls, Commons, campus cafes",
+    "safety_rating": "Good - Yale Police, shuttle services, emergency phones",
+    "nearby_attractions": "New York City (1.5 hours), Long Island Sound beaches, Yale museums"
+  },
+  "career_outcomes": {
+    "employment_rate_6_months": 91,
+    "average_starting_salary": 88000,
+    "top_employers": ["McKinsey", "Goldman Sachs", "Google", "Teach For America", "Morgan Stanley"],
+    "graduate_school_rate": 52,
+    "korean_alumni_network": "Active Yale Korean Alumni Association with strong law/policy connections"
+  },
+  "last_updated": "2024-12-01"
+}

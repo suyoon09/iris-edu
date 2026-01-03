@@ -1,0 +1,140 @@
+{
+  "university_id": "cmu",
+  "basic_info": {
+    "name": "Carnegie Mellon University",
+    "name_short": "CMU",
+    "location": {
+      "city": "Pittsburgh",
+      "state": "Pennsylvania",
+      "region": "Northeast",
+      "nearest_korean_community": "Squirrel Hill",
+      "distance_to_korean_community": "10 min",
+      "climate": "Four seasons, cold snowy winters (-5°C to 3°C), warm summers (20-28°C)"
+    },
+    "type": "Private Research",
+    "founded": 1900,
+    "website": "https://www.cmu.edu"
+  },
+  "enrollment": {
+    "total_undergraduate": 7500,
+    "total_graduate": 8000,
+    "international_percentage": 22.5,
+    "korean_student_estimate": 280,
+    "student_faculty_ratio": "5:1"
+  },
+  "admission_stats": {
+    "acceptance_rate": 11.3,
+    "early_action_rate": null,
+    "early_decision_rate": 17.5,
+    "regular_decision_rate": 9.8,
+    "yield_rate": 42,
+    "total_applicants": 34261,
+    "total_admitted": 3871,
+    "international_applicants": 8500,
+    "international_admitted": 580,
+    "profile_ranges": {
+      "gpa_unweighted": { "25th": 3.85, "median": 3.94, "75th": 4.0 },
+      "sat_total": { "25th": 1480, "median": 1530, "75th": 1570 },
+      "sat_math": { "25th": 770, "median": 800, "75th": 800 },
+      "sat_reading": { "25th": 710, "median": 740, "75th": 770 },
+      "act_composite": { "25th": 33, "median": 35, "75th": 36 }
+    }
+  },
+  "application_requirements": {
+    "deadline_early": "November 1",
+    "deadline_regular": "January 3",
+    "application_platform": "Common App or Coalition App",
+    "application_fee": 75,
+    "fee_waiver_available": true,
+    "required_documents": [
+      { "item": "Transcript", "notes": "Official transcripts" },
+      { "item": "Recommendations", "count": 2, "notes": "One counselor, one teacher" },
+      { "item": "Essays", "count": 2, "notes": "CMU-specific essays" },
+      { "item": "Interview", "required": false, "notes": "Not offered" }
+    ],
+    "test_policy": "Test-optional for most programs",
+    "english_proficiency": {
+      "required_for_international": true,
+      "minimum_toefl": 102,
+      "minimum_ielts": 7.5,
+      "duolingo_accepted": true,
+      "minimum_duolingo": 125,
+      "waiver_conditions": "English-medium instruction for 4+ years"
+    }
+  },
+  "academic_programs": {
+    "notable_majors": [
+      "Computer Science (SCS)",
+      "Electrical and Computer Engineering",
+      "Business (Tepper)",
+      "Information Systems",
+      "Drama (top ranked)",
+      "Design",
+      "Robotics"
+    ],
+    "unique_programs": [
+      "School of Computer Science (top-ranked)",
+      "Robotics Institute access",
+      "Human-Computer Interaction Institute",
+      "Entertainment Technology Center",
+      "BXA intercollege degree programs"
+    ],
+    "curriculum_structure": "College-specific requirements + Major + Electives"
+  },
+  "korean_student_specific": {
+    "korean_student_organizations": [
+      "Korean Students Association (KSA)",
+      "CMU Korean Graduate Student Association",
+      "CMU Asian Students Association"
+    ],
+    "korean_food_access": "Good - Korean restaurants in Squirrel Hill (10 min), Asian supermarkets nearby",
+    "korean_church_proximity": "Pittsburgh Korean Church (15 min), several Korean churches in area",
+    "historical_admit_patterns": {
+      "korean_high_schools_commonly_admitted": [
+        "한국과학영재학교",
+        "대원외국어고등학교",
+        "Seoul International School",
+        "Korea International School"
+      ],
+      "common_profiles": "Strong CS/engineering background, programming experience, hackathon winners, robotics competitors"
+    },
+    "korean_specific_advice": [
+      "SCS is extremely competitive - demonstrate strong programming and project experience",
+      "CMU values practical skills and projects over just academic achievements",
+      "Show genuine interest in specific CMU programs and labs",
+      "Drama and Design programs are world-class - not just a tech school",
+      "Workload is famously intense - show you can handle it",
+      "Research experience valued highly, especially for SCS"
+    ],
+    "common_korean_applicant_mistakes": [
+      "Applying to SCS without substantial programming portfolio",
+      "Not showing fit with CMU's intense work culture",
+      "Generic essays that don't show 'Why CMU' specifically",
+      "Overlooking non-STEM strengths of CMU"
+    ]
+  },
+  "cost_and_aid": {
+    "tuition": 62260,
+    "room_and_board": 17600,
+    "total_cost_of_attendance": 83310,
+    "financial_aid_for_international": true,
+    "need_blind_for_international": false,
+    "average_aid_package": 52000,
+    "percentage_receiving_aid": 48
+  },
+  "campus_life": {
+    "housing_guarantee": "2 years",
+    "popular_dorms": ["Morewood Gardens", "Mudge House", "Donner House"],
+    "dining_options": "Multiple dining locations, The Exchange, campus cafes",
+    "safety_rating": "Good - CMU Police, escort services",
+    "nearby_attractions": "Pittsburgh museums, sports, restaurants, Squirrel Hill neighborhood"
+  },
+  "career_outcomes": {
+    "employment_rate_6_months": 97,
+    "average_starting_salary": 125000,
+    "top_employers": ["Google", "Apple", "Meta", "Microsoft", "Amazon", "Jane Street"],
+    "graduate_school_rate": 28,
+    "korean_alumni_network": "Strong CMU Korean Alumni, especially in tech industry"
+  },
+  "last_updated": "2024-12-01"
+}

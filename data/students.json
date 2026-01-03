@@ -1,0 +1,432 @@
+[
+  {
+    "id": "s1-minjun-001",
+    "assigned_counselor_id": "c2-sarah-002",
+    "name_korean": "김민준",
+    "name_english": "Minjun Kim",
+    "email": "minjun.kim@email.com",
+    "phone": "010-1234-5678",
+    "grade": 11,
+    "school_type": "domestic_korean",
+    "current_school": "대원외국어고등학교",
+    "graduation_year": 2026,
+    "academic": {
+      "gpa": {
+        "unweighted": 3.95,
+        "weighted": 4.3,
+        "scale": "4.0"
+      },
+      "class_rank": {
+        "rank": 5,
+        "total": 280
+      },
+      "courses": [
+        {
+          "name": "AP Calculus BC",
+          "level": "AP",
+          "grade": "A",
+          "year": "11th",
+          "subject_area": "math"
+        },
+        {
+          "name": "AP Physics C: Mechanics",
+          "level": "AP",
+          "grade": "A",
+          "year": "11th",
+          "subject_area": "science"
+        },
+        {
+          "name": "AP Computer Science A",
+          "level": "AP",
+          "grade": "A",
+          "year": "10th",
+          "subject_area": "science"
+        },
+        {
+          "name": "AP Chemistry",
+          "level": "AP",
+          "grade": "A",
+          "year": "10th",
+          "subject_area": "science"
+        },
+        {
+          "name": "AP English Language",
+          "level": "AP",
+          "grade": "A-",
+          "year": "11th",
+          "subject_area": "english"
+        },
+        {
+          "name": "AP US History",
+          "level": "AP",
+          "grade": "A",
+          "year": "10th",
+          "subject_area": "social_studies"
+        }
+      ],
+      "standardized_tests": {
+        "sat": {
+          "total": 1540,
+          "reading_writing": 740,
+          "math": 800,
+          "date": "2024-10-05"
+        },
+        "act": {
+          "composite": null,
+          "english": null,
+          "math": null,
+          "reading": null,
+          "science": null,
+          "date": null
+        },
+        "ap_scores": [
+          { "subject": "Computer Science A", "score": 5, "year": "2024" },
+          { "subject": "Chemistry", "score": 5, "year": "2024" },
+          { "subject": "US History", "score": 4, "year": "2024" }
+        ],
+        "toefl": {
+          "total": 115,
+          "date": "2024-06-15"
+        }
+      }
+    },
+    "extracurriculars": [
+      {
+        "name": "Robotics Club",
+        "category": "academic",
+        "role": "President",
+        "description": "Led school robotics team in national and international competitions. Designed and programmed autonomous robots using Python and Arduino.",
+        "hours_per_week": 15,
+        "weeks_per_year": 40,
+        "years": ["9", "10", "11"],
+        "achievements": [
+          "1st Place, Korea Robot Olympiad Regional 2024",
+          "3rd Place, FRC Korea Championship 2023",
+          "Founded junior robotics mentorship program"
+        ]
+      },
+      {
+        "name": "KAIST Research Internship",
+        "category": "academic",
+        "role": "Research Assistant",
+        "description": "Conducted research on machine learning applications in robotics under Professor Kim. Contributed to paper on reinforcement learning for robotic arm control.",
+        "hours_per_week": 20,
+        "weeks_per_year": 8,
+        "years": ["10", "11"],
+        "achievements": [
+          "Co-author on pending publication",
+          "Presented at Korea AI Conference 2024"
+        ]
+      },
+      {
+        "name": "Math Olympiad Team",
+        "category": "academic",
+        "role": "Team Member",
+        "description": "Prepared for and competed in Korean Mathematical Olympiad (KMO). Regular practice sessions and mentoring younger students.",
+        "hours_per_week": 8,
+        "weeks_per_year": 35,
+        "years": ["9", "10", "11"],
+        "achievements": [
+          "KMO Silver Medal 2024",
+          "KMO Bronze Medal 2023"
+        ]
+      },
+      {
+        "name": "Volunteer Teaching",
+        "category": "community_service",
+        "role": "Lead Tutor",
+        "description": "Tutored underprivileged middle school students in math and science at local community center.",
+        "hours_per_week": 4,
+        "weeks_per_year": 40,
+        "years": ["10", "11"],
+        "achievements": [
+          "Helped 15+ students improve grades",
+          "Developed custom curriculum materials"
+        ]
+      }
+    ],
+    "awards": [
+      {
+        "name": "Korean Mathematical Olympiad (KMO)",
+        "level": "national",
+        "year": "2024",
+        "description": "Silver Medal - Top 50 nationally in mathematics competition"
+      },
+      {
+        "name": "Korea Robot Olympiad",
+        "level": "regional",
+        "year": "2024",
+        "description": "1st Place in autonomous robot category"
+      },
+      {
+        "name": "Presidential Science Award",
+        "level": "national",
+        "year": "2023",
+        "description": "Recognition for outstanding achievement in science education"
+      },
+      {
+        "name": "English Speech Contest",
+        "level": "school",
+        "year": "2023",
+        "description": "1st Place in annual school English speech competition"
+      }
+    ],
+    "target_universities": [
+      {
+        "university_id": "mit",
+        "priority": "reach",
+        "intended_major": "Computer Science",
+        "application_round": "EA"
+      },
+      {
+        "university_id": "stanford",
+        "priority": "reach",
+        "intended_major": "Computer Science",
+        "application_round": "RD"
+      },
+      {
+        "university_id": "cmu",
+        "priority": "target",
+        "intended_major": "Computer Science",
+        "application_round": "RD"
+      },
+      {
+        "university_id": "berkeley",
+        "priority": "target",
+        "intended_major": "EECS",
+        "application_round": "RD"
+      },
+      {
+        "university_id": "georgia-tech",
+        "priority": "safety",
+        "intended_major": "Computer Science",
+        "application_round": "EA"
+      }
+    ],
+    "application_status": "applying",
+    "created_at": "2024-03-15T10:00:00Z",
+    "updated_at": "2024-12-01T15:30:00Z",
+    "notes": "Strong STEM profile with genuine research experience. Focus on MIT EA - good match with hands-on maker culture. Essay draft in progress, emphasizing robotics journey and social impact."
+  },
+  {
+    "id": "s2-seoyeon-002",
+    "assigned_counselor_id": "c3-james-003",
+    "name_korean": "이서연",
+    "name_english": "Seoyeon Lee",
+    "email": "seoyeon.lee@email.com",
+    "phone": "010-9876-5432",
+    "grade": 11,
+    "school_type": "international_in_korea",
+    "current_school": "Seoul International School",
+    "graduation_year": 2026,
+    "academic": {
+      "gpa": {
+        "unweighted": 3.88,
+        "weighted": 4.15,
+        "scale": "4.0"
+      },
+      "class_rank": {
+        "rank": 12,
+        "total": 150
+      },
+      "courses": [
+        {
+          "name": "AP English Literature",
+          "level": "AP",
+          "grade": "A",
+          "year": "11th",
+          "subject_area": "english"
+        },
+        {
+          "name": "AP Psychology",
+          "level": "AP",
+          "grade": "A",
+          "year": "11th",
+          "subject_area": "social_studies"
+        },
+        {
+          "name": "AP World History",
+          "level": "AP",
+          "grade": "A",
+          "year": "10th",
+          "subject_area": "social_studies"
+        },
+        {
+          "name": "AP Statistics",
+          "level": "AP",
+          "grade": "A-",
+          "year": "11th",
+          "subject_area": "math"
+        },
+        {
+          "name": "AP French",
+          "level": "AP",
+          "grade": "A",
+          "year": "11th",
+          "subject_area": "foreign_language"
+        },
+        {
+          "name": "Honors Pre-Calculus",
+          "level": "honors",
+          "grade": "A-",
+          "year": "10th",
+          "subject_area": "math"
+        }
+      ],
+      "standardized_tests": {
+        "sat": {
+          "total": 1510,
+          "reading_writing": 790,
+          "math": 720,
+          "date": "2024-08-24"
+        },
+        "act": {
+          "composite": null,
+          "english": null,
+          "math": null,
+          "reading": null,
+          "science": null,
+          "date": null
+        },
+        "ap_scores": [
+          { "subject": "World History", "score": 5, "year": "2024" },
+          { "subject": "French Language", "score": 4, "year": "2024" }
+        ],
+        "toefl": null
+      }
+    },
+    "extracurriculars": [
+      {
+        "name": "Debate Team",
+        "category": "academic",
+        "role": "Captain",
+        "description": "Led school debate team in national and international Model UN and debate competitions. Focus on international relations and human rights topics.",
+        "hours_per_week": 12,
+        "weeks_per_year": 40,
+        "years": ["9", "10", "11"],
+        "achievements": [
+          "Best Delegate, HMUN Korea 2024",
+          "Outstanding Speaker, Korea National Debate Tournament 2023",
+          "Founded school's debate mentorship program"
+        ]
+      },
+      {
+        "name": "Literary Magazine",
+        "category": "arts",
+        "role": "Editor-in-Chief",
+        "description": "Lead editorial team for school's award-winning literary magazine. Curate submissions, edit pieces, and design layouts.",
+        "hours_per_week": 8,
+        "weeks_per_year": 35,
+        "years": ["10", "11"],
+        "achievements": [
+          "Scholastic Art & Writing Awards - Silver Key for personal essay",
+          "Doubled magazine circulation",
+          "Launched digital edition"
+        ]
+      },
+      {
+        "name": "Model United Nations",
+        "category": "academic",
+        "role": "Head Delegate",
+        "description": "Represent countries and debate global issues at Model UN conferences. Specialize in human rights and environmental policy.",
+        "hours_per_week": 6,
+        "weeks_per_year": 30,
+        "years": ["9", "10", "11"],
+        "achievements": [
+          "Best Delegate at 5 conferences",
+          "Secretary-General, SIS MUN 2024",
+          "Crisis Committee Award, YMUN Korea"
+        ]
+      },
+      {
+        "name": "Women's Rights Advocacy",
+        "category": "community_service",
+        "role": "Founder & President",
+        "description": "Founded student organization advocating for gender equality. Organize workshops, speaker events, and awareness campaigns.",
+        "hours_per_week": 5,
+        "weeks_per_year": 40,
+        "years": ["10", "11"],
+        "achievements": [
+          "Partnered with Korean Women's Development Institute",
+          "Hosted school's first Gender Equality Week",
+          "Published op-ed in Korea Herald"
+        ]
+      },
+      {
+        "name": "French Club",
+        "category": "academic",
+        "role": "Vice President",
+        "description": "Organize French cultural events and conversation practice sessions. Help coordinate exchange with partner school in Lyon.",
+        "hours_per_week": 3,
+        "weeks_per_year": 35,
+        "years": ["10", "11"],
+        "achievements": [
+          "Organized successful virtual exchange program",
+          "DELF B2 Certification"
+        ]
+      }
+    ],
+    "awards": [
+      {
+        "name": "Scholastic Art & Writing Awards",
+        "level": "national",
+        "year": "2024",
+        "description": "Silver Key for Personal Essay on cultural identity"
+      },
+      {
+        "name": "Korea National Debate Tournament",
+        "level": "national",
+        "year": "2023",
+        "description": "Outstanding Speaker Award"
+      },
+      {
+        "name": "Harvard Model UN Korea",
+        "level": "regional",
+        "year": "2024",
+        "description": "Best Delegate, Human Rights Council"
+      },
+      {
+        "name": "AP Scholar with Distinction",
+        "level": "national",
+        "year": "2024",
+        "description": "Recognized for outstanding performance on AP exams"
+      }
+    ],
+    "target_universities": [
+      {
+        "university_id": "yale",
+        "priority": "reach",
+        "intended_major": "Political Science",
+        "application_round": "REA"
+      },
+      {
+        "university_id": "columbia",
+        "priority": "reach",
+        "intended_major": "Political Science",
+        "application_round": "RD"
+      },
+      {
+        "university_id": "upenn",
+        "priority": "target",
+        "intended_major": "Philosophy, Politics, and Economics",
+        "application_round": "RD"
+      },
+      {
+        "university_id": "northwestern",
+        "priority": "target",
+        "intended_major": "Journalism",
+        "application_round": "ED2"
+      },
+      {
+        "university_id": "nyu",
+        "priority": "safety",
+        "intended_major": "Politics",
+        "application_round": "RD"
+      }
+    ],
+    "application_status": "preparing",
+    "created_at": "2024-04-01T14:00:00Z",
+    "updated_at": "2024-11-28T11:00:00Z",
+    "notes": "Strong writer with genuine passion for advocacy. Yale REA is strategic choice - good fit with political engagement culture. Working on personal essay exploring Korean-American identity and women's rights work. Need to strengthen math scores if possible."
+  }
+]
