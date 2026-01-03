@@ -20,6 +20,7 @@ export default function AnalysisPage() {
   const [isLoading, setIsLoading] = useState(true);
   const [isGenerating, setIsGenerating] = useState(false);
   const [error, setError] = useState("");
+  const [debugInfo, setDebugInfo] = useState<Record<string, unknown> | null>(null);
 
   useEffect(() => {
     fetchStudent();
@@ -41,6 +42,7 @@ export default function AnalysisPage() {
   const generateAnalysis = async () => {
     setIsGenerating(true);
     setError("");
+    setDebugInfo(null);
 
     try {
       const response = await fetch("/api/analyze", {
@@ -49,15 +51,20 @@ export default function AnalysisPage() {
         body: JSON.stringify({ student_id: studentId }),
       });
 
+      const data = await response.json();
+
       if (!response.ok) {
-        const data = await response.json();
-        throw new Error(data.error || "Analysis failed");
+        setError(data.error || "Analysis failed");
+        if (data.debug) {
+          setDebugInfo(data.debug);
+        }
+        return;
       }
 
-      const data = await response.json();
       setAnalysis(data);
     } catch (err) {
       setError(err instanceof Error ? err.message : "분석 생성에 실패했습니다.");
+      setDebugInfo({ networkError: true, message: String(err) });
     } finally {
       setIsGenerating(false);
     }
@@ -114,7 +121,15 @@ export default function AnalysisPage() {
           {error && (
             <Card className="mb-6 border-red-200 bg-red-50">
               <CardContent className="py-4">
-                <p className="text-red-600">{error}</p>
+                <p className="text-red-600 font-medium">{error}</p>
+                {debugInfo && (
+                  <div className="mt-4 p-3 bg-red-100 rounded text-xs font-mono overflow-x-auto">
+                    <p className="font-bold text-red-800 mb-2">Debug Info:</p>
+                    <pre className="text-red-700 whitespace-pre-wrap">
+                      {JSON.stringify(debugInfo, null, 2)}
+                    </pre>
+                  </div>
+                )}
               </CardContent>
             </Card>
           )}

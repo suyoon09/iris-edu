@@ -62,8 +62,17 @@ export async function POST(request: NextRequest) {
       analysisText = await generateAnalysis(prompt);
     } catch (apiError) {
       console.error("Claude API error:", apiError);
+      const errorMessage = apiError instanceof Error ? apiError.message : String(apiError);
       return NextResponse.json(
-        { error: "AI 서비스 연결에 실패했습니다. API 키를 확인하세요." },
+        {
+          error: "AI 서비스 연결에 실패했습니다.",
+          debug: {
+            message: errorMessage,
+            type: apiError?.constructor?.name,
+            apiKeySet: !!process.env.ANTHROPIC_API_KEY,
+            apiKeyPrefix: process.env.ANTHROPIC_API_KEY?.substring(0, 10) + "...",
+          }
+        },
         { status: 503 }
       );
     }
@@ -115,8 +124,17 @@ export async function POST(request: NextRequest) {
     });
   } catch (error) {
     console.error("Error generating analysis:", error);
+    const errorMessage = error instanceof Error ? error.message : String(error);
+    const errorStack = error instanceof Error ? error.stack : undefined;
     return NextResponse.json(
-      { error: "분석 생성에 실패했습니다. 다시 시도해주세요." },
+      {
+        error: "분석 생성에 실패했습니다.",
+        debug: {
+          message: errorMessage,
+          stack: errorStack,
+          type: error?.constructor?.name,
+        }
+      },
       { status: 500 }
     );
   }

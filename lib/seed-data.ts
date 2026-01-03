@@ -324,7 +324,588 @@ const universityIndex: UniversityListItem[] = [
   { university_id: "northeastern", name: "Northeastern University", name_short: "Northeastern", location: "Boston, MA", acceptance_rate: 6.70, type: "Private Research" },
 ];
 
-// Helper function to create a minimal university detail
+// Complete university details for key universities
+const completeUniversityDetails: Record<string, University> = {
+  mit: {
+    university_id: "mit",
+    basic_info: {
+      name: "Massachusetts Institute of Technology",
+      name_short: "MIT",
+      location: { city: "Cambridge", state: "Massachusetts", region: "Northeast" },
+      type: "Private Research",
+      founded: 1861,
+      website: "https://www.mit.edu",
+    },
+    enrollment: { total_undergraduate: 4500, international_percentage: 11.2 },
+    admission_stats: {
+      acceptance_rate: 3.96,
+      early_action_rate: 4.7,
+      yield_rate: 85,
+      total_applicants: 26914,
+      total_admitted: 1067,
+      international_applicants: 5500,
+      international_admitted: 140,
+      profile_ranges: {
+        gpa_unweighted: { "25th": 3.95, median: 4.0, "75th": 4.0 },
+        sat_total: { "25th": 1510, median: 1550, "75th": 1580 },
+        sat_math: { "25th": 780, median: 800, "75th": 800 },
+        act_composite: { "25th": 34, median: 35, "75th": 36 },
+      },
+    },
+    application_requirements: {
+      deadline_early: "November 1",
+      deadline_regular: "January 5",
+      application_platform: "MyMIT",
+      application_fee: 75,
+      test_policy: "Test flexible - SAT/ACT optional",
+      english_proficiency: { minimum_toefl: 90, minimum_ielts: 7.0 },
+    },
+    academic_programs: {
+      notable_majors: ["Computer Science", "EECS", "Mechanical Engineering", "Physics", "Mathematics"],
+      unique_programs: ["UROP Research Program", "MIT Media Lab", "Cross-registration with Harvard"],
+    },
+    korean_student_specific: {
+      korean_student_organizations: ["Korean Students Association", "MIT KSEA"],
+      korean_food_access: "H Mart in Cambridge (15 min), Korean restaurants in Allston",
+      korean_church_proximity: "Boston Korean Church (20 min)",
+      korean_specific_advice: [
+        "MIT values 'making things' - demonstrate building projects",
+        "Research experience with genuine intellectual contribution is valued",
+        "Essays should show personality, not just achievements",
+        "Show collaboration - MIT culture is collaborative",
+      ],
+      common_korean_applicant_mistakes: [
+        "Over-focusing on olympiad credentials without personality",
+        "Essays too formal/achievement-focused",
+        "Not demonstrating hands-on maker culture fit",
+      ],
+      historical_admit_patterns: {
+        korean_high_schools_commonly_admitted: ["대원외고", "민사고", "Seoul International School", "KIS"],
+      },
+    },
+    cost_and_aid: {
+      tuition: 57986,
+      room_and_board: 19980,
+      total_cost_of_attendance: 82000,
+      financial_aid_for_international: true,
+      average_aid_package: 62000,
+    },
+    campus_life: {
+      housing_guarantee: "4 years guaranteed",
+      safety_rating: "High",
+      nearby_attractions: "Boston, Harvard Square, Charles River",
+    },
+    career_outcomes: {
+      employment_rate_6_months: 95,
+      average_starting_salary: 118000,
+      top_employers: ["Google", "Apple", "Microsoft", "McKinsey", "Goldman Sachs"],
+      graduate_school_rate: 42,
+    },
+    last_updated: "2024-12-01",
+  } as University,
+
+  stanford: {
+    university_id: "stanford",
+    basic_info: {
+      name: "Stanford University",
+      name_short: "Stanford",
+      location: { city: "Stanford", state: "California", region: "West Coast" },
+      type: "Private Research",
+      founded: 1885,
+      website: "https://www.stanford.edu",
+    },
+    admission_stats: {
+      acceptance_rate: 3.68,
+      yield_rate: 82,
+      total_applicants: 56378,
+      total_admitted: 2075,
+      profile_ranges: {
+        gpa_unweighted: { "25th": 3.9, median: 3.96, "75th": 4.0 },
+        sat_total: { "25th": 1500, median: 1550, "75th": 1580 },
+        act_composite: { "25th": 33, median: 35, "75th": 36 },
+      },
+    },
+    application_requirements: {
+      deadline_regular: "January 2",
+      application_platform: "Common App + Coalition",
+      application_fee: 90,
+      test_policy: "Test optional",
+      english_proficiency: { minimum_toefl: 100 },
+    },
+    academic_programs: {
+      notable_majors: ["Computer Science", "Engineering", "Economics", "Human Biology"],
+      unique_programs: ["Stanford d.school", "StartX Accelerator", "Bing Overseas Studies"],
+    },
+    korean_student_specific: {
+      korean_specific_advice: [
+        "Stanford loves intellectual vitality - show curiosity",
+        "Entrepreneurial spirit valued highly",
+        "'What matters to you' essay is crucial",
+      ],
+      common_korean_applicant_mistakes: [
+        "Cookie-cutter activities without passion",
+        "Not showing 'Why Stanford' specifically",
+      ],
+    },
+    cost_and_aid: {
+      tuition: 61731,
+      room_and_board: 20955,
+      total_cost_of_attendance: 87225,
+      financial_aid_for_international: true,
+      average_aid_package: 64000,
+    },
+    campus_life: { housing_guarantee: "4 years", safety_rating: "High" },
+    career_outcomes: {
+      employment_rate_6_months: 94,
+      average_starting_salary: 115000,
+      top_employers: ["Google", "Apple", "Meta", "McKinsey"],
+    },
+    last_updated: "2024-12-01",
+  } as University,
+
+  yale: {
+    university_id: "yale",
+    basic_info: {
+      name: "Yale University",
+      name_short: "Yale",
+      location: { city: "New Haven", state: "Connecticut", region: "Northeast" },
+      type: "Private Research",
+      founded: 1701,
+      website: "https://www.yale.edu",
+    },
+    admission_stats: {
+      acceptance_rate: 4.57,
+      early_action_rate: 10.0,
+      yield_rate: 72,
+      total_applicants: 52250,
+      total_admitted: 2289,
+      profile_ranges: {
+        gpa_unweighted: { "25th": 3.9, median: 3.95, "75th": 4.0 },
+        sat_total: { "25th": 1470, median: 1540, "75th": 1570 },
+        act_composite: { "25th": 33, median: 35, "75th": 36 },
+      },
+    },
+    application_requirements: {
+      deadline_early: "November 1 (REA)",
+      deadline_regular: "January 2",
+      application_platform: "Common App + Coalition + QuestBridge",
+      application_fee: 80,
+      test_policy: "Test optional through 2024-25",
+      english_proficiency: { minimum_toefl: 100, minimum_ielts: 7.0 },
+    },
+    academic_programs: {
+      notable_majors: ["Political Science", "Economics", "History", "English", "Psychology"],
+      unique_programs: ["Residential College System", "Yale-NUS College", "Global Health Studies"],
+    },
+    korean_student_specific: {
+      korean_student_organizations: ["Korean American Students at Yale (KASY)", "Yale Korean Undergraduate Students Association"],
+      korean_specific_advice: [
+        "Yale values intellectual breadth and curiosity",
+        "Residential college system - show you value community",
+        "Strong writing skills are essential",
+        "Show engagement with social issues",
+      ],
+      common_korean_applicant_mistakes: [
+        "Focusing only on academic achievements",
+        "Not demonstrating fit with liberal arts culture",
+        "Generic 'Why Yale' essay",
+      ],
+    },
+    cost_and_aid: {
+      tuition: 64700,
+      room_and_board: 19200,
+      total_cost_of_attendance: 87900,
+      financial_aid_for_international: true,
+      average_aid_package: 67000,
+    },
+    campus_life: { housing_guarantee: "4 years", safety_rating: "Good" },
+    career_outcomes: {
+      employment_rate_6_months: 92,
+      average_starting_salary: 95000,
+      top_employers: ["Goldman Sachs", "McKinsey", "Google", "Yale University"],
+    },
+    last_updated: "2024-12-01",
+  } as University,
+
+  cmu: {
+    university_id: "cmu",
+    basic_info: {
+      name: "Carnegie Mellon University",
+      name_short: "CMU",
+      location: { city: "Pittsburgh", state: "Pennsylvania", region: "Northeast" },
+      type: "Private Research",
+      founded: 1900,
+    },
+    admission_stats: {
+      acceptance_rate: 11.3,
+      yield_rate: 42,
+      total_applicants: 34261,
+      total_admitted: 3871,
+      profile_ranges: {
+        gpa_unweighted: { "25th": 3.85, median: 3.92, "75th": 4.0 },
+        sat_total: { "25th": 1480, median: 1530, "75th": 1570 },
+        act_composite: { "25th": 33, median: 35, "75th": 36 },
+      },
+    },
+    application_requirements: {
+      deadline_early: "November 1 (ED)",
+      deadline_regular: "January 3",
+      application_platform: "Common App",
+      application_fee: 75,
+      test_policy: "Test optional",
+      english_proficiency: { minimum_toefl: 102 },
+    },
+    academic_programs: {
+      notable_majors: ["Computer Science", "ECE", "Statistics", "Drama", "Design"],
+      unique_programs: ["School of Computer Science", "Robotics Institute", "Entertainment Technology Center"],
+    },
+    korean_student_specific: {
+      korean_specific_advice: [
+        "CMU values technical excellence AND creativity",
+        "School-specific essays are important",
+        "Show passion for your specific major",
+      ],
+    },
+    cost_and_aid: {
+      tuition: 62260,
+      room_and_board: 18230,
+      total_cost_of_attendance: 83750,
+      financial_aid_for_international: true,
+      average_aid_package: 52000,
+    },
+    career_outcomes: {
+      employment_rate_6_months: 93,
+      average_starting_salary: 105000,
+      top_employers: ["Google", "Amazon", "Meta", "Apple", "Microsoft"],
+    },
+    last_updated: "2024-12-01",
+  } as University,
+
+  berkeley: {
+    university_id: "berkeley",
+    basic_info: {
+      name: "University of California, Berkeley",
+      name_short: "UC Berkeley",
+      location: { city: "Berkeley", state: "California", region: "West Coast" },
+      type: "Public Research",
+      founded: 1868,
+    },
+    admission_stats: {
+      acceptance_rate: 11.4,
+      yield_rate: 46,
+      total_applicants: 128226,
+      total_admitted: 14603,
+      profile_ranges: {
+        gpa_unweighted: { "25th": 3.85, median: 3.93, "75th": 4.0 },
+        sat_total: { "25th": 1330, median: 1440, "75th": 1530 },
+        act_composite: { "25th": 29, median: 33, "75th": 35 },
+      },
+    },
+    application_requirements: {
+      deadline_regular: "November 30",
+      application_platform: "UC Application",
+      application_fee: 80,
+      test_policy: "Test blind",
+      english_proficiency: { minimum_toefl: 80 },
+    },
+    academic_programs: {
+      notable_majors: ["EECS", "Computer Science", "Economics", "Molecular Biology", "Political Science"],
+      unique_programs: ["Berkeley Haas", "College of Engineering", "Cal Discoveries"],
+    },
+    korean_student_specific: {
+      korean_specific_advice: [
+        "PIQs (Personal Insight Questions) are crucial",
+        "Show leadership and initiative",
+        "Demonstrate fit with public university mission",
+      ],
+    },
+    cost_and_aid: {
+      tuition: 44066,
+      room_and_board: 21270,
+      total_cost_of_attendance: 74076,
+      financial_aid_for_international: false,
+      average_aid_package: 24000,
+    },
+    career_outcomes: {
+      employment_rate_6_months: 88,
+      average_starting_salary: 95000,
+      top_employers: ["Google", "Apple", "Meta", "Amazon"],
+    },
+    last_updated: "2024-12-01",
+  } as University,
+
+  "georgia-tech": {
+    university_id: "georgia-tech",
+    basic_info: {
+      name: "Georgia Institute of Technology",
+      name_short: "Georgia Tech",
+      location: { city: "Atlanta", state: "Georgia", region: "Southeast" },
+      type: "Public Research",
+      founded: 1885,
+    },
+    admission_stats: {
+      acceptance_rate: 16.0,
+      early_action_rate: 28.0,
+      yield_rate: 45,
+      total_applicants: 55200,
+      total_admitted: 8832,
+      profile_ranges: {
+        gpa_unweighted: { "25th": 3.85, median: 3.95, "75th": 4.0 },
+        sat_total: { "25th": 1390, median: 1470, "75th": 1540 },
+        act_composite: { "25th": 31, median: 34, "75th": 35 },
+      },
+    },
+    application_requirements: {
+      deadline_early: "October 15 (EA)",
+      deadline_regular: "January 4",
+      application_platform: "Common App",
+      application_fee: 75,
+      english_proficiency: { minimum_toefl: 90 },
+    },
+    academic_programs: {
+      notable_majors: ["Computer Science", "Mechanical Engineering", "Industrial Engineering", "Aerospace"],
+      unique_programs: ["Co-op Program", "CREATE-X", "VIP Program"],
+    },
+    korean_student_specific: {
+      korean_specific_advice: [
+        "Strong STEM focus - show technical passion",
+        "Essays should demonstrate problem-solving",
+        "EA highly recommended",
+      ],
+    },
+    cost_and_aid: {
+      tuition: 33794,
+      room_and_board: 15640,
+      total_cost_of_attendance: 55000,
+      financial_aid_for_international: false,
+    },
+    career_outcomes: {
+      employment_rate_6_months: 90,
+      average_starting_salary: 85000,
+      top_employers: ["Google", "Amazon", "Microsoft", "Lockheed Martin"],
+    },
+    last_updated: "2024-12-01",
+  } as University,
+
+  columbia: {
+    university_id: "columbia",
+    basic_info: {
+      name: "Columbia University",
+      name_short: "Columbia",
+      location: { city: "New York", state: "New York", region: "Northeast" },
+      type: "Private Research",
+      founded: 1754,
+    },
+    admission_stats: {
+      acceptance_rate: 3.93,
+      early_decision_rate: 10.0,
+      yield_rate: 67,
+      total_applicants: 60377,
+      total_admitted: 2373,
+      profile_ranges: {
+        gpa_unweighted: { "25th": 3.9, median: 3.97, "75th": 4.0 },
+        sat_total: { "25th": 1500, median: 1550, "75th": 1570 },
+        act_composite: { "25th": 34, median: 35, "75th": 36 },
+      },
+    },
+    application_requirements: {
+      deadline_early: "November 1 (ED)",
+      deadline_regular: "January 1",
+      application_platform: "Common App + Coalition",
+      application_fee: 85,
+      english_proficiency: { minimum_toefl: 100 },
+    },
+    academic_programs: {
+      notable_majors: ["Economics", "Political Science", "Computer Science", "English"],
+      unique_programs: ["Core Curriculum", "3-2 Engineering Program", "Global Centers"],
+    },
+    korean_student_specific: {
+      korean_specific_advice: [
+        "Core Curriculum is central - show appreciation for liberal arts",
+        "NYC location should be meaningful to your goals",
+        "List essays reflect intellectual depth",
+      ],
+    },
+    cost_and_aid: {
+      tuition: 65524,
+      room_and_board: 17500,
+      total_cost_of_attendance: 89000,
+      financial_aid_for_international: true,
+      average_aid_package: 68000,
+    },
+    career_outcomes: {
+      employment_rate_6_months: 91,
+      average_starting_salary: 90000,
+      top_employers: ["Goldman Sachs", "JPMorgan", "McKinsey", "Google"],
+    },
+    last_updated: "2024-12-01",
+  } as University,
+
+  upenn: {
+    university_id: "upenn",
+    basic_info: {
+      name: "University of Pennsylvania",
+      name_short: "UPenn",
+      location: { city: "Philadelphia", state: "Pennsylvania", region: "Northeast" },
+      type: "Private Research",
+      founded: 1740,
+    },
+    admission_stats: {
+      acceptance_rate: 5.68,
+      early_decision_rate: 15.0,
+      yield_rate: 68,
+      total_applicants: 59000,
+      total_admitted: 3350,
+      profile_ranges: {
+        gpa_unweighted: { "25th": 3.9, median: 3.95, "75th": 4.0 },
+        sat_total: { "25th": 1500, median: 1540, "75th": 1570 },
+        act_composite: { "25th": 33, median: 35, "75th": 36 },
+      },
+    },
+    application_requirements: {
+      deadline_early: "November 1 (ED)",
+      deadline_regular: "January 5",
+      application_platform: "Common App",
+      application_fee: 75,
+      english_proficiency: { minimum_toefl: 100 },
+    },
+    academic_programs: {
+      notable_majors: ["Finance (Wharton)", "Economics", "Nursing", "Engineering"],
+      unique_programs: ["Wharton School", "M&T Program", "Huntsman Program", "Jerome Fisher Program"],
+    },
+    korean_student_specific: {
+      korean_specific_advice: [
+        "Show entrepreneurial spirit",
+        "Penn values practical application of knowledge",
+        "Cross-school interest is valued",
+      ],
+    },
+    cost_and_aid: {
+      tuition: 63452,
+      room_and_board: 18600,
+      total_cost_of_attendance: 86000,
+      financial_aid_for_international: true,
+      average_aid_package: 60000,
+    },
+    career_outcomes: {
+      employment_rate_6_months: 94,
+      average_starting_salary: 95000,
+      top_employers: ["Goldman Sachs", "McKinsey", "Bain", "Google"],
+    },
+    last_updated: "2024-12-01",
+  } as University,
+
+  northwestern: {
+    university_id: "northwestern",
+    basic_info: {
+      name: "Northwestern University",
+      name_short: "Northwestern",
+      location: { city: "Evanston", state: "Illinois", region: "Midwest" },
+      type: "Private Research",
+      founded: 1851,
+    },
+    admission_stats: {
+      acceptance_rate: 7.01,
+      early_decision_rate: 20.0,
+      yield_rate: 58,
+      total_applicants: 51500,
+      total_admitted: 3610,
+      profile_ranges: {
+        gpa_unweighted: { "25th": 3.85, median: 3.94, "75th": 4.0 },
+        sat_total: { "25th": 1470, median: 1530, "75th": 1570 },
+        act_composite: { "25th": 33, median: 34, "75th": 35 },
+      },
+    },
+    application_requirements: {
+      deadline_early: "November 1 (ED)",
+      deadline_regular: "January 3",
+      application_platform: "Common App + Coalition",
+      application_fee: 75,
+      english_proficiency: { minimum_toefl: 100 },
+    },
+    academic_programs: {
+      notable_majors: ["Journalism (Medill)", "Economics", "Engineering", "Theatre"],
+      unique_programs: ["Medill School of Journalism", "Kellogg Certificate", "Integrated Science Program"],
+    },
+    korean_student_specific: {
+      korean_specific_advice: [
+        "Show multi-dimensional interests",
+        "Journalism and communications are world-class",
+        "ED significantly increases chances",
+      ],
+    },
+    cost_and_aid: {
+      tuition: 63468,
+      room_and_board: 19800,
+      total_cost_of_attendance: 87000,
+      financial_aid_for_international: true,
+      average_aid_package: 58000,
+    },
+    career_outcomes: {
+      employment_rate_6_months: 92,
+      average_starting_salary: 85000,
+      top_employers: ["McKinsey", "Google", "NBC", "Goldman Sachs"],
+    },
+    last_updated: "2024-12-01",
+  } as University,
+
+  nyu: {
+    university_id: "nyu",
+    basic_info: {
+      name: "New York University",
+      name_short: "NYU",
+      location: { city: "New York", state: "New York", region: "Northeast" },
+      type: "Private Research",
+      founded: 1831,
+    },
+    admission_stats: {
+      acceptance_rate: 12.2,
+      early_decision_rate: 25.0,
+      yield_rate: 40,
+      total_applicants: 120000,
+      total_admitted: 14640,
+      profile_ranges: {
+        gpa_unweighted: { "25th": 3.7, median: 3.85, "75th": 3.95 },
+        sat_total: { "25th": 1420, median: 1500, "75th": 1560 },
+        act_composite: { "25th": 32, median: 34, "75th": 35 },
+      },
+    },
+    application_requirements: {
+      deadline_early: "November 1 (ED/ED II)",
+      deadline_regular: "January 5",
+      application_platform: "Common App",
+      application_fee: 80,
+      english_proficiency: { minimum_toefl: 100 },
+    },
+    academic_programs: {
+      notable_majors: ["Business (Stern)", "Film (Tisch)", "Politics", "Economics"],
+      unique_programs: ["Stern School of Business", "Tisch School of the Arts", "Global Sites (Abu Dhabi, Shanghai)"],
+    },
+    korean_student_specific: {
+      korean_food_access: "Koreatown Manhattan (10 min), Flushing (30 min)",
+      korean_specific_advice: [
+        "NYC is integral to NYU experience - show city engagement",
+        "Strong arts and business schools",
+        "Global campuses are unique opportunity",
+      ],
+    },
+    cost_and_aid: {
+      tuition: 58168,
+      room_and_board: 21000,
+      total_cost_of_attendance: 86000,
+      financial_aid_for_international: true,
+      average_aid_package: 45000,
+    },
+    career_outcomes: {
+      employment_rate_6_months: 88,
+      average_starting_salary: 78000,
+      top_employers: ["Goldman Sachs", "JPMorgan", "Google", "Disney"],
+    },
+    last_updated: "2024-12-01",
+  } as University,
+};
+
+// Helper function to create a minimal university detail for others
 function createUniversityDetail(item: UniversityListItem): University {
   return {
     university_id: item.university_id,
@@ -352,10 +933,15 @@ function createUniversityDetail(item: UniversityListItem): University {
   } as University;
 }
 
-// Generate university details from index
+// Generate university details from index, using complete data when available
 const universityDetails: Record<string, University> = {};
 universityIndex.forEach((item) => {
-  universityDetails[item.university_id] = createUniversityDetail(item);
+  // Use complete data for key universities, minimal for others
+  if (completeUniversityDetails[item.university_id]) {
+    universityDetails[item.university_id] = completeUniversityDetails[item.university_id];
+  } else {
+    universityDetails[item.university_id] = createUniversityDetail(item);
+  }
 });
 
 // Export consolidated seed data
