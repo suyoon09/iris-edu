@@ -1,10 +1,17 @@
 import Anthropic from "@anthropic-ai/sdk";
 
-const anthropic = new Anthropic({
-  apiKey: process.env.ANTHROPIC_API_KEY,
-});
+// Lazy initialization to ensure env vars are available
+function getClient(): Anthropic {
+  if (!process.env.ANTHROPIC_API_KEY) {
+    throw new Error("ANTHROPIC_API_KEY is not configured");
+  }
+  return new Anthropic({
+    apiKey: process.env.ANTHROPIC_API_KEY,
+  });
+}
 
 export async function generateAnalysis(prompt: string): Promise<string> {
+  const anthropic = getClient();
   const message = await anthropic.messages.create({
     model: "claude-sonnet-4-20250514",
     max_tokens: 4096,
@@ -25,6 +32,7 @@ export async function generateAnalysis(prompt: string): Promise<string> {
 }
 
 export async function generateRoadmap(prompt: string): Promise<string> {
+  const anthropic = getClient();
   const message = await anthropic.messages.create({
     model: "claude-sonnet-4-20250514",
     max_tokens: 4096,
@@ -45,6 +53,7 @@ export async function generateRoadmap(prompt: string): Promise<string> {
 }
 
 export async function optimizeStrategy(prompt: string): Promise<string> {
+  const anthropic = getClient();
   const message = await anthropic.messages.create({
     model: "claude-sonnet-4-20250514",
     max_tokens: 4096,
@@ -64,4 +73,4 @@ export async function optimizeStrategy(prompt: string): Promise<string> {
   throw new Error("Unexpected response type from Claude API");
 }
 
-export { anthropic };
+export { getClient };
