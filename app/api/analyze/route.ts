@@ -38,9 +38,18 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Student not found" }, { status: 404 });
     }
 
+    // Check if student has target universities
+    const targetUniversities = student.target_universities || [];
+    if (targetUniversities.length === 0) {
+      return NextResponse.json(
+        { error: "목표 대학 정보가 없습니다. 먼저 목표 대학을 추가해주세요." },
+        { status: 400 }
+      );
+    }
+
     // Get university data for target universities
     const universities: University[] = [];
-    for (const target of student.target_universities) {
+    for (const target of targetUniversities) {
       const uni = await getUniversityById(target.university_id);
       if (uni) {
         universities.push(uni);
@@ -49,7 +58,7 @@ export async function POST(request: NextRequest) {
 
     if (universities.length === 0) {
       return NextResponse.json(
-        { error: "목표 대학 정보가 없습니다. 먼저 목표 대학을 추가해주세요." },
+        { error: "목표 대학 데이터를 찾을 수 없습니다. 데이터베이스를 확인해주세요." },
         { status: 400 }
       );
     }
