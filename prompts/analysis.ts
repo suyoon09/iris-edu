@@ -6,16 +6,25 @@ export function buildAnalysisPrompt(
   universities: University[]
 ): string {
   const universityData = universities
-    .map(
-      (u) => `
-### ${u.basic_info.name} (${u.basic_info.name_short})
-- Acceptance Rate: ${u.admission_stats.acceptance_rate}%
-- SAT Range: ${u.admission_stats.profile_ranges.sat_total["25th"]}-${u.admission_stats.profile_ranges.sat_total["75th"]}
-- GPA Median: ${u.admission_stats.profile_ranges.gpa_unweighted.median}
-- Korean Student Advice: ${u.korean_student_specific.korean_specific_advice.join("; ")}
-- Common Mistakes: ${u.korean_student_specific.common_korean_applicant_mistakes.join("; ")}
-`
-    )
+    .map((u) => {
+      const basicInfo = u.basic_info || {};
+      const admissionStats = u.admission_stats || {};
+      const profileRanges = admissionStats.profile_ranges || {};
+      const satTotal = profileRanges.sat_total || {};
+      const gpaUnweighted = profileRanges.gpa_unweighted || {};
+      const koreanSpecific = u.korean_student_specific || {};
+      const advice = koreanSpecific.korean_specific_advice || [];
+      const mistakes = koreanSpecific.common_korean_applicant_mistakes || [];
+
+      return `
+### ${basicInfo.name || u.university_id} (${basicInfo.name_short || ""})
+- Acceptance Rate: ${admissionStats.acceptance_rate ?? "N/A"}%
+- SAT Range: ${satTotal["25th"] ?? "N/A"}-${satTotal["75th"] ?? "N/A"}
+- GPA Median: ${gpaUnweighted.median ?? "N/A"}
+- Korean Student Advice: ${advice.length > 0 ? advice.join("; ") : "Not available"}
+- Common Mistakes: ${mistakes.length > 0 ? mistakes.join("; ") : "Not available"}
+`;
+    })
     .join("\n");
 
   return `You are an expert US college admissions counselor with deep knowledge of Korean student applications. Analyze this Korean student's profile and provide detailed admission analysis.
@@ -29,35 +38,35 @@ export function buildAnalysisPrompt(
 - Graduation Year: ${student.graduation_year}
 
 **Academic Profile:**
-- GPA: ${student.academic.gpa.unweighted} (unweighted)${student.academic.gpa.weighted ? `, ${student.academic.gpa.weighted} (weighted)` : ""}
-- Class Rank: ${student.academic.class_rank.rank ? `${student.academic.class_rank.rank}/${student.academic.class_rank.total}` : "Not reported"}
-- SAT: ${student.academic.standardized_tests.sat.total || "Not taken"} (Math: ${student.academic.standardized_tests.sat.math || "N/A"}, R/W: ${student.academic.standardized_tests.sat.reading_writing || "N/A"})
-- AP Scores: ${student.academic.standardized_tests.ap_scores.map((ap) => `${ap.subject}: ${ap.score}`).join(", ") || "None reported"}
-- TOEFL: ${student.academic.standardized_tests.toefl?.total || "Not taken"}
+- GPA: ${student.academic?.gpa?.unweighted ?? "N/A"} (unweighted)${student.academic?.gpa?.weighted ? `, ${student.academic.gpa.weighted} (weighted)` : ""}
+- Class Rank: ${student.academic?.class_rank?.rank ? `${student.academic.class_rank.rank}/${student.academic.class_rank.total}` : "Not reported"}
+- SAT: ${student.academic?.standardized_tests?.sat?.total || "Not taken"} (Math: ${student.academic?.standardized_tests?.sat?.math || "N/A"}, R/W: ${student.academic?.standardized_tests?.sat?.reading_writing || "N/A"})
+- AP Scores: ${(student.academic?.standardized_tests?.ap_scores || []).map((ap) => `${ap.subject}: ${ap.score}`).join(", ") || "None reported"}
+- TOEFL: ${student.academic?.standardized_tests?.toefl?.total || "Not taken"}
 
 **Courses:**
-${student.academic.courses.map((c) => `- ${c.name} (${c.level}): ${c.grade}`).join("\n")}
+${(student.academic?.courses || []).map((c) => `- ${c.name} (${c.level}): ${c.grade}`).join("\n") || "None reported"}
 
 **Extracurricular Activities:**
-${student.extracurriculars
+${(student.extracurriculars || [])
   .map(
     (e) => `- ${e.name} (${e.role})
   Category: ${e.category}
-  Years: ${e.years.join(", ")}
+  Years: ${(e.years || []).join(", ")}
   Hours: ${e.hours_per_week} hrs/week, ${e.weeks_per_year} weeks/year
-  Achievements: ${e.achievements.join("; ") || "None specified"}`
+  Achievements: ${(e.achievements || []).join("; ") || "None specified"}`
   )
-  .join("\n")}
+  .join("\n") || "None reported"}
 
 **Awards:**
-${student.awards.map((a) => `- ${a.name} (${a.level}, ${a.year}): ${a.description}`).join("\n") || "None reported"}
+${(student.awards || []).map((a) => `- ${a.name} (${a.level}, ${a.year}): ${a.description}`).join("\n") || "None reported"}
 
 ## Target Universities
-${student.target_universities
+${(student.target_universities || [])
   .map(
     (t) => `- ${t.university_id}: ${t.priority} (${t.application_round}) - ${t.intended_major}`
   )
-  .join("\n")}
+  .join("\n") || "None specified"}
 
 ## University Data
 ${universityData}

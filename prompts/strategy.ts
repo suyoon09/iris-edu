@@ -16,32 +16,39 @@ export function buildStrategyPrompt(
 - Graduation Year: ${student.graduation_year}
 
 **Academic Profile:**
-- GPA: ${student.academic.gpa.unweighted}
-- SAT: ${student.academic.standardized_tests.sat.total || "Not taken"}
-- AP Scores: ${student.academic.standardized_tests.ap_scores.map((ap) => `${ap.subject}: ${ap.score}`).join(", ") || "None"}
+- GPA: ${student.academic?.gpa?.unweighted ?? "N/A"}
+- SAT: ${student.academic?.standardized_tests?.sat?.total || "Not taken"}
+- AP Scores: ${(student.academic?.standardized_tests?.ap_scores || []).map((ap) => `${ap.subject}: ${ap.score}`).join(", ") || "None"}
 
 **Strengths:**
-${student.extracurriculars
+${(student.extracurriculars || [])
   .slice(0, 3)
-  .map((e) => `- ${e.name}: ${e.role} (${e.achievements.join(", ")})`)
-  .join("\n")}
+  .map((e) => `- ${e.name}: ${e.role} (${(e.achievements || []).join(", ") || "No achievements listed"})`)
+  .join("\n") || "None specified"}
 
 **Awards:**
-${student.awards.slice(0, 5).map((a) => `- ${a.name} (${a.level})`).join("\n") || "None"}
+${(student.awards || []).slice(0, 5).map((a) => `- ${a.name} (${a.level})`).join("\n") || "None"}
 
 **Current Target List:**
-${student.target_universities
+${(student.target_universities || [])
   .map((t) => `- ${t.university_id}: ${t.priority} (${t.application_round}) - ${t.intended_major}`)
-  .join("\n")}
+  .join("\n") || "None specified"}
 
 ## Available Universities Data
-${universities
-  .map(
-    (u) => `
-${u.basic_info.name_short}: ${u.admission_stats.acceptance_rate}% acceptance, SAT median ${u.admission_stats.profile_ranges.sat_total.median}
-- ED/EA rate: ${u.admission_stats.early_decision_rate || u.admission_stats.early_action_rate || "N/A"}%
-- Korean-specific: ${u.korean_student_specific.korean_specific_advice[0] || "No specific advice"}`
-  )
+${(universities || [])
+  .map((u) => {
+    const basicInfo = u.basic_info || {};
+    const admissionStats = u.admission_stats || {};
+    const profileRanges = admissionStats.profile_ranges || {};
+    const satTotal = profileRanges.sat_total || {};
+    const koreanSpecific = u.korean_student_specific || {};
+    const advice = koreanSpecific.korean_specific_advice || [];
+
+    return `
+${basicInfo.name_short || u.university_id}: ${admissionStats.acceptance_rate ?? "N/A"}% acceptance, SAT median ${satTotal.median ?? "N/A"}
+- ED/EA rate: ${admissionStats.early_decision_rate || admissionStats.early_action_rate || "N/A"}%
+- Korean-specific: ${advice[0] || "No specific advice"}`;
+  })
   .join("\n")}
 
 ## Strategy Optimization Required

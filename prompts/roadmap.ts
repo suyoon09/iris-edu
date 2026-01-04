@@ -17,17 +17,17 @@ export function buildRoadmapPrompt(student: Student): string {
 - Application Status: ${student.application_status}
 
 **Current Academic Standing:**
-- GPA: ${student.academic.gpa.unweighted}
-- SAT: ${student.academic.standardized_tests.sat.total || "Not taken"}
-- TOEFL: ${student.academic.standardized_tests.toefl?.total || "Not taken"}
+- GPA: ${student.academic?.gpa?.unweighted ?? "N/A"}
+- SAT: ${student.academic?.standardized_tests?.sat?.total || "Not taken"}
+- TOEFL: ${student.academic?.standardized_tests?.toefl?.total || "Not taken"}
 
 **Target Universities:**
-${student.target_universities
+${(student.target_universities || [])
   .map((t) => `- ${t.university_id}: ${t.priority} (${t.application_round}) - ${t.intended_major}`)
   .join("\n") || "None specified yet"}
 
 **Current Extracurriculars:**
-${student.extracurriculars.map((e) => `- ${e.name} (${e.role})`).join("\n") || "None specified"}
+${(student.extracurriculars || []).map((e) => `- ${e.name} (${e.role})`).join("\n") || "None specified"}
 
 **Current Date:** ${currentMonth}/${currentYear}
 
