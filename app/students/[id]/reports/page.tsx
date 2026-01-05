@@ -7,6 +7,7 @@ import { Header } from "@/components/layout/Header";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
+import { exportToPDF } from "@/lib/pdf-export";
 import type { Student, SavedReport } from "@/types/student";
 
 export default function ReportsPage() {
@@ -115,8 +116,8 @@ export default function ReportsPage() {
                                                     key={report.id}
                                                     onClick={() => setSelectedReport(report)}
                                                     className={`w-full text-left p-3 rounded-lg border transition-all ${selectedReport?.id === report.id
-                                                            ? "border-blue-500 bg-blue-50"
-                                                            : "border-slate-200 hover:border-slate-300"
+                                                        ? "border-blue-500 bg-blue-50"
+                                                        : "border-slate-200 hover:border-slate-300"
                                                         }`}
                                                 >
                                                     <div className="flex items-center justify-between mb-1">
@@ -150,22 +151,42 @@ export default function ReportsPage() {
                                     <CardHeader>
                                         <div className="flex items-center justify-between">
                                             <CardTitle>{selectedReport.title}</CardTitle>
-                                            <Badge
-                                                variant={selectedReport.type === "analysis" ? "info" : "success"}
-                                            >
-                                                {selectedReport.type === "analysis" ? "AI 분석" : "로드맵"}
-                                            </Badge>
+                                            <div className="flex items-center gap-2">
+                                                <Button
+                                                    variant="outline"
+                                                    size="sm"
+                                                    onClick={() => {
+                                                        const typeLabel = selectedReport.type === 'analysis' ? 'AI분석' : '로드맵';
+                                                        exportToPDF('report-content', {
+                                                            filename: `${student?.name_korean}_${typeLabel}.pdf`,
+                                                            title: `${student?.name_korean} - ${typeLabel} 리포트`
+                                                        });
+                                                    }}
+                                                >
+                                                    <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                                    </svg>
+                                                    PDF 다운로드
+                                                </Button>
+                                                <Badge
+                                                    variant={selectedReport.type === "analysis" ? "info" : "success"}
+                                                >
+                                                    {selectedReport.type === "analysis" ? "AI 분석" : "로드맵"}
+                                                </Badge>
+                                            </div>
                                         </div>
                                         <p className="text-sm text-slate-500">
                                             생성일: {formatDate(selectedReport.generated_at)}
                                         </p>
                                     </CardHeader>
                                     <CardContent>
-                                        {selectedReport.type === "analysis" ? (
-                                            <AnalysisReportView data={selectedReport.data} />
-                                        ) : (
-                                            <RoadmapReportView data={selectedReport.data} />
-                                        )}
+                                        <div id="report-content">
+                                            {selectedReport.type === "analysis" ? (
+                                                <AnalysisReportView data={selectedReport.data} />
+                                            ) : (
+                                                <RoadmapReportView data={selectedReport.data} />
+                                            )}
+                                        </div>
                                     </CardContent>
                                 </Card>
                             ) : (
@@ -198,130 +219,320 @@ export default function ReportsPage() {
     );
 }
 
-// Analysis Report View Component
+// Analysis Report View Component - FULL REPORT
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function AnalysisReportView({ data }: { data: any }) {
     return (
-        <div className="space-y-6">
+        <div className="space-y-8">
             {/* Stage 1: Overall Assessment */}
             {data.stage1?.overall_assessment && (
-                <div>
-                    <h4 className="font-medium text-slate-900 mb-2">종합 평가</h4>
-                    <p className="text-slate-700 text-sm">{data.stage1.overall_assessment.summary}</p>
-                    <div className="grid grid-cols-2 gap-4 mt-3">
+                <section className="border-b pb-6">
+                    <h3 className="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+                        <span className="bg-blue-100 text-blue-700 w-6 h-6 rounded-full flex items-center justify-center text-sm">1</span>
+                        종합 평가
+                    </h3>
+                    <div className="bg-slate-50 p-4 rounded-lg mb-4">
+                        <p className="text-slate-700">{data.stage1.overall_assessment.summary}</p>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
-                            <p className="text-xs font-medium text-green-700 mb-1">강점</p>
-                            <ul className="text-xs text-slate-600 space-y-1">
-                                {(data.stage1.overall_assessment.strengths || []).slice(0, 3).map((s: string, i: number) => (
-                                    <li key={i}>+ {s}</li>
+                            <h4 className="font-semibold text-green-700 mb-2 flex items-center gap-1">
+                                <span>✓</span> 강점
+                            </h4>
+                            <ul className="space-y-2">
+                                {(data.stage1.overall_assessment.strengths || []).map((s: string, i: number) => (
+                                    <li key={i} className="text-sm text-slate-700 pl-4 border-l-2 border-green-300">{s}</li>
                                 ))}
                             </ul>
                         </div>
                         <div>
-                            <p className="text-xs font-medium text-amber-700 mb-1">개선 영역</p>
-                            <ul className="text-xs text-slate-600 space-y-1">
-                                {(data.stage1.overall_assessment.areas_for_improvement || []).slice(0, 3).map((a: string, i: number) => (
-                                    <li key={i}>! {a}</li>
+                            <h4 className="font-semibold text-amber-700 mb-2 flex items-center gap-1">
+                                <span>!</span> 개선 영역
+                            </h4>
+                            <ul className="space-y-2">
+                                {(data.stage1.overall_assessment.areas_for_improvement || []).map((a: string, i: number) => (
+                                    <li key={i} className="text-sm text-slate-700 pl-4 border-l-2 border-amber-300">{a}</li>
                                 ))}
                             </ul>
                         </div>
                     </div>
-                </div>
+
+                    {data.stage1.overall_assessment.korean_student_context && (
+                        <div className="mt-4 bg-indigo-50 p-3 rounded">
+                            <h4 className="font-semibold text-indigo-700 mb-1">한국 학생 맥락</h4>
+                            <p className="text-sm text-indigo-900">{data.stage1.overall_assessment.korean_student_context}</p>
+                        </div>
+                    )}
+                </section>
             )}
 
             {/* Stage 2: University Analyses */}
             {data.stage2?.university_analyses && (
-                <div>
-                    <h4 className="font-medium text-slate-900 mb-2">대학별 분석</h4>
-                    <div className="space-y-2">
-                        {data.stage2.university_analyses.slice(0, 5).map((uni: { university_name: string; admission_probability?: { score: number; category: string } }, i: number) => (
-                            <div key={i} className="flex items-center justify-between p-2 bg-slate-50 rounded">
-                                <span className="text-sm">{uni.university_name}</span>
-                                <Badge variant={
-                                    uni.admission_probability?.category === "safety" ? "success" :
-                                        uni.admission_probability?.category === "target" ? "warning" : "error"
-                                }>
-                                    {uni.admission_probability?.score}%
-                                </Badge>
+                <section className="border-b pb-6">
+                    <h3 className="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+                        <span className="bg-blue-100 text-blue-700 w-6 h-6 rounded-full flex items-center justify-center text-sm">2</span>
+                        대학별 분석
+                    </h3>
+                    <div className="space-y-4">
+                        {data.stage2.university_analyses.map((uni: {
+                            university_name: string;
+                            university_id: string;
+                            admission_probability?: { score: number; category: string; confidence?: string };
+                            profile_match?: { academic_fit: number; extracurricular_fit: number; overall_fit: number };
+                            strengths_for_school?: string[];
+                            gaps_to_address?: string[];
+                            application_strategy?: string;
+                            essay_themes_suggested?: string[];
+                        }, i: number) => (
+                            <div key={i} className="border rounded-lg p-4 bg-white">
+                                <div className="flex items-center justify-between mb-3">
+                                    <h4 className="font-semibold text-slate-900">{uni.university_name}</h4>
+                                    <div className="flex items-center gap-2">
+                                        <Badge variant={
+                                            uni.admission_probability?.category === "safety" ? "success" :
+                                                uni.admission_probability?.category === "target" ? "warning" : "error"
+                                        }>
+                                            {uni.admission_probability?.score}% ({uni.admission_probability?.category})
+                                        </Badge>
+                                    </div>
+                                </div>
+
+                                {uni.profile_match && (
+                                    <div className="grid grid-cols-3 gap-2 mb-3">
+                                        <div className="text-center bg-slate-50 p-2 rounded">
+                                            <p className="text-xs text-slate-500">학업 적합도</p>
+                                            <p className="font-bold text-slate-700">{uni.profile_match.academic_fit}%</p>
+                                        </div>
+                                        <div className="text-center bg-slate-50 p-2 rounded">
+                                            <p className="text-xs text-slate-500">활동 적합도</p>
+                                            <p className="font-bold text-slate-700">{uni.profile_match.extracurricular_fit}%</p>
+                                        </div>
+                                        <div className="text-center bg-slate-50 p-2 rounded">
+                                            <p className="text-xs text-slate-500">종합 적합도</p>
+                                            <p className="font-bold text-slate-700">{uni.profile_match.overall_fit}%</p>
+                                        </div>
+                                    </div>
+                                )}
+
+                                {uni.application_strategy && (
+                                    <p className="text-sm text-slate-600 mb-2"><strong>전략:</strong> {uni.application_strategy}</p>
+                                )}
+
+                                {uni.essay_themes_suggested && uni.essay_themes_suggested.length > 0 && (
+                                    <div className="text-sm">
+                                        <strong className="text-slate-700">추천 에세이 주제:</strong>
+                                        <ul className="list-disc list-inside text-slate-600 mt-1">
+                                            {uni.essay_themes_suggested.map((t: string, j: number) => (
+                                                <li key={j}>{t}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                )}
                             </div>
                         ))}
                     </div>
-                </div>
+                </section>
             )}
 
             {/* Stage 3: ED/RD Strategy */}
             {data.stage3?.ed_rd_strategy && (
-                <div>
-                    <h4 className="font-medium text-slate-900 mb-2">ED/RD 전략</h4>
-                    <p className="text-sm text-indigo-700 bg-indigo-50 p-3 rounded">
-                        추천 ED: {data.stage3.ed_rd_strategy.recommended_ed_school?.university_id || "N/A"}
-                    </p>
-                </div>
+                <section className="border-b pb-6">
+                    <h3 className="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+                        <span className="bg-blue-100 text-blue-700 w-6 h-6 rounded-full flex items-center justify-center text-sm">3</span>
+                        ED/RD 전략
+                    </h3>
+
+                    {data.stage3.ed_rd_strategy.recommended_ed_school && (
+                        <div className="bg-indigo-50 p-4 rounded-lg mb-4">
+                            <h4 className="font-semibold text-indigo-700 mb-2">추천 ED 학교</h4>
+                            <p className="text-lg font-bold text-indigo-900">
+                                {data.stage3.ed_rd_strategy.recommended_ed_school.university_name || data.stage3.ed_rd_strategy.recommended_ed_school.university_id}
+                            </p>
+                            {data.stage3.ed_rd_strategy.recommended_ed_school.rationale && (
+                                <p className="text-sm text-indigo-700 mt-2">{data.stage3.ed_rd_strategy.recommended_ed_school.rationale}</p>
+                            )}
+                        </div>
+                    )}
+
+                    {data.stage3.ed_rd_strategy.ea_recommendations && (
+                        <div className="mb-4">
+                            <h4 className="font-semibold text-slate-700 mb-2">EA 추천</h4>
+                            <ul className="space-y-1">
+                                {data.stage3.ed_rd_strategy.ea_recommendations.map((ea: { university_id: string; rationale?: string }, i: number) => (
+                                    <li key={i} className="text-sm text-slate-600">• {ea.university_id} {ea.rationale && `- ${ea.rationale}`}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    )}
+
+                    {data.stage3.ed_rd_strategy.rd_list && (
+                        <div>
+                            <h4 className="font-semibold text-slate-700 mb-2">RD 리스트</h4>
+                            <ul className="space-y-1">
+                                {data.stage3.ed_rd_strategy.rd_list.map((rd: { university_id: string }, i: number) => (
+                                    <li key={i} className="text-sm text-slate-600">• {rd.university_id}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    )}
+                </section>
             )}
 
-            <p className="text-xs text-slate-400 text-right">
+            {/* Stage 4: Timeline */}
+            {data.stage4?.timeline && (
+                <section>
+                    <h3 className="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+                        <span className="bg-blue-100 text-blue-700 w-6 h-6 rounded-full flex items-center justify-center text-sm">4</span>
+                        상세 타임라인
+                    </h3>
+                    <div className="space-y-3">
+                        {data.stage4.timeline.map((item: { month: string; year: number; tasks: string[]; focus_area: string }, i: number) => (
+                            <div key={i} className="border-l-4 border-blue-500 pl-4 py-2">
+                                <div className="flex items-center gap-2 mb-1">
+                                    <span className="font-semibold text-slate-900">{item.year}년 {item.month}</span>
+                                    <Badge variant="info">{item.focus_area}</Badge>
+                                </div>
+                                <ul className="text-sm text-slate-600 space-y-1">
+                                    {item.tasks.map((task: string, j: number) => (
+                                        <li key={j}>• {task}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+            )}
+
+            <p className="text-xs text-slate-400 text-right border-t pt-4">
                 생성 완료: {data.completed_at ? new Date(data.completed_at).toLocaleString("ko-KR") : "N/A"}
             </p>
         </div>
     );
 }
 
-// Roadmap Report View Component
+// Roadmap Report View Component - FULL REPORT
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function RoadmapReportView({ data }: { data: any }) {
+    const getPriorityColor = (priority: string) => {
+        switch (priority) {
+            case "high": return "border-red-500 bg-red-50";
+            case "medium": return "border-amber-500 bg-amber-50";
+            case "low": return "border-green-500 bg-green-50";
+            default: return "border-blue-500 bg-slate-50";
+        }
+    };
+
     return (
-        <div className="space-y-6">
+        <div className="space-y-8">
             {/* Stage 1: Key Priorities */}
             {data.stage1 && (
-                <div>
-                    <h4 className="font-medium text-slate-900 mb-2">핵심 우선순위</h4>
-                    <p className="text-sm text-indigo-700 bg-indigo-50 px-3 py-2 rounded mb-2">
-                        현재 단계: {data.stage1.current_phase}
-                    </p>
-                    <ul className="text-sm text-slate-600 space-y-1">
-                        {(data.stage1.key_priorities || []).map((p: string, i: number) => (
-                            <li key={i}>{i + 1}. {p}</li>
-                        ))}
-                    </ul>
-                </div>
+                <section className="border-b pb-6">
+                    <h3 className="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+                        <span className="bg-indigo-100 text-indigo-700 w-6 h-6 rounded-full flex items-center justify-center text-sm">1</span>
+                        핵심 계획 및 우선순위
+                    </h3>
+
+                    <div className="bg-indigo-50 p-4 rounded-lg mb-4">
+                        <h4 className="font-semibold text-indigo-700 mb-1">현재 단계</h4>
+                        <p className="text-indigo-900 font-medium">{data.stage1.current_phase || "N/A"}</p>
+                    </div>
+
+                    {data.stage1.key_priorities && (
+                        <div className="mb-4">
+                            <h4 className="font-semibold text-slate-700 mb-2">핵심 우선순위</h4>
+                            <ol className="space-y-2">
+                                {data.stage1.key_priorities.map((p: string, i: number) => (
+                                    <li key={i} className="flex items-start gap-2">
+                                        <span className="bg-slate-700 text-white w-5 h-5 rounded-full flex items-center justify-center text-xs flex-shrink-0 mt-0.5">
+                                            {i + 1}
+                                        </span>
+                                        <span className="text-slate-700">{p}</span>
+                                    </li>
+                                ))}
+                            </ol>
+                        </div>
+                    )}
+
+                    {data.stage1.risk_factors && (
+                        <div className="bg-amber-50 p-3 rounded">
+                            <h4 className="font-semibold text-amber-700 mb-1">위험 요소</h4>
+                            <ul className="text-sm text-amber-900 space-y-1">
+                                {data.stage1.risk_factors.map((r: string, i: number) => (
+                                    <li key={i}>⚠ {r}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    )}
+                </section>
             )}
 
-            {/* Stage 2: Monthly Items */}
+            {/* Stage 2: Monthly Roadmap Items */}
             {data.stage2?.items && (
-                <div>
-                    <h4 className="font-medium text-slate-900 mb-2">월별 로드맵</h4>
-                    <div className="space-y-2 max-h-80 overflow-y-auto">
-                        {data.stage2.items.slice(0, 10).map((item: { year: number; month: number; title: string; priority: string }, i: number) => (
-                            <div key={i} className="p-2 border-l-4 border-blue-500 bg-slate-50 rounded-r">
-                                <div className="flex items-center justify-between">
-                                    <span className="text-sm font-medium">{item.title}</span>
-                                    <span className="text-xs text-slate-500">
-                                        {item.year}/{item.month}
-                                    </span>
+                <section className="border-b pb-6">
+                    <h3 className="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+                        <span className="bg-indigo-100 text-indigo-700 w-6 h-6 rounded-full flex items-center justify-center text-sm">2</span>
+                        월별 상세 로드맵
+                    </h3>
+
+                    <div className="space-y-3">
+                        {data.stage2.items.map((item: {
+                            year: number;
+                            month: number;
+                            title: string;
+                            description?: string;
+                            priority: string;
+                            category?: string;
+                            deadline?: string;
+                        }, i: number) => (
+                            <div key={i} className={`p-3 border-l-4 rounded-r ${getPriorityColor(item.priority)}`}>
+                                <div className="flex items-center justify-between mb-1">
+                                    <span className="font-semibold text-slate-900">{item.title}</span>
+                                    <div className="flex items-center gap-2">
+                                        {item.category && (
+                                            <Badge variant="info">{item.category}</Badge>
+                                        )}
+                                        <span className="text-xs text-slate-500 bg-white px-2 py-1 rounded">
+                                            {item.year}년 {item.month}월
+                                        </span>
+                                    </div>
                                 </div>
+                                {item.description && (
+                                    <p className="text-sm text-slate-600">{item.description}</p>
+                                )}
+                                {item.deadline && (
+                                    <p className="text-xs text-red-600 mt-1">마감: {item.deadline}</p>
+                                )}
                             </div>
                         ))}
                     </div>
-                </div>
+                </section>
             )}
 
             {/* Milestones */}
             {data.stage2?.milestones && data.stage2.milestones.length > 0 && (
-                <div>
-                    <h4 className="font-medium text-slate-900 mb-2">주요 마일스톤</h4>
-                    <div className="space-y-2">
-                        {data.stage2.milestones.slice(0, 4).map((m: { date: string; title: string }, i: number) => (
-                            <div key={i} className="flex items-center gap-2 text-sm">
-                                <span className="text-blue-500">★</span>
-                                <span>{m.title}</span>
-                                <span className="text-xs text-slate-400">({m.date})</span>
+                <section>
+                    <h3 className="text-lg font-bold text-slate-900 mb-4">주요 마일스톤</h3>
+                    <div className="space-y-3">
+                        {data.stage2.milestones.map((m: { date: string; title: string; description?: string }, i: number) => (
+                            <div key={i} className="flex items-start gap-3 p-3 bg-gradient-to-r from-blue-50 to-white rounded-lg border border-blue-100">
+                                <span className="text-2xl">★</span>
+                                <div>
+                                    <div className="flex items-center gap-2">
+                                        <span className="font-semibold text-slate-900">{m.title}</span>
+                                        <span className="text-xs text-blue-600 bg-blue-100 px-2 py-0.5 rounded">{m.date}</span>
+                                    </div>
+                                    {m.description && (
+                                        <p className="text-sm text-slate-600 mt-1">{m.description}</p>
+                                    )}
+                                </div>
                             </div>
                         ))}
                     </div>
-                </div>
+                </section>
             )}
 
-            <p className="text-xs text-slate-400 text-right">
+            <p className="text-xs text-slate-400 text-right border-t pt-4">
                 생성 완료: {data.completed_at ? new Date(data.completed_at).toLocaleString("ko-KR") : "N/A"}
             </p>
         </div>

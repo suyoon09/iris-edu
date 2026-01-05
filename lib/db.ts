@@ -363,7 +363,20 @@ export async function getUniversities(): Promise<UniversityListItem[]> {
 }
 
 export async function getUniversityById(id: string): Promise<University | null> {
-  return await getJsonData<University>(STORES.UNIVERSITIES, id);
+  // First try Netlify Blobs
+  const blobData = await getJsonData<University>(STORES.UNIVERSITIES, id);
+  if (blobData) {
+    return blobData;
+  }
+
+  // Fallback: load from JSON file
+  try {
+    const { loadUniversityFromFile } = await import("./university-loader");
+    return loadUniversityFromFile(id);
+  } catch (error) {
+    console.error(`Error loading university ${id} from file:`, error);
+    return null;
+  }
 }
 
 export async function searchUniversities(query: string): Promise<UniversityListItem[]> {
