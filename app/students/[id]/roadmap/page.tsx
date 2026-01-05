@@ -135,6 +135,28 @@ export default function RoadmapPage() {
       setRoadmapState((prev) => ({ ...prev, stage2 }));
 
       setCurrentStage(0);
+
+      // Auto-save the complete roadmap
+      const completeReport = {
+        stage1: stage1.result,
+        stage2: stage2.result,
+        completed_at: new Date().toISOString(),
+      };
+
+      try {
+        await fetch("/api/reports", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            student_id: studentId,
+            type: "roadmap",
+            title: `입시 로드맵 - ${new Date().toLocaleDateString("ko-KR")}`,
+            data: completeReport,
+          }),
+        });
+      } catch (saveErr) {
+        console.error("Failed to save roadmap:", saveErr);
+      }
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : String(err);
       setError(errorMessage);
@@ -258,10 +280,10 @@ export default function RoadmapPage() {
                         <div
                           key={s}
                           className={`h-2 flex-1 rounded-full ${s < currentStage
-                              ? "bg-blue-600"
-                              : s === currentStage
-                                ? "bg-blue-400 animate-pulse"
-                                : "bg-blue-200"
+                            ? "bg-blue-600"
+                            : s === currentStage
+                              ? "bg-blue-400 animate-pulse"
+                              : "bg-blue-200"
                             }`}
                         />
                       ))}

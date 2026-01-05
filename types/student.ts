@@ -95,6 +95,9 @@ export interface Student {
   // Target Universities
   target_universities: TargetUniversity[];
 
+  // Saved AI Reports
+  saved_reports: SavedReport[];
+
   // Application Status
   application_status: "planning" | "preparing" | "applying" | "complete";
 
@@ -102,6 +105,16 @@ export interface Student {
   created_at: string;
   updated_at: string;
   notes: string;
+}
+
+export interface SavedReport {
+  id: string;
+  type: "analysis" | "roadmap";
+  title: string;
+  generated_at: string;
+  generated_by: string; // counselor id
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  data: any; // The full report data
 }
 
 export interface StudentCreate {
@@ -116,4 +129,4 @@ export interface StudentCreate {
   notes?: string;
 }
 
-export interface StudentUpdate extends Partial<Omit<Student, 'id' | 'created_at'>> {}
+export interface StudentUpdate extends Partial<Omit<Student, 'id' | 'created_at'>> { }

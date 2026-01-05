@@ -136,8 +136,33 @@ export default function AnalysisPage() {
       if (!stage4) throw new Error("Stage 4 returned no result");
       setAnalysisState((prev) => ({ ...prev, stage4 }));
 
-      // Complete
+      // Complete - Save the report
       setCurrentStage(0);
+
+      // Auto-save the complete analysis
+      const completeReport = {
+        stage1: stage1.result,
+        stage2: stage2.result,
+        stage3: stage3.result,
+        stage4: stage4.result,
+        completed_at: new Date().toISOString(),
+      };
+
+      try {
+        await fetch("/api/reports", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            student_id: studentId,
+            type: "analysis",
+            title: `AI 입시 분석 - ${new Date().toLocaleDateString("ko-KR")}`,
+            data: completeReport,
+          }),
+        });
+      } catch (saveErr) {
+        console.error("Failed to save report:", saveErr);
+        // Don't fail the whole operation if save fails
+      }
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : String(err);
       setError(errorMessage);
@@ -258,10 +283,10 @@ export default function AnalysisPage() {
                         <div
                           key={s}
                           className={`h-2 flex-1 rounded-full ${s < currentStage
-                              ? "bg-blue-600"
-                              : s === currentStage
-                                ? "bg-blue-400 animate-pulse"
-                                : "bg-blue-200"
+                            ? "bg-blue-600"
+                            : s === currentStage
+                              ? "bg-blue-400 animate-pulse"
+                              : "bg-blue-200"
                             }`}
                         />
                       ))}

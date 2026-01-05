@@ -116,6 +116,7 @@ export async function createStudent(data: StudentCreate): Promise<Student> {
     extracurriculars: [],
     awards: [],
     target_universities: [],
+    saved_reports: [],
     application_status: "planning",
     created_at: now,
     updated_at: now,
