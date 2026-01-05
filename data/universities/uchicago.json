@@ -1,104 +1,185 @@
 {
   "university_id": "uchicago",
   "basic_info": {
-    "name": "University Name",
-    "name_short": "Short",
+    "name": "University of Chicago",
+    "name_short": "UChicago",
     "location": {
-      "city": "City",
-      "state": "State",
-      "region": "Region",
-      "nearest_korean_community": "TBD",
-      "distance_to_korean_community": "TBD",
-      "climate": "TBD"
+      "city": "Chicago",
+      "state": "Illinois",
+      "region": "Midwest",
+      "nearest_korean_community": "Chicago Koreatown (20 min)",
+      "distance_to_korean_community": "20 min",
+      "climate": "Cold winters (-9°C to 1°C), warm summers (18-29°C)"
     },
     "type": "Private Research",
-    "founded": 1900,
-    "website": "https://example.edu"
+    "founded": 1890,
+    "website": "https://www.uchicago.edu"
   },
   "enrollment": {
-    "total_undergraduate": 5000,
-    "total_graduate": 5000,
-    "international_percentage": 10.0,
-    "korean_student_estimate": 100,
-    "student_faculty_ratio": "10:1"
+    "total_undergraduate": 7500,
+    "total_graduate": 10000,
+    "international_percentage": 15.0,
+    "korean_student_estimate": 180,
+    "student_faculty_ratio": "5:1"
   },
   "admission_stats": {
-    "acceptance_rate": 10.0,
-    "early_action_rate": null,
-    "early_decision_rate": null,
-    "regular_decision_rate": 10.0,
-    "yield_rate": 50,
-    "total_applicants": 30000,
-    "total_admitted": 3000,
-    "international_applicants": 5000,
-    "international_admitted": 300,
+    "acceptance_rate": 5.4,
+    "early_action_rate": 7.5,
+    "early_decision_rate": 12.0,
+    "regular_decision_rate": 3.5,
+    "yield_rate": 82,
+    "total_applicants": 38000,
+    "total_admitted": 2052,
+    "international_applicants": 6200,
+    "international_admitted": 340,
     "profile_ranges": {
-      "gpa_unweighted": { "25th": 3.8, "median": 3.9, "75th": 4.0 },
-      "sat_total": { "25th": 1400, "median": 1480, "75th": 1550 },
-      "sat_math": { "25th": 700, "median": 750, "75th": 790 },
-      "sat_reading": { "25th": 680, "median": 730, "75th": 770 },
-      "act_composite": { "25th": 31, "median": 33, "75th": 35 }
+      "gpa_unweighted": {
+        "25th": 3.92,
+        "median": 3.98,
+        "75th": 4.0
+      },
+      "sat_total": {
+        "25th": 1510,
+        "median": 1550,
+        "75th": 1580
+      },
+      "sat_math": {
+        "25th": 770,
+        "median": 790,
+        "75th": 800
+      },
+      "sat_reading": {
+        "25th": 740,
+        "median": 770,
+        "75th": 790
+      },
+      "act_composite": {
+        "25th": 34,
+        "median": 35,
+        "75th": 36
+      }
     }
   },
   "application_requirements": {
-    "deadline_early": "November 1",
-    "deadline_regular": "January 1",
-    "application_platform": "Common App",
+    "deadline_early": "November 1 (EA) / November 2 (ED)",
+    "deadline_regular": "January 4",
+    "application_platform": "Common App, Coalition, or UChicago Application",
     "application_fee": 75,
     "fee_waiver_available": true,
     "required_documents": [
-      { "item": "Transcript", "notes": "Official" },
-      { "item": "Recommendations", "count": 2 },
-      { "item": "Essays", "count": 2 }
+      {
+        "item": "Transcript",
+        "notes": "Official transcripts"
+      },
+      {
+        "item": "Recommendations",
+        "count": 2,
+        "notes": "Two teachers"
+      },
+      {
+        "item": "Counselor Report",
+        "required": true
+      },
+      {
+        "item": "Essays",
+        "notes": "Famous quirky UChicago essays required"
+      },
+      {
+        "item": "Interview",
+        "notes": "Optional - alumni/virtual"
+      }
     ],
     "test_policy": "Test-optional",
     "english_proficiency": {
       "required_for_international": true,
-      "minimum_toefl": 100,
+      "minimum_toefl": 104,
       "minimum_ielts": 7.0,
       "duolingo_accepted": true,
-      "minimum_duolingo": 120,
-      "waiver_conditions": "4+ years English instruction"
+      "minimum_duolingo": 125,
+      "waiver_conditions": "English as primary language"
     }
   },
   "academic_programs": {
-    "notable_majors": ["Computer Science", "Economics", "Biology"],
-    "unique_programs": ["TBD"],
-    "curriculum_structure": "Core + Major + Electives"
+    "notable_majors": [
+      "Economics",
+      "Mathematics",
+      "Biology",
+      "Political Science",
+      "Computer Science",
+      "Physics"
+    ],
+    "unique_programs": [
+      "Core Curriculum (famous general education)",
+      "Booth School of Business (MBA cross-registration)",
+      "Metcalf Internship Program",
+      "Research opportunities with Nobel laureates"
+    ],
+    "curriculum_structure": "Famous Core Curriculum + Major"
   },
   "korean_student_specific": {
-    "korean_student_organizations": ["Korean Students Association"],
-    "korean_food_access": "TBD",
-    "korean_church_proximity": "TBD",
+    "korean_student_organizations": [
+      "Korean Student Organization (KSO)",
+      "UChicago Asian American Alliance",
+      "UChicago Asian Business Group"
+    ],
+    "korean_food_access": "Good - Chicago Koreatown (20 min), Korean grocery and restaurants",
+    "korean_church_proximity": "Multiple Korean churches in Chicago area",
     "historical_admit_patterns": {
-      "korean_high_schools_commonly_admitted": [],
-      "common_profiles": "TBD"
+      "korean_high_schools_commonly_admitted": [
+        "Seoul International School",
+        "Korea International School",
+        "민족사관고등학교",
+        "대원외국어고등학교"
+      ],
+      "common_profiles": "Intellectually curious, loves debate and unconventional thinking"
     },
-    "korean_specific_advice": [],
-    "common_korean_applicant_mistakes": []
+    "korean_specific_advice": [
+      "The quirky essays are CRUCIAL - show genuine intellectual curiosity",
+      "UChicago values 'weird' thinkers - don't be afraid to be unconventional",
+      "The Core Curriculum is intensive - show you embrace rigorous academics",
+      "Fun fact: UChicago motto is 'I hate fun' (joke but shows culture)",
+      "Research opportunities are unparalleled - mention specific interests"
+    ],
+    "common_korean_applicant_mistakes": [
+      "Playing it safe with the quirky essay - be genuinely creative",
+      "Not showing genuine intellectual passion",
+      "Essays that are too focused on achievements vs. ideas",
+      "Not understanding the Core Curriculum's importance",
+      "Appearing too career/practical-focused rather than intellectually driven"
+    ]
   },
   "cost_and_aid": {
-    "tuition": 60000,
-    "room_and_board": 18000,
-    "total_cost_of_attendance": 82000,
+    "tuition": 66939,
+    "room_and_board": 20124,
+    "total_cost_of_attendance": 92063,
     "financial_aid_for_international": true,
     "need_blind_for_international": false,
-    "average_aid_package": 50000,
+    "average_aid_package": 58000,
     "percentage_receiving_aid": 50
   },
   "campus_life": {
-    "housing_guarantee": "4 years",
-    "popular_dorms": [],
-    "dining_options": "Multiple dining halls",
-    "safety_rating": "Good",
-    "nearby_attractions": "TBD"
+    "housing_guarantee": "2 years (freshmen live in houses)",
+    "popular_dorms": [
+      "Burton-Judson",
+      "Max Palevsky",
+      "South Campus"
+    ],
+    "dining_options": "Dining halls, Hyde Park restaurants",
+    "safety_rating": "Good - UCPD, campus is a bubble in Hyde Park",
+    "nearby_attractions": "Museum of Science and Industry, Lake Michigan, downtown Chicago"
   },
   "career_outcomes": {
-    "employment_rate_6_months": 90,
-    "average_starting_salary": 70000,
-    "top_employers": [],
-    "graduate_school_rate": 40,
-    "korean_alumni_network": "TBD"
+    "employment_rate_6_months": 91,
+    "average_starting_salary": 85000,
+    "top_employers": [
+      "McKinsey",
+      "Goldman Sachs",
+      "BCG",
+      "Google",
+      "Academia"
+    ],
+    "graduate_school_rate": 52,
+    "korean_alumni_network": "Strong UChicago Korean Alumni in finance and academia"
   },
-  "last_updated": "2024-12-01"
+  "last_updated": "2025-01-05"
 }

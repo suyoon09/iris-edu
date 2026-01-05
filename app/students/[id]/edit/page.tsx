@@ -30,21 +30,11 @@ export default async function EditStudentPage({
       <div className="ml-64">
         <Header />
         <main className="p-6">
-          <div className="max-w-2xl mx-auto">
+          <div className="max-w-4xl mx-auto">
             <StudentForm
               isEdit
               studentId={id}
-              initialData={{
-                name_korean: student.name_korean,
-                name_english: student.name_english,
-                email: student.email,
-                phone: student.phone,
-                grade: student.grade,
-                school_type: student.school_type,
-                current_school: student.current_school,
-                graduation_year: student.graduation_year,
-                notes: student.notes,
-              }}
+              initialData={student}
             />
           </div>
         </main>
@@ -52,3 +42,4 @@ export default async function EditStudentPage({
     </div>
   );
 }
+

@@ -1,55 +1,85 @@
 {
   "university_id": "washu",
   "basic_info": {
-    "name": "University Name",
-    "name_short": "Short",
+    "name": "Washington University in St. Louis",
+    "name_short": "WashU",
     "location": {
-      "city": "City",
-      "state": "State",
-      "region": "Region",
-      "nearest_korean_community": "TBD",
-      "distance_to_korean_community": "TBD",
-      "climate": "TBD"
+      "city": "St. Louis",
+      "state": "Missouri",
+      "region": "Midwest",
+      "nearest_korean_community": "Olive Blvd Korean corridor (15 min)",
+      "distance_to_korean_community": "15 min",
+      "climate": "Four seasons, cold winters (-4°C to 5°C), hot summers (22-32°C)"
     },
     "type": "Private Research",
-    "founded": 1900,
-    "website": "https://example.edu"
+    "founded": 1853,
+    "website": "https://wustl.edu"
   },
   "enrollment": {
-    "total_undergraduate": 5000,
-    "total_graduate": 5000,
+    "total_undergraduate": 8000,
+    "total_graduate": 8500,
     "international_percentage": 10.0,
-    "korean_student_estimate": 100,
-    "student_faculty_ratio": "10:1"
+    "korean_student_estimate": 110,
+    "student_faculty_ratio": "7:1"
   },
   "admission_stats": {
-    "acceptance_rate": 10.0,
+    "acceptance_rate": 9.0,
     "early_action_rate": null,
-    "early_decision_rate": null,
-    "regular_decision_rate": 10.0,
-    "yield_rate": 50,
+    "early_decision_rate": 32.0,
+    "regular_decision_rate": 6.5,
+    "yield_rate": 46,
     "total_applicants": 30000,
-    "total_admitted": 3000,
-    "international_applicants": 5000,
-    "international_admitted": 300,
+    "total_admitted": 2700,
+    "international_applicants": 4200,
+    "international_admitted": 290,
     "profile_ranges": {
-      "gpa_unweighted": { "25th": 3.8, "median": 3.9, "75th": 4.0 },
-      "sat_total": { "25th": 1400, "median": 1480, "75th": 1550 },
-      "sat_math": { "25th": 700, "median": 750, "75th": 790 },
-      "sat_reading": { "25th": 680, "median": 730, "75th": 770 },
-      "act_composite": { "25th": 31, "median": 33, "75th": 35 }
+      "gpa_unweighted": {
+        "25th": 3.85,
+        "median": 3.93,
+        "75th": 4.0
+      },
+      "sat_total": {
+        "25th": 1480,
+        "median": 1530,
+        "75th": 1570
+      },
+      "sat_math": {
+        "25th": 750,
+        "median": 780,
+        "75th": 800
+      },
+      "sat_reading": {
+        "25th": 720,
+        "median": 750,
+        "75th": 770
+      },
+      "act_composite": {
+        "25th": 33,
+        "median": 34,
+        "75th": 35
+      }
     }
   },
   "application_requirements": {
     "deadline_early": "November 1",
-    "deadline_regular": "January 1",
-    "application_platform": "Common App",
+    "deadline_regular": "January 4",
+    "application_platform": "Common App or Coalition App",
     "application_fee": 75,
     "fee_waiver_available": true,
     "required_documents": [
-      { "item": "Transcript", "notes": "Official" },
-      { "item": "Recommendations", "count": 2 },
-      { "item": "Essays", "count": 2 }
+      {
+        "item": "Transcript",
+        "notes": "Official transcripts"
+      },
+      {
+        "item": "Recommendations",
+        "count": 2,
+        "notes": "One counselor, one teacher"
+      },
+      {
+        "item": "Essays",
+        "notes": "WashU essays required"
+      }
     ],
     "test_policy": "Test-optional",
     "english_proficiency": {
@@ -57,48 +87,90 @@
       "minimum_toefl": 100,
       "minimum_ielts": 7.0,
       "duolingo_accepted": true,
-      "minimum_duolingo": 120,
-      "waiver_conditions": "4+ years English instruction"
+      "minimum_duolingo": 125,
+      "waiver_conditions": "English-medium instruction for 3+ years"
     }
   },
   "academic_programs": {
-    "notable_majors": ["Computer Science", "Economics", "Biology"],
-    "unique_programs": ["TBD"],
-    "curriculum_structure": "Core + Major + Electives"
+    "notable_majors": [
+      "Business (Olin)",
+      "Pre-Med",
+      "Computer Science",
+      "Biomedical Engineering",
+      "Political Science",
+      "Architecture"
+    ],
+    "unique_programs": [
+      "Dual-degree programs available",
+      "Olin Business School undergraduate program",
+      "Sam Fox School of Design & Visual Arts",
+      "Extensive research opportunities"
+    ],
+    "curriculum_structure": "Varies by school, flexible requirements"
   },
   "korean_student_specific": {
-    "korean_student_organizations": ["Korean Students Association"],
-    "korean_food_access": "TBD",
-    "korean_church_proximity": "TBD",
+    "korean_student_organizations": [
+      "Korean Students Association (KSA)",
+      "WashU Asian Business Association",
+      "Asian Student Alliance"
+    ],
+    "korean_food_access": "Good - Olive Blvd has Korean restaurants and grocery stores (15 min)",
+    "korean_church_proximity": "St. Louis Korean Church (15 min)",
     "historical_admit_patterns": {
-      "korean_high_schools_commonly_admitted": [],
-      "common_profiles": "TBD"
+      "korean_high_schools_commonly_admitted": [
+        "Seoul International School",
+        "Korea International School",
+        "민족사관고등학교",
+        "대원외국어고등학교"
+      ],
+      "common_profiles": "Pre-professional focus, especially pre-med and business"
     },
-    "korean_specific_advice": [],
-    "common_korean_applicant_mistakes": []
+    "korean_specific_advice": [
+      "WashU has VERY high ED acceptance rate - consider strongly for ED",
+      "Pre-med track is excellent - mention if interested",
+      "Olin Business School is competitive - requires specific interest statement",
+      "Show genuine interest - WashU tracks demonstrated interest",
+      "The campus and student satisfaction are major assets to mention"
+    ],
+    "common_korean_applicant_mistakes": [
+      "Not applying ED despite high ED acceptance rate",
+      "Not demonstrating genuine interest in WashU",
+      "Overlooking the collaborative, non-competitive culture",
+      "Not mentioning specific programs or professors",
+      "Essays that are too focused on rankings/prestige"
+    ]
   },
   "cost_and_aid": {
-    "tuition": 60000,
-    "room_and_board": 18000,
-    "total_cost_of_attendance": 82000,
+    "tuition": 63397,
+    "room_and_board": 19870,
+    "total_cost_of_attendance": 88267,
     "financial_aid_for_international": true,
     "need_blind_for_international": false,
-    "average_aid_package": 50000,
-    "percentage_receiving_aid": 50
+    "average_aid_package": 58000,
+    "percentage_receiving_aid": 46
   },
   "campus_life": {
-    "housing_guarantee": "4 years",
-    "popular_dorms": [],
-    "dining_options": "Multiple dining halls",
-    "safety_rating": "Good",
-    "nearby_attractions": "TBD"
+    "housing_guarantee": "3 years guaranteed",
+    "popular_dorms": [
+      "South 40 (freshmen)",
+      "Danforth Campus"
+    ],
+    "dining_options": "Multiple dining venues, highly rated",
+    "safety_rating": "Excellent - Campus is a bubble, very safe",
+    "nearby_attractions": "Forest Park, St. Louis Zoo, City Museum, downtown St. Louis"
   },
   "career_outcomes": {
-    "employment_rate_6_months": 90,
-    "average_starting_salary": 70000,
-    "top_employers": [],
-    "graduate_school_rate": 40,
-    "korean_alumni_network": "TBD"
+    "employment_rate_6_months": 94,
+    "average_starting_salary": 78000,
+    "top_employers": [
+      "McKinsey",
+      "BCG",
+      "Goldman Sachs",
+      "Bain",
+      "Major hospitals"
+    ],
+    "graduate_school_rate": 42,
+    "korean_alumni_network": "Active WashU Korean alumni network"
   },
-  "last_updated": "2024-12-01"
+  "last_updated": "2025-01-05"
 }

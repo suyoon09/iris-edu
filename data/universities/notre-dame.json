@@ -1,104 +1,177 @@
 {
   "university_id": "notre-dame",
   "basic_info": {
-    "name": "University Name",
-    "name_short": "Short",
+    "name": "University of Notre Dame",
+    "name_short": "Notre Dame",
     "location": {
-      "city": "City",
-      "state": "State",
-      "region": "Region",
-      "nearest_korean_community": "TBD",
-      "distance_to_korean_community": "TBD",
-      "climate": "TBD"
+      "city": "Notre Dame",
+      "state": "Indiana",
+      "region": "Midwest",
+      "nearest_korean_community": "Chicago Koreatown (2 hours)",
+      "distance_to_korean_community": "2 hours",
+      "climate": "Cold winters (-8°C to 2°C), warm summers (18-28°C)"
     },
-    "type": "Private Research",
-    "founded": 1900,
-    "website": "https://example.edu"
+    "type": "Private Research (Catholic)",
+    "founded": 1842,
+    "website": "https://www.nd.edu"
   },
   "enrollment": {
-    "total_undergraduate": 5000,
-    "total_graduate": 5000,
-    "international_percentage": 10.0,
-    "korean_student_estimate": 100,
+    "total_undergraduate": 8900,
+    "total_graduate": 4000,
+    "international_percentage": 6.0,
+    "korean_student_estimate": 70,
     "student_faculty_ratio": "10:1"
   },
   "admission_stats": {
-    "acceptance_rate": 10.0,
-    "early_action_rate": null,
+    "acceptance_rate": 12.9,
+    "early_action_rate": 19.0,
     "early_decision_rate": null,
-    "regular_decision_rate": 10.0,
-    "yield_rate": 50,
-    "total_applicants": 30000,
-    "total_admitted": 3000,
-    "international_applicants": 5000,
-    "international_admitted": 300,
+    "regular_decision_rate": 10.5,
+    "yield_rate": 60,
+    "total_applicants": 28000,
+    "total_admitted": 3612,
+    "international_applicants": 2800,
+    "international_admitted": 200,
     "profile_ranges": {
-      "gpa_unweighted": { "25th": 3.8, "median": 3.9, "75th": 4.0 },
-      "sat_total": { "25th": 1400, "median": 1480, "75th": 1550 },
-      "sat_math": { "25th": 700, "median": 750, "75th": 790 },
-      "sat_reading": { "25th": 680, "median": 730, "75th": 770 },
-      "act_composite": { "25th": 31, "median": 33, "75th": 35 }
+      "gpa_unweighted": {
+        "25th": 3.82,
+        "median": 3.92,
+        "75th": 4.0
+      },
+      "sat_total": {
+        "25th": 1420,
+        "median": 1490,
+        "75th": 1550
+      },
+      "sat_math": {
+        "25th": 720,
+        "median": 760,
+        "75th": 790
+      },
+      "sat_reading": {
+        "25th": 690,
+        "median": 730,
+        "75th": 770
+      },
+      "act_composite": {
+        "25th": 32,
+        "median": 34,
+        "75th": 35
+      }
     }
   },
   "application_requirements": {
-    "deadline_early": "November 1",
+    "deadline_early": "November 1 (REA)",
     "deadline_regular": "January 1",
     "application_platform": "Common App",
     "application_fee": 75,
     "fee_waiver_available": true,
     "required_documents": [
-      { "item": "Transcript", "notes": "Official" },
-      { "item": "Recommendations", "count": 2 },
-      { "item": "Essays", "count": 2 }
+      {
+        "item": "Transcript",
+        "notes": "Official transcripts"
+      },
+      {
+        "item": "Recommendations",
+        "count": 2,
+        "notes": "Counselor + teacher"
+      },
+      {
+        "item": "Essays",
+        "notes": "Notre Dame essays"
+      }
     ],
     "test_policy": "Test-optional",
     "english_proficiency": {
       "required_for_international": true,
       "minimum_toefl": 100,
-      "minimum_ielts": 7.0,
+      "minimum_ielts": 7.5,
       "duolingo_accepted": true,
-      "minimum_duolingo": 120,
-      "waiver_conditions": "4+ years English instruction"
+      "minimum_duolingo": 125,
+      "waiver_conditions": "English instruction for 3+ years"
     }
   },
   "academic_programs": {
-    "notable_majors": ["Computer Science", "Economics", "Biology"],
-    "unique_programs": ["TBD"],
-    "curriculum_structure": "Core + Major + Electives"
+    "notable_majors": [
+      "Business (Mendoza)",
+      "Engineering",
+      "Political Science",
+      "Pre-Law",
+      "Theology",
+      "Computer Science"
+    ],
+    "unique_programs": [
+      "Mendoza College of Business (top-ranked)",
+      "Notre Dame Law School",
+      "Faith-integrated education",
+      "Strong study abroad (70% participate)"
+    ],
+    "curriculum_structure": "Core requirements + Major"
   },
   "korean_student_specific": {
-    "korean_student_organizations": ["Korean Students Association"],
-    "korean_food_access": "TBD",
-    "korean_church_proximity": "TBD",
+    "korean_student_organizations": [
+      "Asian American Association",
+      "Korean Student Association",
+      "International Student Association"
+    ],
+    "korean_food_access": "Limited - Chicago (2 hours) for major Korean groceries",
+    "korean_church_proximity": "Campus Catholic services, limited Korean Protestant options",
     "historical_admit_patterns": {
-      "korean_high_schools_commonly_admitted": [],
-      "common_profiles": "TBD"
+      "korean_high_schools_commonly_admitted": [
+        "Seoul International School",
+        "Korea International School",
+        "Catholic schools in Korea"
+      ],
+      "common_profiles": "Service-oriented, values-driven, often from Catholic background"
     },
-    "korean_specific_advice": [],
-    "common_korean_applicant_mistakes": []
+    "korean_specific_advice": [
+      "Catholic identity MATTERS - address your perspective on faith/values",
+      "Service and community are central to Notre Dame culture",
+      "Football and school spirit are legendary - show enthusiasm",
+      "Mendoza Business School is very competitive",
+      "Notre Dame looks for students who will embrace 'family' culture"
+    ],
+    "common_korean_applicant_mistakes": [
+      "Not addressing the Catholic/faith dimension at all",
+      "Underestimating the importance of service and community",
+      "Essays that are purely academic without showing values",
+      "Not demonstrating awareness of Notre Dame traditions",
+      "Rural Indiana location concerns not addressed"
+    ]
   },
   "cost_and_aid": {
-    "tuition": 60000,
-    "room_and_board": 18000,
-    "total_cost_of_attendance": 82000,
+    "tuition": 62693,
+    "room_and_board": 17882,
+    "total_cost_of_attendance": 85575,
     "financial_aid_for_international": true,
     "need_blind_for_international": false,
-    "average_aid_package": 50000,
-    "percentage_receiving_aid": 50
+    "average_aid_package": 55000,
+    "percentage_receiving_aid": 48
   },
   "campus_life": {
-    "housing_guarantee": "4 years",
-    "popular_dorms": [],
-    "dining_options": "Multiple dining halls",
-    "safety_rating": "Good",
-    "nearby_attractions": "TBD"
+    "housing_guarantee": "4 years (required to live on campus)",
+    "popular_dorms": [
+      "Keenan",
+      "Alumni",
+      "Welsh Family",
+      "O'Neill"
+    ],
+    "dining_options": "Two dining halls, highly rated",
+    "safety_rating": "Excellent - very safe campus",
+    "nearby_attractions": "South Bend, Chicago (2 hours), campus is destination itself"
   },
   "career_outcomes": {
-    "employment_rate_6_months": 90,
-    "average_starting_salary": 70000,
-    "top_employers": [],
+    "employment_rate_6_months": 95,
+    "average_starting_salary": 72000,
+    "top_employers": [
+      "Deloitte",
+      "EY",
+      "PwC",
+      "Major corporations",
+      "Law firms"
+    ],
     "graduate_school_rate": 40,
-    "korean_alumni_network": "TBD"
+    "korean_alumni_network": "Smaller but loyal Notre Dame Korean alumni"
   },
-  "last_updated": "2024-12-01"
+  "last_updated": "2025-01-05"
 }

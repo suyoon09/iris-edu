@@ -1,104 +1,174 @@
 {
   "university_id": "boston-college",
   "basic_info": {
-    "name": "University Name",
-    "name_short": "Short",
+    "name": "Boston College",
+    "name_short": "BC",
     "location": {
-      "city": "City",
-      "state": "State",
-      "region": "Region",
-      "nearest_korean_community": "TBD",
-      "distance_to_korean_community": "TBD",
-      "climate": "TBD"
+      "city": "Chestnut Hill",
+      "state": "Massachusetts",
+      "region": "Northeast",
+      "nearest_korean_community": "Boston Koreatown (Allston, 15 min)",
+      "distance_to_korean_community": "15 min",
+      "climate": "Four seasons, cold winters (-4°C to 3°C), warm summers (18-27°C)"
     },
-    "type": "Private Research",
-    "founded": 1900,
-    "website": "https://example.edu"
+    "type": "Private Research (Jesuit)",
+    "founded": 1863,
+    "website": "https://www.bc.edu"
   },
   "enrollment": {
-    "total_undergraduate": 5000,
+    "total_undergraduate": 9500,
     "total_graduate": 5000,
-    "international_percentage": 10.0,
-    "korean_student_estimate": 100,
-    "student_faculty_ratio": "10:1"
+    "international_percentage": 7.0,
+    "korean_student_estimate": 85,
+    "student_faculty_ratio": "11:1"
   },
   "admission_stats": {
-    "acceptance_rate": 10.0,
+    "acceptance_rate": 16.0,
     "early_action_rate": null,
-    "early_decision_rate": null,
-    "regular_decision_rate": 10.0,
-    "yield_rate": 50,
-    "total_applicants": 30000,
-    "total_admitted": 3000,
-    "international_applicants": 5000,
-    "international_admitted": 300,
+    "early_decision_rate": 34.0,
+    "regular_decision_rate": 12.0,
+    "yield_rate": 36,
+    "total_applicants": 40000,
+    "total_admitted": 6400,
+    "international_applicants": 4000,
+    "international_admitted": 350,
     "profile_ranges": {
-      "gpa_unweighted": { "25th": 3.8, "median": 3.9, "75th": 4.0 },
-      "sat_total": { "25th": 1400, "median": 1480, "75th": 1550 },
-      "sat_math": { "25th": 700, "median": 750, "75th": 790 },
-      "sat_reading": { "25th": 680, "median": 730, "75th": 770 },
-      "act_composite": { "25th": 31, "median": 33, "75th": 35 }
+      "gpa_unweighted": {
+        "25th": 3.78,
+        "median": 3.88,
+        "75th": 3.96
+      },
+      "sat_total": {
+        "25th": 1400,
+        "median": 1450,
+        "75th": 1510
+      },
+      "sat_math": {
+        "25th": 700,
+        "median": 740,
+        "75th": 780
+      },
+      "sat_reading": {
+        "25th": 690,
+        "median": 720,
+        "75th": 750
+      },
+      "act_composite": {
+        "25th": 32,
+        "median": 33,
+        "75th": 34
+      }
     }
   },
   "application_requirements": {
-    "deadline_early": "November 1",
+    "deadline_early": "November 1 (ED1) / January 1 (ED2)",
     "deadline_regular": "January 1",
     "application_platform": "Common App",
-    "application_fee": 75,
+    "application_fee": 80,
     "fee_waiver_available": true,
     "required_documents": [
-      { "item": "Transcript", "notes": "Official" },
-      { "item": "Recommendations", "count": 2 },
-      { "item": "Essays", "count": 2 }
+      {
+        "item": "Transcript",
+        "notes": "Official transcripts"
+      },
+      {
+        "item": "Recommendations",
+        "count": 2,
+        "notes": "Counselor + teacher"
+      },
+      {
+        "item": "Essays",
+        "notes": "BC essays"
+      }
     ],
     "test_policy": "Test-optional",
     "english_proficiency": {
       "required_for_international": true,
       "minimum_toefl": 100,
-      "minimum_ielts": 7.0,
+      "minimum_ielts": 7.5,
       "duolingo_accepted": true,
-      "minimum_duolingo": 120,
+      "minimum_duolingo": 125,
       "waiver_conditions": "4+ years English instruction"
     }
   },
   "academic_programs": {
-    "notable_majors": ["Computer Science", "Economics", "Biology"],
-    "unique_programs": ["TBD"],
-    "curriculum_structure": "Core + Major + Electives"
+    "notable_majors": [
+      "Finance",
+      "Economics",
+      "Biology",
+      "Communication",
+      "Nursing",
+      "Political Science"
+    ],
+    "unique_programs": [
+      "Carroll School of Management",
+      "Connell School of Nursing",
+      "Core Curriculum with Jesuit values",
+      "PULSE Program (service learning)"
+    ],
+    "curriculum_structure": "Core Curriculum + Major"
   },
   "korean_student_specific": {
-    "korean_student_organizations": ["Korean Students Association"],
-    "korean_food_access": "TBD",
-    "korean_church_proximity": "TBD",
+    "korean_student_organizations": [
+      "Korean Students Association",
+      "Asian Caucus",
+      "Asian Business Student Association"
+    ],
+    "korean_food_access": "Good - Boston area has many options",
+    "korean_church_proximity": "Boston area Korean churches",
     "historical_admit_patterns": {
-      "korean_high_schools_commonly_admitted": [],
-      "common_profiles": "TBD"
+      "korean_high_schools_commonly_admitted": [
+        "Seoul International School",
+        "Korea International School"
+      ],
+      "common_profiles": "Well-rounded, service-oriented, often Catholic/faith background"
     },
-    "korean_specific_advice": [],
-    "common_korean_applicant_mistakes": []
+    "korean_specific_advice": [
+      "Jesuit identity and 'men and women for others' is important",
+      "ED acceptance rate is MUCH higher - strong ED consideration",
+      "Carroll School of Management is highly competitive",
+      "PULSE and service programs show BC values in action",
+      "Boston location is a major draw - mention it"
+    ],
+    "common_korean_applicant_mistakes": [
+      "Not addressing Jesuit values or service orientation",
+      "Missing ED opportunity for better acceptance chances",
+      "Essays too focused on career without showing values",
+      "Not showing interest in Boston/community engagement",
+      "Generic essays that don't show BC-specific knowledge"
+    ]
   },
   "cost_and_aid": {
-    "tuition": 60000,
-    "room_and_board": 18000,
-    "total_cost_of_attendance": 82000,
+    "tuition": 64680,
+    "room_and_board": 17480,
+    "total_cost_of_attendance": 87160,
     "financial_aid_for_international": true,
     "need_blind_for_international": false,
     "average_aid_package": 50000,
-    "percentage_receiving_aid": 50
+    "percentage_receiving_aid": 43
   },
   "campus_life": {
-    "housing_guarantee": "4 years",
-    "popular_dorms": [],
+    "housing_guarantee": "3 years",
+    "popular_dorms": [
+      "Newton Campus (freshmen)",
+      "Upper Campus"
+    ],
     "dining_options": "Multiple dining halls",
-    "safety_rating": "Good",
-    "nearby_attractions": "TBD"
+    "safety_rating": "Excellent - safe Chestnut Hill neighborhood",
+    "nearby_attractions": "Boston, Cambridge, Fenway Park, museums"
   },
   "career_outcomes": {
-    "employment_rate_6_months": 90,
-    "average_starting_salary": 70000,
-    "top_employers": [],
-    "graduate_school_rate": 40,
-    "korean_alumni_network": "TBD"
+    "employment_rate_6_months": 95,
+    "average_starting_salary": 68000,
+    "top_employers": [
+      "Goldman Sachs",
+      "JP Morgan",
+      "Deloitte",
+      "Fidelity",
+      "Big 4"
+    ],
+    "graduate_school_rate": 38,
+    "korean_alumni_network": "Active BC Korean alumni in finance"
   },
-  "last_updated": "2024-12-01"
+  "last_updated": "2025-01-05"
 }

@@ -1,104 +1,176 @@
 {
   "university_id": "boston-u",
   "basic_info": {
-    "name": "University Name",
-    "name_short": "Short",
+    "name": "Boston University",
+    "name_short": "BU",
     "location": {
-      "city": "City",
-      "state": "State",
-      "region": "Region",
-      "nearest_korean_community": "TBD",
-      "distance_to_korean_community": "TBD",
-      "climate": "TBD"
+      "city": "Boston",
+      "state": "Massachusetts",
+      "region": "Northeast",
+      "nearest_korean_community": "Boston Koreatown (Allston, 5-10 min)",
+      "distance_to_korean_community": "5-10 min",
+      "climate": "Four seasons, cold winters (-4°C to 3°C), warm summers (18-27°C)"
     },
     "type": "Private Research",
-    "founded": 1900,
-    "website": "https://example.edu"
+    "founded": 1839,
+    "website": "https://www.bu.edu"
   },
   "enrollment": {
-    "total_undergraduate": 5000,
-    "total_graduate": 5000,
-    "international_percentage": 10.0,
-    "korean_student_estimate": 100,
+    "total_undergraduate": 17000,
+    "total_graduate": 17000,
+    "international_percentage": 23.0,
+    "korean_student_estimate": 450,
     "student_faculty_ratio": "10:1"
   },
   "admission_stats": {
-    "acceptance_rate": 10.0,
+    "acceptance_rate": 11.0,
     "early_action_rate": null,
-    "early_decision_rate": null,
-    "regular_decision_rate": 10.0,
-    "yield_rate": 50,
-    "total_applicants": 30000,
-    "total_admitted": 3000,
-    "international_applicants": 5000,
-    "international_admitted": 300,
+    "early_decision_rate": 30.0,
+    "regular_decision_rate": 9.0,
+    "yield_rate": 30,
+    "total_applicants": 81000,
+    "total_admitted": 8910,
+    "international_applicants": 18000,
+    "international_admitted": 1500,
     "profile_ranges": {
-      "gpa_unweighted": { "25th": 3.8, "median": 3.9, "75th": 4.0 },
-      "sat_total": { "25th": 1400, "median": 1480, "75th": 1550 },
-      "sat_math": { "25th": 700, "median": 750, "75th": 790 },
-      "sat_reading": { "25th": 680, "median": 730, "75th": 770 },
-      "act_composite": { "25th": 31, "median": 33, "75th": 35 }
+      "gpa_unweighted": {
+        "25th": 3.7,
+        "median": 3.85,
+        "75th": 3.95
+      },
+      "sat_total": {
+        "25th": 1390,
+        "median": 1450,
+        "75th": 1510
+      },
+      "sat_math": {
+        "25th": 700,
+        "median": 740,
+        "75th": 780
+      },
+      "sat_reading": {
+        "25th": 680,
+        "median": 720,
+        "75th": 750
+      },
+      "act_composite": {
+        "25th": 31,
+        "median": 33,
+        "75th": 34
+      }
     }
   },
   "application_requirements": {
-    "deadline_early": "November 1",
-    "deadline_regular": "January 1",
+    "deadline_early": "November 1 (ED1) / January 6 (ED2)",
+    "deadline_regular": "January 6",
     "application_platform": "Common App",
-    "application_fee": 75,
+    "application_fee": 80,
     "fee_waiver_available": true,
     "required_documents": [
-      { "item": "Transcript", "notes": "Official" },
-      { "item": "Recommendations", "count": 2 },
-      { "item": "Essays", "count": 2 }
+      {
+        "item": "Transcript",
+        "notes": "Official transcripts"
+      },
+      {
+        "item": "Recommendations",
+        "count": 2,
+        "notes": "Counselor + teacher"
+      },
+      {
+        "item": "Essays",
+        "notes": "BU-specific essays"
+      }
     ],
     "test_policy": "Test-optional",
     "english_proficiency": {
       "required_for_international": true,
-      "minimum_toefl": 100,
+      "minimum_toefl": 90,
       "minimum_ielts": 7.0,
       "duolingo_accepted": true,
       "minimum_duolingo": 120,
-      "waiver_conditions": "4+ years English instruction"
+      "waiver_conditions": "English instruction for 4+ years"
     }
   },
   "academic_programs": {
-    "notable_majors": ["Computer Science", "Economics", "Biology"],
-    "unique_programs": ["TBD"],
-    "curriculum_structure": "Core + Major + Electives"
+    "notable_majors": [
+      "Business (Questrom)",
+      "Communication",
+      "Engineering",
+      "Biology",
+      "Film & Television",
+      "Hospitality"
+    ],
+    "unique_programs": [
+      "Questrom School of Business",
+      "College of Communication",
+      "Kilachand Honors College",
+      "GWISE and research programs"
+    ],
+    "curriculum_structure": "BU Hub curriculum + Major"
   },
   "korean_student_specific": {
-    "korean_student_organizations": ["Korean Students Association"],
-    "korean_food_access": "TBD",
-    "korean_church_proximity": "TBD",
+    "korean_student_organizations": [
+      "Korean Student Association (KSA)",
+      "Korean Christian Fellowship",
+      "Asian Student Union"
+    ],
+    "korean_food_access": "Excellent - BU is right next to Allston Koreatown",
+    "korean_church_proximity": "Boston Hankook Church nearby",
     "historical_admit_patterns": {
-      "korean_high_schools_commonly_admitted": [],
-      "common_profiles": "TBD"
+      "korean_high_schools_commonly_admitted": [
+        "Seoul International School",
+        "Korea International School",
+        "Various Korean high schools"
+      ],
+      "common_profiles": "Urban-loving, career-focused, diverse backgrounds"
     },
-    "korean_specific_advice": [],
-    "common_korean_applicant_mistakes": []
+    "korean_specific_advice": [
+      "BU has HUGE Korean international student community",
+      "Location is next to Koreatown - mention if that's a draw",
+      "Questrom and COM are competitive programs",
+      "ED significantly boosts chances if BU is top choice",
+      "Urban campus and internship opportunities are differentiators"
+    ],
+    "common_korean_applicant_mistakes": [
+      "Not applying ED when BU is top choice",
+      "Generic essays that don't mention Boston/urban opportunities",
+      "Underestimating the competition for popular programs",
+      "Not demonstrating fit with urban campus life",
+      "Essays lacking personality and specificity"
+    ]
   },
   "cost_and_aid": {
-    "tuition": 60000,
-    "room_and_board": 18000,
-    "total_cost_of_attendance": 82000,
+    "tuition": 64994,
+    "room_and_board": 19270,
+    "total_cost_of_attendance": 89264,
     "financial_aid_for_international": true,
     "need_blind_for_international": false,
-    "average_aid_package": 50000,
-    "percentage_receiving_aid": 50
+    "average_aid_package": 48000,
+    "percentage_receiving_aid": 41
   },
   "campus_life": {
-    "housing_guarantee": "4 years",
-    "popular_dorms": [],
-    "dining_options": "Multiple dining halls",
-    "safety_rating": "Good",
-    "nearby_attractions": "TBD"
+    "housing_guarantee": "2 years",
+    "popular_dorms": [
+      "Warren Towers",
+      "West Campus",
+      "StuVi"
+    ],
+    "dining_options": "Multiple dining halls along Commonwealth Ave",
+    "safety_rating": "Good - BUPD, urban safety measures",
+    "nearby_attractions": "Fenway Park, Charles River, downtown Boston"
   },
   "career_outcomes": {
     "employment_rate_6_months": 90,
-    "average_starting_salary": 70000,
-    "top_employers": [],
-    "graduate_school_rate": 40,
-    "korean_alumni_network": "TBD"
+    "average_starting_salary": 62000,
+    "top_employers": [
+      "EY",
+      "Deloitte",
+      "State Street",
+      "Fidelity",
+      "Media companies"
+    ],
+    "graduate_school_rate": 30,
+    "korean_alumni_network": "Large BU Korean Alumni network"
   },
-  "last_updated": "2024-12-01"
+  "last_updated": "2025-01-05"
 }

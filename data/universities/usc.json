@@ -1,55 +1,85 @@
 {
   "university_id": "usc",
   "basic_info": {
-    "name": "University Name",
-    "name_short": "Short",
+    "name": "University of Southern California",
+    "name_short": "USC",
     "location": {
-      "city": "City",
-      "state": "State",
-      "region": "Region",
-      "nearest_korean_community": "TBD",
-      "distance_to_korean_community": "TBD",
-      "climate": "TBD"
+      "city": "Los Angeles",
+      "state": "California",
+      "region": "West Coast",
+      "nearest_korean_community": "Koreatown LA (10 min)",
+      "distance_to_korean_community": "10 min",
+      "climate": "Mediterranean, mild year-round (12-28°C)"
     },
     "type": "Private Research",
-    "founded": 1900,
-    "website": "https://example.edu"
+    "founded": 1880,
+    "website": "https://www.usc.edu"
   },
   "enrollment": {
-    "total_undergraduate": 5000,
-    "total_graduate": 5000,
-    "international_percentage": 10.0,
-    "korean_student_estimate": 100,
-    "student_faculty_ratio": "10:1"
+    "total_undergraduate": 21000,
+    "total_graduate": 28000,
+    "international_percentage": 24.0,
+    "korean_student_estimate": 1000,
+    "student_faculty_ratio": "9:1"
   },
   "admission_stats": {
-    "acceptance_rate": 10.0,
+    "acceptance_rate": 9.2,
     "early_action_rate": null,
     "early_decision_rate": null,
-    "regular_decision_rate": 10.0,
-    "yield_rate": 50,
-    "total_applicants": 30000,
-    "total_admitted": 3000,
-    "international_applicants": 5000,
-    "international_admitted": 300,
+    "regular_decision_rate": 9.2,
+    "yield_rate": 44,
+    "total_applicants": 80000,
+    "total_admitted": 7360,
+    "international_applicants": 18000,
+    "international_admitted": 1500,
     "profile_ranges": {
-      "gpa_unweighted": { "25th": 3.8, "median": 3.9, "75th": 4.0 },
-      "sat_total": { "25th": 1400, "median": 1480, "75th": 1550 },
-      "sat_math": { "25th": 700, "median": 750, "75th": 790 },
-      "sat_reading": { "25th": 680, "median": 730, "75th": 770 },
-      "act_composite": { "25th": 31, "median": 33, "75th": 35 }
+      "gpa_unweighted": {
+        "25th": 3.8,
+        "median": 3.92,
+        "75th": 4.0
+      },
+      "sat_total": {
+        "25th": 1420,
+        "median": 1490,
+        "75th": 1550
+      },
+      "sat_math": {
+        "25th": 720,
+        "median": 760,
+        "75th": 790
+      },
+      "sat_reading": {
+        "25th": 690,
+        "median": 730,
+        "75th": 770
+      },
+      "act_composite": {
+        "25th": 32,
+        "median": 34,
+        "75th": 35
+      }
     }
   },
   "application_requirements": {
-    "deadline_early": "November 1",
-    "deadline_regular": "January 1",
+    "deadline_early": "November 1 (Scholarship consideration)",
+    "deadline_regular": "January 15",
     "application_platform": "Common App",
-    "application_fee": 75,
+    "application_fee": 85,
     "fee_waiver_available": true,
     "required_documents": [
-      { "item": "Transcript", "notes": "Official" },
-      { "item": "Recommendations", "count": 2 },
-      { "item": "Essays", "count": 2 }
+      {
+        "item": "Transcript",
+        "notes": "Official transcripts"
+      },
+      {
+        "item": "Recommendations",
+        "count": 2,
+        "notes": "Counselor + one teacher"
+      },
+      {
+        "item": "Essays",
+        "notes": "USC-specific essays"
+      }
     ],
     "test_policy": "Test-optional",
     "english_proficiency": {
@@ -57,48 +87,90 @@
       "minimum_toefl": 100,
       "minimum_ielts": 7.0,
       "duolingo_accepted": true,
-      "minimum_duolingo": 120,
-      "waiver_conditions": "4+ years English instruction"
+      "minimum_duolingo": 125,
+      "waiver_conditions": "English instruction 4+ years"
     }
   },
   "academic_programs": {
-    "notable_majors": ["Computer Science", "Economics", "Biology"],
-    "unique_programs": ["TBD"],
-    "curriculum_structure": "Core + Major + Electives"
+    "notable_majors": [
+      "Film/Cinematic Arts",
+      "Business (Marshall)",
+      "Computer Science",
+      "Communication",
+      "Engineering"
+    ],
+    "unique_programs": [
+      "School of Cinematic Arts (top film school)",
+      "Marshall School of Business",
+      "Thornton School of Music",
+      "USC Annenberg (Communication)"
+    ],
+    "curriculum_structure": "Core requirements + Major"
   },
   "korean_student_specific": {
-    "korean_student_organizations": ["Korean Students Association"],
-    "korean_food_access": "TBD",
-    "korean_church_proximity": "TBD",
+    "korean_student_organizations": [
+      "Korean Student Association",
+      "USC Korean American",
+      "Korean Culture Club"
+    ],
+    "korean_food_access": "Excellent - Koreatown LA just 10 min from campus",
+    "korean_church_proximity": "Many Korean churches throughout LA",
     "historical_admit_patterns": {
-      "korean_high_schools_commonly_admitted": [],
-      "common_profiles": "TBD"
+      "korean_high_schools_commonly_admitted": [
+        "Seoul International School",
+        "Korea International School",
+        "민족사관고등학교",
+        "California high schools with large Korean populations"
+      ],
+      "common_profiles": "Entertainment, business, and tech oriented students"
     },
-    "korean_specific_advice": [],
-    "common_korean_applicant_mistakes": []
+    "korean_specific_advice": [
+      "USC has HUGE Korean international student population - network is valuable",
+      "School of Cinematic Arts is world-renowned for film",
+      "Trojan Network is powerful for jobs - emphasize networking",
+      "Show school spirit - USC culture is very spirited",
+      "LA location and entertainment industry connections are major assets"
+    ],
+    "common_korean_applicant_mistakes": [
+      "Applying only for prestige without showing USC-specific interest",
+      "Not mentioning LA and entertainment/business opportunities",
+      "Essays that don't show fit with USC's collaborative culture",
+      "Not demonstrating how you'll use Trojan Network",
+      "Underestimating essay importance without test scores"
+    ]
   },
   "cost_and_aid": {
-    "tuition": 60000,
-    "room_and_board": 18000,
-    "total_cost_of_attendance": 82000,
+    "tuition": 66640,
+    "room_and_board": 20622,
+    "total_cost_of_attendance": 92262,
     "financial_aid_for_international": true,
     "need_blind_for_international": false,
-    "average_aid_package": 50000,
-    "percentage_receiving_aid": 50
+    "average_aid_package": 45000,
+    "percentage_receiving_aid": 40
   },
   "campus_life": {
-    "housing_guarantee": "4 years",
-    "popular_dorms": [],
-    "dining_options": "Multiple dining halls",
-    "safety_rating": "Good",
-    "nearby_attractions": "TBD"
+    "housing_guarantee": "2 years (freshmen and sophomores)",
+    "popular_dorms": [
+      "USC Village",
+      "Birnkrant",
+      "Fluor Tower"
+    ],
+    "dining_options": "Multiple dining halls, USC Village food court",
+    "safety_rating": "Improved - DPS, neighborhood improvements",
+    "nearby_attractions": "Downtown LA, Hollywood, beaches, entertainment"
   },
   "career_outcomes": {
-    "employment_rate_6_months": 90,
-    "average_starting_salary": 70000,
-    "top_employers": [],
-    "graduate_school_rate": 40,
-    "korean_alumni_network": "TBD"
+    "employment_rate_6_months": 91,
+    "average_starting_salary": 72000,
+    "top_employers": [
+      "Disney",
+      "Warner Bros",
+      "Google",
+      "Goldman Sachs",
+      "Entertainment industry"
+    ],
+    "graduate_school_rate": 30,
+    "korean_alumni_network": "Massive USC Korean Alumni network in entertainment and business"
   },
-  "last_updated": "2024-12-01"
+  "last_updated": "2025-01-05"
 }

@@ -18,7 +18,7 @@ export default async function NewStudentPage() {
       <div className="ml-64">
         <Header />
         <main className="p-6">
-          <div className="max-w-2xl mx-auto">
+          <div className="max-w-4xl mx-auto">
             <StudentForm />
           </div>
         </main>
@@ -26,3 +26,4 @@ export default async function NewStudentPage() {
     </div>
   );
 }
+

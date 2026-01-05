@@ -1,104 +1,183 @@
 {
   "university_id": "cornell",
   "basic_info": {
-    "name": "University Name",
-    "name_short": "Short",
+    "name": "Cornell University",
+    "name_short": "Cornell",
     "location": {
-      "city": "City",
-      "state": "State",
-      "region": "Region",
-      "nearest_korean_community": "TBD",
-      "distance_to_korean_community": "TBD",
-      "climate": "TBD"
+      "city": "Ithaca",
+      "state": "New York",
+      "region": "Northeast",
+      "nearest_korean_community": "New York City (4 hr drive)",
+      "distance_to_korean_community": "4 hours",
+      "climate": "Cold winters (-8°C to 2°C), mild summers (15-27°C), significant snowfall"
     },
-    "type": "Private Research",
-    "founded": 1900,
-    "website": "https://example.edu"
+    "type": "Private Research (with public statutory colleges)",
+    "founded": 1865,
+    "website": "https://www.cornell.edu"
   },
   "enrollment": {
-    "total_undergraduate": 5000,
-    "total_graduate": 5000,
-    "international_percentage": 10.0,
-    "korean_student_estimate": 100,
-    "student_faculty_ratio": "10:1"
+    "total_undergraduate": 15700,
+    "total_graduate": 9600,
+    "international_percentage": 11.5,
+    "korean_student_estimate": 280,
+    "student_faculty_ratio": "9:1"
   },
   "admission_stats": {
-    "acceptance_rate": 10.0,
+    "acceptance_rate": 7.3,
     "early_action_rate": null,
-    "early_decision_rate": null,
-    "regular_decision_rate": 10.0,
-    "yield_rate": 50,
-    "total_applicants": 30000,
-    "total_admitted": 3000,
-    "international_applicants": 5000,
-    "international_admitted": 300,
+    "early_decision_rate": 16.5,
+    "regular_decision_rate": 5.4,
+    "yield_rate": 61,
+    "total_applicants": 68000,
+    "total_admitted": 4964,
+    "international_applicants": 9500,
+    "international_admitted": 520,
     "profile_ranges": {
-      "gpa_unweighted": { "25th": 3.8, "median": 3.9, "75th": 4.0 },
-      "sat_total": { "25th": 1400, "median": 1480, "75th": 1550 },
-      "sat_math": { "25th": 700, "median": 750, "75th": 790 },
-      "sat_reading": { "25th": 680, "median": 730, "75th": 770 },
-      "act_composite": { "25th": 31, "median": 33, "75th": 35 }
+      "gpa_unweighted": {
+        "25th": 3.88,
+        "median": 3.95,
+        "75th": 4.0
+      },
+      "sat_total": {
+        "25th": 1470,
+        "median": 1510,
+        "75th": 1560
+      },
+      "sat_math": {
+        "25th": 750,
+        "median": 780,
+        "75th": 800
+      },
+      "sat_reading": {
+        "25th": 710,
+        "median": 740,
+        "75th": 770
+      },
+      "act_composite": {
+        "25th": 33,
+        "median": 34,
+        "75th": 35
+      }
     }
   },
   "application_requirements": {
     "deadline_early": "November 1",
-    "deadline_regular": "January 1",
-    "application_platform": "Common App",
-    "application_fee": 75,
+    "deadline_regular": "January 2",
+    "application_platform": "Common App or Coalition App",
+    "application_fee": 80,
     "fee_waiver_available": true,
     "required_documents": [
-      { "item": "Transcript", "notes": "Official" },
-      { "item": "Recommendations", "count": 2 },
-      { "item": "Essays", "count": 2 }
+      {
+        "item": "Transcript",
+        "notes": "Official transcripts required"
+      },
+      {
+        "item": "Recommendations",
+        "count": 2,
+        "notes": "Two teacher recommendations"
+      },
+      {
+        "item": "Counselor Report",
+        "required": true
+      },
+      {
+        "item": "Essays",
+        "notes": "College-specific essays required"
+      }
     ],
-    "test_policy": "Test-optional",
+    "test_policy": "Test-optional through 2025",
     "english_proficiency": {
       "required_for_international": true,
       "minimum_toefl": 100,
-      "minimum_ielts": 7.0,
+      "minimum_ielts": 7.5,
       "duolingo_accepted": true,
-      "minimum_duolingo": 120,
+      "minimum_duolingo": 130,
       "waiver_conditions": "4+ years English instruction"
     }
   },
   "academic_programs": {
-    "notable_majors": ["Computer Science", "Economics", "Biology"],
-    "unique_programs": ["TBD"],
-    "curriculum_structure": "Core + Major + Electives"
+    "notable_majors": [
+      "Computer Science",
+      "Engineering",
+      "Hotel Administration",
+      "Agriculture",
+      "Architecture",
+      "Business (Dyson)",
+      "Biology"
+    ],
+    "unique_programs": [
+      "7 undergraduate colleges with distinct identities",
+      "Cornell Tech (NYC campus)",
+      "Hotel Administration (world-renowned)",
+      "College of Agriculture and Life Sciences"
+    ],
+    "curriculum_structure": "Varies by college - each has unique requirements"
   },
   "korean_student_specific": {
-    "korean_student_organizations": ["Korean Students Association"],
-    "korean_food_access": "TBD",
-    "korean_church_proximity": "TBD",
+    "korean_student_organizations": [
+      "Korean Students Association (KSA)",
+      "Korean American Students (KASA)",
+      "Korean International Students Association"
+    ],
+    "korean_food_access": "H Mart in Elmira (45 min), Korean restaurants in Collegetown area",
+    "korean_church_proximity": "Ithaca Korean Church (10 min)",
     "historical_admit_patterns": {
-      "korean_high_schools_commonly_admitted": [],
-      "common_profiles": "TBD"
+      "korean_high_schools_commonly_admitted": [
+        "Seoul International School",
+        "Korea International School",
+        "대원외국어고등학교",
+        "민족사관고등학교",
+        "외대부속외국어고등학교"
+      ],
+      "common_profiles": "Strong academics with clear focus, practical achievers, STEM-oriented students"
     },
-    "korean_specific_advice": [],
-    "common_korean_applicant_mistakes": []
+    "korean_specific_advice": [
+      "Apply to the specific college that fits your interests - each has different culture",
+      "Hotel School is extremely competitive - show genuine hospitality passion",
+      "Engineering and CS are very competitive for Korean applicants - need differentiation",
+      "Show you can handle isolated Ithaca location - campus community is crucial",
+      "Research opportunities are abundant - mention specific labs/professors"
+    ],
+    "common_korean_applicant_mistakes": [
+      "Applying to wrong college (especially Arts & Sciences vs Engineering)",
+      "Not showing genuine fit for specific college culture",
+      "Underestimating the rigor and competitiveness",
+      "Not addressing the remote location in essays",
+      "Generic essays that don't show Cornell-specific interest"
+    ]
   },
   "cost_and_aid": {
-    "tuition": 60000,
-    "room_and_board": 18000,
-    "total_cost_of_attendance": 82000,
+    "tuition": 65204,
+    "room_and_board": 18450,
+    "total_cost_of_attendance": 88954,
     "financial_aid_for_international": true,
     "need_blind_for_international": false,
-    "average_aid_package": 50000,
-    "percentage_receiving_aid": 50
+    "average_aid_package": 54000,
+    "percentage_receiving_aid": 52
   },
   "campus_life": {
-    "housing_guarantee": "4 years",
-    "popular_dorms": [],
-    "dining_options": "Multiple dining halls",
-    "safety_rating": "Good",
-    "nearby_attractions": "TBD"
+    "housing_guarantee": "First year guaranteed, lottery after",
+    "popular_dorms": [
+      "North Campus",
+      "West Campus",
+      "Collegetown"
+    ],
+    "dining_options": "30+ dining locations, excellent variety",
+    "safety_rating": "Good - Cornell Police, Safety Escort Service",
+    "nearby_attractions": "Finger Lakes, Ithaca Falls, hiking trails, wine country"
   },
   "career_outcomes": {
-    "employment_rate_6_months": 90,
-    "average_starting_salary": 70000,
-    "top_employers": [],
-    "graduate_school_rate": 40,
-    "korean_alumni_network": "TBD"
+    "employment_rate_6_months": 93,
+    "average_starting_salary": 82000,
+    "top_employers": [
+      "Google",
+      "Goldman Sachs",
+      "Microsoft",
+      "Amazon",
+      "McKinsey"
+    ],
+    "graduate_school_rate": 38,
+    "korean_alumni_network": "Strong Cornell Club of Korea with active mentorship"
   },
-  "last_updated": "2024-12-01"
+  "last_updated": "2025-01-05"
 }

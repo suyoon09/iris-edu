@@ -1,43 +1,63 @@
 {
   "university_id": "emory",
   "basic_info": {
-    "name": "University Name",
-    "name_short": "Short",
+    "name": "Emory University",
+    "name_short": "Emory",
     "location": {
-      "city": "City",
-      "state": "State",
-      "region": "Region",
-      "nearest_korean_community": "TBD",
-      "distance_to_korean_community": "TBD",
-      "climate": "TBD"
+      "city": "Atlanta",
+      "state": "Georgia",
+      "region": "South",
+      "nearest_korean_community": "Atlanta Koreatown (Duluth, 25 min)",
+      "distance_to_korean_community": "25 min",
+      "climate": "Mild winters (3-12°C), hot humid summers (22-32°C)"
     },
     "type": "Private Research",
-    "founded": 1900,
-    "website": "https://example.edu"
+    "founded": 1836,
+    "website": "https://www.emory.edu"
   },
   "enrollment": {
-    "total_undergraduate": 5000,
-    "total_graduate": 5000,
-    "international_percentage": 10.0,
-    "korean_student_estimate": 100,
-    "student_faculty_ratio": "10:1"
+    "total_undergraduate": 7000,
+    "total_graduate": 8500,
+    "international_percentage": 17.0,
+    "korean_student_estimate": 180,
+    "student_faculty_ratio": "9:1"
   },
   "admission_stats": {
-    "acceptance_rate": 10.0,
+    "acceptance_rate": 11.4,
     "early_action_rate": null,
-    "early_decision_rate": null,
-    "regular_decision_rate": 10.0,
-    "yield_rate": 50,
-    "total_applicants": 30000,
-    "total_admitted": 3000,
-    "international_applicants": 5000,
-    "international_admitted": 300,
+    "early_decision_rate": 20.5,
+    "regular_decision_rate": 9.0,
+    "yield_rate": 35,
+    "total_applicants": 33000,
+    "total_admitted": 3760,
+    "international_applicants": 6000,
+    "international_admitted": 420,
     "profile_ranges": {
-      "gpa_unweighted": { "25th": 3.8, "median": 3.9, "75th": 4.0 },
-      "sat_total": { "25th": 1400, "median": 1480, "75th": 1550 },
-      "sat_math": { "25th": 700, "median": 750, "75th": 790 },
-      "sat_reading": { "25th": 680, "median": 730, "75th": 770 },
-      "act_composite": { "25th": 31, "median": 33, "75th": 35 }
+      "gpa_unweighted": {
+        "25th": 3.75,
+        "median": 3.88,
+        "75th": 3.97
+      },
+      "sat_total": {
+        "25th": 1430,
+        "median": 1490,
+        "75th": 1540
+      },
+      "sat_math": {
+        "25th": 720,
+        "median": 760,
+        "75th": 790
+      },
+      "sat_reading": {
+        "25th": 700,
+        "median": 730,
+        "75th": 760
+      },
+      "act_composite": {
+        "25th": 32,
+        "median": 34,
+        "75th": 35
+      }
     }
   },
   "application_requirements": {
@@ -47,58 +67,111 @@
     "application_fee": 75,
     "fee_waiver_available": true,
     "required_documents": [
-      { "item": "Transcript", "notes": "Official" },
-      { "item": "Recommendations", "count": 2 },
-      { "item": "Essays", "count": 2 }
+      {
+        "item": "Transcript",
+        "notes": "Official transcripts"
+      },
+      {
+        "item": "Recommendations",
+        "count": 2,
+        "notes": "Two teacher recommendations"
+      },
+      {
+        "item": "Essays",
+        "notes": "Emory-specific essays required"
+      }
     ],
     "test_policy": "Test-optional",
     "english_proficiency": {
       "required_for_international": true,
       "minimum_toefl": 100,
-      "minimum_ielts": 7.0,
+      "minimum_ielts": 7.5,
       "duolingo_accepted": true,
-      "minimum_duolingo": 120,
-      "waiver_conditions": "4+ years English instruction"
+      "minimum_duolingo": 125,
+      "waiver_conditions": "English instruction 4+ years"
     }
   },
   "academic_programs": {
-    "notable_majors": ["Computer Science", "Economics", "Biology"],
-    "unique_programs": ["TBD"],
-    "curriculum_structure": "Core + Major + Electives"
+    "notable_majors": [
+      "Business (Goizueta)",
+      "Biology/Pre-Med",
+      "Nursing",
+      "Public Health",
+      "Economics",
+      "Neuroscience"
+    ],
+    "unique_programs": [
+      "Emory + Oxford College 2+2 pathway",
+      "CDC partnership for public health",
+      "Goizueta Business School BBA",
+      "Strong pre-health advising"
+    ],
+    "curriculum_structure": "General Education Requirements (GERs) + Major"
   },
   "korean_student_specific": {
-    "korean_student_organizations": ["Korean Students Association"],
-    "korean_food_access": "TBD",
-    "korean_church_proximity": "TBD",
+    "korean_student_organizations": [
+      "Korean Student Association",
+      "Emory Asian Student Organization",
+      "Korean Christian Fellowship"
+    ],
+    "korean_food_access": "Excellent - Atlanta/Duluth Koreatown (25 min) has extensive options",
+    "korean_church_proximity": "Many Korean churches in Atlanta metro area",
     "historical_admit_patterns": {
-      "korean_high_schools_commonly_admitted": [],
-      "common_profiles": "TBD"
+      "korean_high_schools_commonly_admitted": [
+        "Seoul International School",
+        "Korea International School",
+        "대원외국어고등학교",
+        "민족사관고등학교"
+      ],
+      "common_profiles": "Pre-health, business-oriented, community-engaged students"
     },
-    "korean_specific_advice": [],
-    "common_korean_applicant_mistakes": []
+    "korean_specific_advice": [
+      "Emory is a pre-med powerhouse - CDC proximity is a unique asset",
+      "Business (Goizueta) is highly competitive and respected",
+      "Atlanta's Korean community is one of the largest in the US - mention this",
+      "Show collaborative spirit - Emory values community over competition",
+      "Oxford College pathway can be strategic for admission"
+    ],
+    "common_korean_applicant_mistakes": [
+      "Applying only because of pre-med without showing genuine interest",
+      "Not considering Oxford College as an entry point",
+      "Essays focused only on academics without community involvement",
+      "Not mentioning Atlanta and its opportunities",
+      "Appearing too focused on prestige rankings"
+    ]
   },
   "cost_and_aid": {
-    "tuition": 60000,
-    "room_and_board": 18000,
-    "total_cost_of_attendance": 82000,
+    "tuition": 60774,
+    "room_and_board": 17496,
+    "total_cost_of_attendance": 83270,
     "financial_aid_for_international": true,
     "need_blind_for_international": false,
-    "average_aid_package": 50000,
-    "percentage_receiving_aid": 50
+    "average_aid_package": 52000,
+    "percentage_receiving_aid": 48
   },
   "campus_life": {
-    "housing_guarantee": "4 years",
-    "popular_dorms": [],
-    "dining_options": "Multiple dining halls",
-    "safety_rating": "Good",
-    "nearby_attractions": "TBD"
+    "housing_guarantee": "2 years guaranteed",
+    "popular_dorms": [
+      "Dobbs Hall",
+      "Turman",
+      "Complex"
+    ],
+    "dining_options": "Multiple dining halls, excellent variety",
+    "safety_rating": "Good - Emory Police, campus escorts",
+    "nearby_attractions": "Downtown Atlanta, Midtown, Decatur, CDC, CNN Center"
   },
   "career_outcomes": {
-    "employment_rate_6_months": 90,
-    "average_starting_salary": 70000,
-    "top_employers": [],
-    "graduate_school_rate": 40,
-    "korean_alumni_network": "TBD"
+    "employment_rate_6_months": 92,
+    "average_starting_salary": 68000,
+    "top_employers": [
+      "Deloitte",
+      "EY",
+      "CDC",
+      "Major hospitals",
+      "Goldman Sachs"
+    ],
+    "graduate_school_rate": 50,
+    "korean_alumni_network": "Strong Emory Korean Alumni in Atlanta and Korea"
   },
-  "last_updated": "2024-12-01"
+  "last_updated": "2025-01-05"
 }

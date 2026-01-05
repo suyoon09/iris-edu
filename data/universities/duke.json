@@ -1,104 +1,185 @@
 {
   "university_id": "duke",
   "basic_info": {
-    "name": "University Name",
-    "name_short": "Short",
+    "name": "Duke University",
+    "name_short": "Duke",
     "location": {
-      "city": "City",
-      "state": "State",
-      "region": "Region",
-      "nearest_korean_community": "TBD",
-      "distance_to_korean_community": "TBD",
-      "climate": "TBD"
+      "city": "Durham",
+      "state": "North Carolina",
+      "region": "South",
+      "nearest_korean_community": "H Mart Cary (25 min)",
+      "distance_to_korean_community": "25 min",
+      "climate": "Mild winters (1-10°C), hot humid summers (22-31°C)"
     },
     "type": "Private Research",
-    "founded": 1900,
-    "website": "https://example.edu"
+    "founded": 1838,
+    "website": "https://duke.edu"
   },
   "enrollment": {
-    "total_undergraduate": 5000,
-    "total_graduate": 5000,
-    "international_percentage": 10.0,
-    "korean_student_estimate": 100,
-    "student_faculty_ratio": "10:1"
+    "total_undergraduate": 6800,
+    "total_graduate": 9800,
+    "international_percentage": 11.0,
+    "korean_student_estimate": 140,
+    "student_faculty_ratio": "6:1"
   },
   "admission_stats": {
-    "acceptance_rate": 10.0,
+    "acceptance_rate": 5.9,
     "early_action_rate": null,
-    "early_decision_rate": null,
-    "regular_decision_rate": 10.0,
-    "yield_rate": 50,
-    "total_applicants": 30000,
-    "total_admitted": 3000,
-    "international_applicants": 5000,
-    "international_admitted": 300,
+    "early_decision_rate": 16.5,
+    "regular_decision_rate": 4.4,
+    "yield_rate": 56,
+    "total_applicants": 52631,
+    "total_admitted": 3105,
+    "international_applicants": 7200,
+    "international_admitted": 385,
     "profile_ranges": {
-      "gpa_unweighted": { "25th": 3.8, "median": 3.9, "75th": 4.0 },
-      "sat_total": { "25th": 1400, "median": 1480, "75th": 1550 },
-      "sat_math": { "25th": 700, "median": 750, "75th": 790 },
-      "sat_reading": { "25th": 680, "median": 730, "75th": 770 },
-      "act_composite": { "25th": 31, "median": 33, "75th": 35 }
+      "gpa_unweighted": {
+        "25th": 3.91,
+        "median": 3.97,
+        "75th": 4.0
+      },
+      "sat_total": {
+        "25th": 1490,
+        "median": 1540,
+        "75th": 1580
+      },
+      "sat_math": {
+        "25th": 760,
+        "median": 790,
+        "75th": 800
+      },
+      "sat_reading": {
+        "25th": 720,
+        "median": 750,
+        "75th": 780
+      },
+      "act_composite": {
+        "25th": 33,
+        "median": 35,
+        "75th": 36
+      }
     }
   },
   "application_requirements": {
     "deadline_early": "November 1",
-    "deadline_regular": "January 1",
+    "deadline_regular": "January 4",
     "application_platform": "Common App",
-    "application_fee": 75,
+    "application_fee": 85,
     "fee_waiver_available": true,
     "required_documents": [
-      { "item": "Transcript", "notes": "Official" },
-      { "item": "Recommendations", "count": 2 },
-      { "item": "Essays", "count": 2 }
+      {
+        "item": "Transcript",
+        "notes": "Official transcripts"
+      },
+      {
+        "item": "Recommendations",
+        "count": 2,
+        "notes": "Two teacher recommendations"
+      },
+      {
+        "item": "Counselor Report",
+        "required": true
+      },
+      {
+        "item": "Essays",
+        "notes": "Duke-specific essay required"
+      },
+      {
+        "item": "Optional arts portfolio",
+        "required": false
+      }
     ],
-    "test_policy": "Test-optional",
+    "test_policy": "Test-optional through 2026",
     "english_proficiency": {
       "required_for_international": true,
       "minimum_toefl": 100,
       "minimum_ielts": 7.0,
       "duolingo_accepted": true,
-      "minimum_duolingo": 120,
+      "minimum_duolingo": 125,
       "waiver_conditions": "4+ years English instruction"
     }
   },
   "academic_programs": {
-    "notable_majors": ["Computer Science", "Economics", "Biology"],
-    "unique_programs": ["TBD"],
-    "curriculum_structure": "Core + Major + Electives"
+    "notable_majors": [
+      "Public Policy",
+      "Economics",
+      "Computer Science",
+      "Biomedical Engineering",
+      "Biology",
+      "Political Science"
+    ],
+    "unique_programs": [
+      "Duke Engage (summer service)",
+      "Bass Connections (interdisciplinary research)",
+      "Robertson Scholars Program (with UNC)",
+      "Focus Programs for freshmen"
+    ],
+    "curriculum_structure": "Trinity (Arts & Sciences) or Pratt (Engineering) + Distribution requirements"
   },
   "korean_student_specific": {
-    "korean_student_organizations": ["Korean Students Association"],
-    "korean_food_access": "TBD",
-    "korean_church_proximity": "TBD",
+    "korean_student_organizations": [
+      "Korean Students Association (KSA)",
+      "Asian Students Association",
+      "Duke Korean American Students Association"
+    ],
+    "korean_food_access": "H Mart in Cary (25 min), Korean restaurants in Raleigh",
+    "korean_church_proximity": "Durham Korean Church (10 min), multiple options in Raleigh",
     "historical_admit_patterns": {
-      "korean_high_schools_commonly_admitted": [],
-      "common_profiles": "TBD"
+      "korean_high_schools_commonly_admitted": [
+        "Seoul International School",
+        "Korea International School",
+        "민족사관고등학교",
+        "대원외국어고등학교",
+        "외대부속외국어고등학교"
+      ],
+      "common_profiles": "Well-rounded with strong academics, leadership, and community involvement"
     },
-    "korean_specific_advice": [],
-    "common_korean_applicant_mistakes": []
+    "korean_specific_advice": [
+      "Duke values 'passionate people, not perfect applicants' - show depth of passion",
+      "Basketball and school spirit are HUGE - show you'll embrace Duke culture",
+      "Duke Engage shows commitment to service - reference service experience",
+      "Research opportunities are abundant - mention specific interests",
+      "'Why Duke' essay is critical - be very specific about programs/professors"
+    ],
+    "common_korean_applicant_mistakes": [
+      "Not showing enthusiasm for Duke's culture and traditions",
+      "Essays that focus only on academics without showing personality",
+      "Not demonstrating genuine interest in the South/Durham community",
+      "Overlooking the importance of collaborative, team-oriented work",
+      "Generic 'Why Duke' essays that could apply to any school"
+    ]
   },
   "cost_and_aid": {
-    "tuition": 60000,
-    "room_and_board": 18000,
-    "total_cost_of_attendance": 82000,
+    "tuition": 65244,
+    "room_and_board": 19802,
+    "total_cost_of_attendance": 90046,
     "financial_aid_for_international": true,
     "need_blind_for_international": false,
-    "average_aid_package": 50000,
+    "average_aid_package": 60000,
     "percentage_receiving_aid": 50
   },
   "campus_life": {
-    "housing_guarantee": "4 years",
-    "popular_dorms": [],
-    "dining_options": "Multiple dining halls",
-    "safety_rating": "Good",
-    "nearby_attractions": "TBD"
+    "housing_guarantee": "3 years (freshman live on East Campus)",
+    "popular_dorms": [
+      "East Campus (freshmen)",
+      "West Campus Gothic dorms"
+    ],
+    "dining_options": "Multiple dining halls, food trucks, Gothic wonderland",
+    "safety_rating": "Good - Duke Police, SafeRide",
+    "nearby_attractions": "Research Triangle Park, Raleigh-Durham, Duke Gardens, Carolina beaches"
   },
   "career_outcomes": {
-    "employment_rate_6_months": 90,
-    "average_starting_salary": 70000,
-    "top_employers": [],
+    "employment_rate_6_months": 95,
+    "average_starting_salary": 88000,
+    "top_employers": [
+      "Goldman Sachs",
+      "McKinsey",
+      "Google",
+      "Microsoft",
+      "Deloitte"
+    ],
     "graduate_school_rate": 40,
-    "korean_alumni_network": "TBD"
+    "korean_alumni_network": "Strong Duke Korean Alumni Association"
   },
-  "last_updated": "2024-12-01"
+  "last_updated": "2025-01-05"
 }

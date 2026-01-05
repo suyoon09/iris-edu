@@ -1,104 +1,181 @@
 {
   "university_id": "vanderbilt",
   "basic_info": {
-    "name": "University Name",
-    "name_short": "Short",
+    "name": "Vanderbilt University",
+    "name_short": "Vanderbilt",
     "location": {
-      "city": "City",
-      "state": "State",
-      "region": "Region",
-      "nearest_korean_community": "TBD",
-      "distance_to_korean_community": "TBD",
-      "climate": "TBD"
+      "city": "Nashville",
+      "state": "Tennessee",
+      "region": "South",
+      "nearest_korean_community": "Nashville has small but growing Korean community",
+      "distance_to_korean_community": "10-15 min to Korean restaurants",
+      "climate": "Mild winters (0-10°C), hot humid summers (22-32°C)"
     },
     "type": "Private Research",
-    "founded": 1900,
-    "website": "https://example.edu"
+    "founded": 1873,
+    "website": "https://www.vanderbilt.edu"
   },
   "enrollment": {
-    "total_undergraduate": 5000,
-    "total_graduate": 5000,
-    "international_percentage": 10.0,
+    "total_undergraduate": 7200,
+    "total_graduate": 6500,
+    "international_percentage": 9.5,
     "korean_student_estimate": 100,
-    "student_faculty_ratio": "10:1"
+    "student_faculty_ratio": "7:1"
   },
   "admission_stats": {
-    "acceptance_rate": 10.0,
+    "acceptance_rate": 5.6,
     "early_action_rate": null,
-    "early_decision_rate": null,
-    "regular_decision_rate": 10.0,
+    "early_decision_rate": 17.0,
+    "regular_decision_rate": 4.0,
     "yield_rate": 50,
-    "total_applicants": 30000,
-    "total_admitted": 3000,
-    "international_applicants": 5000,
-    "international_admitted": 300,
+    "total_applicants": 47000,
+    "total_admitted": 2632,
+    "international_applicants": 5500,
+    "international_admitted": 280,
     "profile_ranges": {
-      "gpa_unweighted": { "25th": 3.8, "median": 3.9, "75th": 4.0 },
-      "sat_total": { "25th": 1400, "median": 1480, "75th": 1550 },
-      "sat_math": { "25th": 700, "median": 750, "75th": 790 },
-      "sat_reading": { "25th": 680, "median": 730, "75th": 770 },
-      "act_composite": { "25th": 31, "median": 33, "75th": 35 }
+      "gpa_unweighted": {
+        "25th": 3.86,
+        "median": 3.94,
+        "75th": 4.0
+      },
+      "sat_total": {
+        "25th": 1490,
+        "median": 1540,
+        "75th": 1580
+      },
+      "sat_math": {
+        "25th": 750,
+        "median": 780,
+        "75th": 800
+      },
+      "sat_reading": {
+        "25th": 730,
+        "median": 760,
+        "75th": 780
+      },
+      "act_composite": {
+        "25th": 33,
+        "median": 35,
+        "75th": 36
+      }
     }
   },
   "application_requirements": {
     "deadline_early": "November 1",
     "deadline_regular": "January 1",
     "application_platform": "Common App",
-    "application_fee": 75,
+    "application_fee": 50,
     "fee_waiver_available": true,
     "required_documents": [
-      { "item": "Transcript", "notes": "Official" },
-      { "item": "Recommendations", "count": 2 },
-      { "item": "Essays", "count": 2 }
+      {
+        "item": "Transcript",
+        "notes": "Official transcripts"
+      },
+      {
+        "item": "Recommendations",
+        "count": 2,
+        "notes": "Two teacher recommendations"
+      },
+      {
+        "item": "Counselor Report",
+        "required": true
+      },
+      {
+        "item": "Essays",
+        "notes": "Vanderbilt-specific essay required"
+      }
     ],
-    "test_policy": "Test-optional",
+    "test_policy": "Test-optional through 2025",
     "english_proficiency": {
       "required_for_international": true,
       "minimum_toefl": 100,
       "minimum_ielts": 7.0,
       "duolingo_accepted": true,
-      "minimum_duolingo": 120,
-      "waiver_conditions": "4+ years English instruction"
+      "minimum_duolingo": 125,
+      "waiver_conditions": "English instruction throughout high school"
     }
   },
   "academic_programs": {
-    "notable_majors": ["Computer Science", "Economics", "Biology"],
-    "unique_programs": ["TBD"],
-    "curriculum_structure": "Core + Major + Electives"
+    "notable_majors": [
+      "Economics",
+      "Human and Organizational Development",
+      "Medicine, Health, and Society",
+      "Computer Science",
+      "Neuroscience",
+      "Political Science"
+    ],
+    "unique_programs": [
+      "Peabody College of Education (top-ranked)",
+      "Blair School of Music",
+      "The Ingram Scholarship (service + academics)",
+      "Immersion Vanderbilt"
+    ],
+    "curriculum_structure": "Core requirements (AXLE) + Major + Exploration"
   },
   "korean_student_specific": {
-    "korean_student_organizations": ["Korean Students Association"],
-    "korean_food_access": "TBD",
-    "korean_church_proximity": "TBD",
+    "korean_student_organizations": [
+      "Korean Students Association (KSA)",
+      "Vanderbilt Asian American Association",
+      "Asian Business Student Alliance"
+    ],
+    "korean_food_access": "Korean restaurants in Nashville (15-20 min), limited Korean grocery",
+    "korean_church_proximity": "Nashville Korean Church (20 min)",
     "historical_admit_patterns": {
-      "korean_high_schools_commonly_admitted": [],
-      "common_profiles": "TBD"
+      "korean_high_schools_commonly_admitted": [
+        "Seoul International School",
+        "Korea International School",
+        "민족사관고등학교",
+        "대원외국어고등학교"
+      ],
+      "common_profiles": "Well-rounded, socially engaged, service-oriented students"
     },
-    "korean_specific_advice": [],
-    "common_korean_applicant_mistakes": []
+    "korean_specific_advice": [
+      "Vanderbilt values 'nice' students - collaborative, friendly atmosphere",
+      "Nashville location is a huge draw - mention your interest in the city",
+      "Service and community involvement are highly valued",
+      "Show you can handle Southern culture as an international student",
+      "The school spirit (especially for SEC sports) matters - embrace it"
+    ],
+    "common_korean_applicant_mistakes": [
+      "Not appreciating or mentioning Nashville as a location",
+      "Coming across as too competitive or cutthroat",
+      "Not demonstrating community involvement and service",
+      "Ignoring Vanderbilt's Southern identity in essays",
+      "Generic essays that don't show genuine interest in campus culture"
+    ]
   },
   "cost_and_aid": {
-    "tuition": 60000,
-    "room_and_board": 18000,
-    "total_cost_of_attendance": 82000,
+    "tuition": 62194,
+    "room_and_board": 19832,
+    "total_cost_of_attendance": 87026,
     "financial_aid_for_international": true,
     "need_blind_for_international": false,
-    "average_aid_package": 50000,
-    "percentage_receiving_aid": 50
+    "average_aid_package": 56000,
+    "percentage_receiving_aid": 54
   },
   "campus_life": {
-    "housing_guarantee": "4 years",
-    "popular_dorms": [],
-    "dining_options": "Multiple dining halls",
-    "safety_rating": "Good",
-    "nearby_attractions": "TBD"
+    "housing_guarantee": "4 years (live on campus requirement for freshmen)",
+    "popular_dorms": [
+      "The Commons (freshmen)",
+      "Towers",
+      "Branscomb"
+    ],
+    "dining_options": "Multiple dining halls, excellent food variety",
+    "safety_rating": "Good - VUPD, campus safety escorts",
+    "nearby_attractions": "Broadway (downtown Nashville), music scene, Centennial Park, Parthenon"
   },
   "career_outcomes": {
-    "employment_rate_6_months": 90,
-    "average_starting_salary": 70000,
-    "top_employers": [],
-    "graduate_school_rate": 40,
-    "korean_alumni_network": "TBD"
+    "employment_rate_6_months": 93,
+    "average_starting_salary": 75000,
+    "top_employers": [
+      "Deloitte",
+      "EY",
+      "Goldman Sachs",
+      "McKinsey",
+      "Healthcare companies"
+    ],
+    "graduate_school_rate": 45,
+    "korean_alumni_network": "Growing Vanderbilt Korean alumni network"
   },
-  "last_updated": "2024-12-01"
+  "last_updated": "2025-01-05"
 }

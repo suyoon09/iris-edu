@@ -1,104 +1,186 @@
 {
   "university_id": "georgetown",
   "basic_info": {
-    "name": "University Name",
-    "name_short": "Short",
+    "name": "Georgetown University",
+    "name_short": "Georgetown",
     "location": {
-      "city": "City",
-      "state": "State",
-      "region": "Region",
-      "nearest_korean_community": "TBD",
-      "distance_to_korean_community": "TBD",
-      "climate": "TBD"
+      "city": "Washington",
+      "state": "D.C.",
+      "region": "Mid-Atlantic",
+      "nearest_korean_community": "Annandale Koreatown (20 min)",
+      "distance_to_korean_community": "20 min",
+      "climate": "Four seasons, cold winters (-2°C to 7°C), hot humid summers (22-32°C)"
     },
-    "type": "Private Research",
-    "founded": 1900,
-    "website": "https://example.edu"
+    "type": "Private Research (Jesuit)",
+    "founded": 1789,
+    "website": "https://www.georgetown.edu"
   },
   "enrollment": {
-    "total_undergraduate": 5000,
-    "total_graduate": 5000,
-    "international_percentage": 10.0,
-    "korean_student_estimate": 100,
-    "student_faculty_ratio": "10:1"
+    "total_undergraduate": 7500,
+    "total_graduate": 12000,
+    "international_percentage": 13.5,
+    "korean_student_estimate": 160,
+    "student_faculty_ratio": "11:1"
   },
   "admission_stats": {
-    "acceptance_rate": 10.0,
-    "early_action_rate": null,
+    "acceptance_rate": 12.0,
+    "early_action_rate": 10.5,
     "early_decision_rate": null,
-    "regular_decision_rate": 10.0,
-    "yield_rate": 50,
-    "total_applicants": 30000,
-    "total_admitted": 3000,
-    "international_applicants": 5000,
-    "international_admitted": 300,
+    "regular_decision_rate": 13.0,
+    "yield_rate": 48,
+    "total_applicants": 26856,
+    "total_admitted": 3220,
+    "international_applicants": 4800,
+    "international_admitted": 380,
     "profile_ranges": {
-      "gpa_unweighted": { "25th": 3.8, "median": 3.9, "75th": 4.0 },
-      "sat_total": { "25th": 1400, "median": 1480, "75th": 1550 },
-      "sat_math": { "25th": 700, "median": 750, "75th": 790 },
-      "sat_reading": { "25th": 680, "median": 730, "75th": 770 },
-      "act_composite": { "25th": 31, "median": 33, "75th": 35 }
+      "gpa_unweighted": {
+        "25th": 3.8,
+        "median": 3.92,
+        "75th": 4.0
+      },
+      "sat_total": {
+        "25th": 1420,
+        "median": 1480,
+        "75th": 1540
+      },
+      "sat_math": {
+        "25th": 700,
+        "median": 740,
+        "75th": 780
+      },
+      "sat_reading": {
+        "25th": 710,
+        "median": 750,
+        "75th": 780
+      },
+      "act_composite": {
+        "25th": 32,
+        "median": 34,
+        "75th": 35
+      }
     }
   },
   "application_requirements": {
-    "deadline_early": "November 1",
-    "deadline_regular": "January 1",
-    "application_platform": "Common App",
+    "deadline_early": "November 1 (REA)",
+    "deadline_regular": "January 10",
+    "application_platform": "Georgetown's own application (NOT Common App)",
     "application_fee": 75,
     "fee_waiver_available": true,
     "required_documents": [
-      { "item": "Transcript", "notes": "Official" },
-      { "item": "Recommendations", "count": 2 },
-      { "item": "Essays", "count": 2 }
+      {
+        "item": "Transcript",
+        "notes": "Official transcripts"
+      },
+      {
+        "item": "Recommendations",
+        "count": 2,
+        "notes": "Two teacher recommendations"
+      },
+      {
+        "item": "Counselor Report",
+        "required": true
+      },
+      {
+        "item": "Essays",
+        "notes": "Multiple Georgetown-specific essays"
+      },
+      {
+        "item": "Interview",
+        "notes": "Alumni interview required"
+      }
     ],
-    "test_policy": "Test-optional",
+    "test_policy": "Test-required (SAT or ACT mandatory)",
     "english_proficiency": {
       "required_for_international": true,
       "minimum_toefl": 100,
-      "minimum_ielts": 7.0,
-      "duolingo_accepted": true,
-      "minimum_duolingo": 120,
-      "waiver_conditions": "4+ years English instruction"
+      "minimum_ielts": 7.5,
+      "duolingo_accepted": false,
+      "minimum_duolingo": null,
+      "waiver_conditions": "Native English speaker"
     }
   },
   "academic_programs": {
-    "notable_majors": ["Computer Science", "Economics", "Biology"],
-    "unique_programs": ["TBD"],
-    "curriculum_structure": "Core + Major + Electives"
+    "notable_majors": [
+      "International Relations (SFS)",
+      "Government",
+      "Business (McDonough)",
+      "Foreign Service",
+      "Pre-Law",
+      "Economics"
+    ],
+    "unique_programs": [
+      "School of Foreign Service (SFS) - world-renowned",
+      "McDonough School of Business",
+      "Georgetown Law access",
+      "DC internship opportunities"
+    ],
+    "curriculum_structure": "Core curriculum (varies by school) + Major"
   },
   "korean_student_specific": {
-    "korean_student_organizations": ["Korean Students Association"],
-    "korean_food_access": "TBD",
-    "korean_church_proximity": "TBD",
+    "korean_student_organizations": [
+      "Korean Students Association",
+      "Georgetown Asia Society",
+      "Georgetown Asian-American Student Association"
+    ],
+    "korean_food_access": "Excellent - Annandale Koreatown (20 min) with H Mart and many restaurants",
+    "korean_church_proximity": "Multiple Korean churches in DC/Virginia area",
     "historical_admit_patterns": {
-      "korean_high_schools_commonly_admitted": [],
-      "common_profiles": "TBD"
+      "korean_high_schools_commonly_admitted": [
+        "Seoul International School",
+        "Korea International School",
+        "민족사관고등학교",
+        "대원외국어고등학교",
+        "외대부속외국어고등학교"
+      ],
+      "common_profiles": "Policy-interested, globally-minded, strong communicators"
     },
-    "korean_specific_advice": [],
-    "common_korean_applicant_mistakes": []
+    "korean_specific_advice": [
+      "Georgetown uses its OWN application - don't miss this!",
+      "SFS is extremely competitive but perfect for diplomacy/IR interests",
+      "Interview is REQUIRED - prepare extensively",
+      "Jesuit identity matters - address values and service",
+      "DC location is a major asset - mention internship interests"
+    ],
+    "common_korean_applicant_mistakes": [
+      "Using Common App instead of Georgetown's own application",
+      "Underestimating the required interview",
+      "Not addressing the Jesuit mission and values",
+      "Essays that don't show DC/policy/global interests",
+      "Not submitting test scores (tests are required)"
+    ]
   },
   "cost_and_aid": {
-    "tuition": 60000,
-    "room_and_board": 18000,
-    "total_cost_of_attendance": 82000,
+    "tuition": 63200,
+    "room_and_board": 19310,
+    "total_cost_of_attendance": 87510,
     "financial_aid_for_international": true,
     "need_blind_for_international": false,
-    "average_aid_package": 50000,
-    "percentage_receiving_aid": 50
+    "average_aid_package": 55000,
+    "percentage_receiving_aid": 44
   },
   "campus_life": {
-    "housing_guarantee": "4 years",
-    "popular_dorms": [],
-    "dining_options": "Multiple dining halls",
-    "safety_rating": "Good",
-    "nearby_attractions": "TBD"
+    "housing_guarantee": "3 years (freshmen required, then lottery)",
+    "popular_dorms": [
+      "New South",
+      "Village C",
+      "McCarthy"
+    ],
+    "dining_options": "Leo's, The Corp, Georgetown food scene",
+    "safety_rating": "Good - Georgetown neighborhood, GUPD",
+    "nearby_attractions": "White House, Capitol Hill, Smithsonian museums, Georgetown shops"
   },
   "career_outcomes": {
-    "employment_rate_6_months": 90,
-    "average_starting_salary": 70000,
-    "top_employers": [],
-    "graduate_school_rate": 40,
-    "korean_alumni_network": "TBD"
+    "employment_rate_6_months": 93,
+    "average_starting_salary": 72000,
+    "top_employers": [
+      "State Department",
+      "World Bank",
+      "McKinsey",
+      "Deloitte",
+      "Goldman Sachs"
+    ],
+    "graduate_school_rate": 48,
+    "korean_alumni_network": "Strong Georgetown Korean Alumni in diplomacy and business"
   },
-  "last_updated": "2024-12-01"
+  "last_updated": "2025-01-05"
 }

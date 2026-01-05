@@ -1,104 +1,179 @@
 {
   "university_id": "rice",
   "basic_info": {
-    "name": "University Name",
-    "name_short": "Short",
+    "name": "Rice University",
+    "name_short": "Rice",
     "location": {
-      "city": "City",
-      "state": "State",
-      "region": "Region",
-      "nearest_korean_community": "TBD",
-      "distance_to_korean_community": "TBD",
-      "climate": "TBD"
+      "city": "Houston",
+      "state": "Texas",
+      "region": "Southwest",
+      "nearest_korean_community": "Houston Koreatown (15 min)",
+      "distance_to_korean_community": "15 min",
+      "climate": "Subtropical, mild winters (5-17°C), hot humid summers (25-35°C)"
     },
     "type": "Private Research",
-    "founded": 1900,
-    "website": "https://example.edu"
+    "founded": 1912,
+    "website": "https://www.rice.edu"
   },
   "enrollment": {
-    "total_undergraduate": 5000,
-    "total_graduate": 5000,
-    "international_percentage": 10.0,
-    "korean_student_estimate": 100,
-    "student_faculty_ratio": "10:1"
+    "total_undergraduate": 4500,
+    "total_graduate": 4000,
+    "international_percentage": 13.0,
+    "korean_student_estimate": 90,
+    "student_faculty_ratio": "6:1"
   },
   "admission_stats": {
-    "acceptance_rate": 10.0,
+    "acceptance_rate": 7.7,
     "early_action_rate": null,
-    "early_decision_rate": null,
-    "regular_decision_rate": 10.0,
-    "yield_rate": 50,
-    "total_applicants": 30000,
-    "total_admitted": 3000,
-    "international_applicants": 5000,
-    "international_admitted": 300,
+    "early_decision_rate": 15.8,
+    "regular_decision_rate": 5.5,
+    "yield_rate": 47,
+    "total_applicants": 31424,
+    "total_admitted": 2420,
+    "international_applicants": 4500,
+    "international_admitted": 310,
     "profile_ranges": {
-      "gpa_unweighted": { "25th": 3.8, "median": 3.9, "75th": 4.0 },
-      "sat_total": { "25th": 1400, "median": 1480, "75th": 1550 },
-      "sat_math": { "25th": 700, "median": 750, "75th": 790 },
-      "sat_reading": { "25th": 680, "median": 730, "75th": 770 },
-      "act_composite": { "25th": 31, "median": 33, "75th": 35 }
+      "gpa_unweighted": {
+        "25th": 3.9,
+        "median": 3.97,
+        "75th": 4.0
+      },
+      "sat_total": {
+        "25th": 1500,
+        "median": 1550,
+        "75th": 1580
+      },
+      "sat_math": {
+        "25th": 770,
+        "median": 790,
+        "75th": 800
+      },
+      "sat_reading": {
+        "25th": 720,
+        "median": 750,
+        "75th": 780
+      },
+      "act_composite": {
+        "25th": 34,
+        "median": 35,
+        "75th": 36
+      }
     }
   },
   "application_requirements": {
     "deadline_early": "November 1",
-    "deadline_regular": "January 1",
-    "application_platform": "Common App",
+    "deadline_regular": "January 4",
+    "application_platform": "Common App or Coalition App",
     "application_fee": 75,
     "fee_waiver_available": true,
     "required_documents": [
-      { "item": "Transcript", "notes": "Official" },
-      { "item": "Recommendations", "count": 2 },
-      { "item": "Essays", "count": 2 }
+      {
+        "item": "Transcript",
+        "notes": "Official transcripts"
+      },
+      {
+        "item": "Recommendations",
+        "count": 2,
+        "notes": "One counselor, one teacher"
+      },
+      {
+        "item": "Essays",
+        "notes": "Rice-specific essays required"
+      },
+      {
+        "item": "Interview",
+        "notes": "Optional but recommended"
+      }
     ],
-    "test_policy": "Test-optional",
+    "test_policy": "Test-flexible (SAT/ACT/AP/IB accepted)",
     "english_proficiency": {
       "required_for_international": true,
       "minimum_toefl": 100,
       "minimum_ielts": 7.0,
       "duolingo_accepted": true,
-      "minimum_duolingo": 120,
-      "waiver_conditions": "4+ years English instruction"
+      "minimum_duolingo": 125,
+      "waiver_conditions": "English as primary language"
     }
   },
   "academic_programs": {
-    "notable_majors": ["Computer Science", "Economics", "Biology"],
-    "unique_programs": ["TBD"],
-    "curriculum_structure": "Core + Major + Electives"
+    "notable_majors": [
+      "Computer Science",
+      "Biomedical Engineering",
+      "Economics",
+      "Mechanical Engineering",
+      "Cognitive Sciences",
+      "Political Science"
+    ],
+    "unique_programs": [
+      "Residential College System (11 colleges)",
+      "Rice Investment Fund",
+      "Rice 360° Institute for Global Health",
+      "Rice Space Institute"
+    ],
+    "curriculum_structure": "Distribution requirements + Major, flexible curriculum"
   },
   "korean_student_specific": {
-    "korean_student_organizations": ["Korean Students Association"],
-    "korean_food_access": "TBD",
-    "korean_church_proximity": "TBD",
+    "korean_student_organizations": [
+      "Korean Student Association (KSA)",
+      "Asian-American Studies (AAAS)",
+      "Rice Asian Business Association"
+    ],
+    "korean_food_access": "Excellent - Houston Koreatown (H Mart, 99 Ranch, Korean restaurants) 15 min",
+    "korean_church_proximity": "Multiple Korean churches within 15-20 min",
     "historical_admit_patterns": {
-      "korean_high_schools_commonly_admitted": [],
-      "common_profiles": "TBD"
+      "korean_high_schools_commonly_admitted": [
+        "Seoul International School",
+        "Korea International School",
+        "민족사관고등학교",
+        "대원외국어고등학교"
+      ],
+      "common_profiles": "STEM-strong with quirky/fun personality, collaborative spirit"
     },
-    "korean_specific_advice": [],
-    "common_korean_applicant_mistakes": []
+    "korean_specific_advice": [
+      "Residential College system is CENTRAL - show you'll be an active member",
+      "Rice values unconventional thinking and humor - let personality shine",
+      "The 'Why Rice' essay should mention specific colleges and traditions",
+      "Beer Bike, O-Week, and college culture matter - research them",
+      "Houston's diversity and Korean community are assets to mention"
+    ],
+    "common_korean_applicant_mistakes": [
+      "Too serious/formal tone - Rice loves quirky and fun",
+      "Not understanding the Residential College system",
+      "Focusing only on academics without showing community involvement",
+      "Generic essays that don't show Rice-specific knowledge",
+      "Not mentioning Houston as a benefit"
+    ]
   },
   "cost_and_aid": {
-    "tuition": 60000,
-    "room_and_board": 18000,
-    "total_cost_of_attendance": 82000,
+    "tuition": 58128,
+    "room_and_board": 17450,
+    "total_cost_of_attendance": 80578,
     "financial_aid_for_international": true,
     "need_blind_for_international": false,
     "average_aid_package": 50000,
-    "percentage_receiving_aid": 50
+    "percentage_receiving_aid": 47
   },
   "campus_life": {
-    "housing_guarantee": "4 years",
-    "popular_dorms": [],
-    "dining_options": "Multiple dining halls",
-    "safety_rating": "Good",
-    "nearby_attractions": "TBD"
+    "housing_guarantee": "4 years within Residential Colleges",
+    "popular_dorms": [
+      "All 11 Residential Colleges"
+    ],
+    "dining_options": "College serveries, excellent food reputation",
+    "safety_rating": "Excellent - small campus, safe neighborhood",
+    "nearby_attractions": "Houston Museum District, Space Center Houston, Galleria, excellent food scene"
   },
   "career_outcomes": {
-    "employment_rate_6_months": 90,
-    "average_starting_salary": 70000,
-    "top_employers": [],
-    "graduate_school_rate": 40,
-    "korean_alumni_network": "TBD"
+    "employment_rate_6_months": 94,
+    "average_starting_salary": 85000,
+    "top_employers": [
+      "ExxonMobil",
+      "NASA",
+      "Google",
+      "Goldman Sachs",
+      "McKinsey"
+    ],
+    "graduate_school_rate": 38,
+    "korean_alumni_network": "Active Rice Korean Alumni network in Houston and globally"
   },
-  "last_updated": "2024-12-01"
+  "last_updated": "2025-01-05"
 }

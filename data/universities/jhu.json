@@ -1,104 +1,185 @@
 {
   "university_id": "jhu",
   "basic_info": {
-    "name": "University Name",
-    "name_short": "Short",
+    "name": "Johns Hopkins University",
+    "name_short": "JHU",
     "location": {
-      "city": "City",
-      "state": "State",
-      "region": "Region",
-      "nearest_korean_community": "TBD",
-      "distance_to_korean_community": "TBD",
-      "climate": "TBD"
+      "city": "Baltimore",
+      "state": "Maryland",
+      "region": "Mid-Atlantic",
+      "nearest_korean_community": "Baltimore Korean community, DC Koreatown (45 min)",
+      "distance_to_korean_community": "30 min to local, 45 min to DC",
+      "climate": "Four seasons, cold winters (-2°C to 7°C), hot humid summers (22-31°C)"
     },
     "type": "Private Research",
-    "founded": 1900,
-    "website": "https://example.edu"
+    "founded": 1876,
+    "website": "https://www.jhu.edu"
   },
   "enrollment": {
-    "total_undergraduate": 5000,
-    "total_graduate": 5000,
-    "international_percentage": 10.0,
-    "korean_student_estimate": 100,
-    "student_faculty_ratio": "10:1"
+    "total_undergraduate": 6100,
+    "total_graduate": 18000,
+    "international_percentage": 12.5,
+    "korean_student_estimate": 150,
+    "student_faculty_ratio": "7:1"
   },
   "admission_stats": {
-    "acceptance_rate": 10.0,
+    "acceptance_rate": 6.5,
     "early_action_rate": null,
-    "early_decision_rate": null,
-    "regular_decision_rate": 10.0,
-    "yield_rate": 50,
-    "total_applicants": 30000,
-    "total_admitted": 3000,
-    "international_applicants": 5000,
-    "international_admitted": 300,
+    "early_decision_rate": 20.6,
+    "regular_decision_rate": 4.2,
+    "yield_rate": 49,
+    "total_applicants": 37150,
+    "total_admitted": 2415,
+    "international_applicants": 5200,
+    "international_admitted": 350,
     "profile_ranges": {
-      "gpa_unweighted": { "25th": 3.8, "median": 3.9, "75th": 4.0 },
-      "sat_total": { "25th": 1400, "median": 1480, "75th": 1550 },
-      "sat_math": { "25th": 700, "median": 750, "75th": 790 },
-      "sat_reading": { "25th": 680, "median": 730, "75th": 770 },
-      "act_composite": { "25th": 31, "median": 33, "75th": 35 }
+      "gpa_unweighted": {
+        "25th": 3.88,
+        "median": 3.96,
+        "75th": 4.0
+      },
+      "sat_total": {
+        "25th": 1510,
+        "median": 1550,
+        "75th": 1580
+      },
+      "sat_math": {
+        "25th": 770,
+        "median": 790,
+        "75th": 800
+      },
+      "sat_reading": {
+        "25th": 730,
+        "median": 760,
+        "75th": 780
+      },
+      "act_composite": {
+        "25th": 34,
+        "median": 35,
+        "75th": 36
+      }
     }
   },
   "application_requirements": {
     "deadline_early": "November 1",
-    "deadline_regular": "January 1",
-    "application_platform": "Common App",
-    "application_fee": 75,
+    "deadline_regular": "January 3",
+    "application_platform": "Common App or Coalition App",
+    "application_fee": 70,
     "fee_waiver_available": true,
     "required_documents": [
-      { "item": "Transcript", "notes": "Official" },
-      { "item": "Recommendations", "count": 2 },
-      { "item": "Essays", "count": 2 }
+      {
+        "item": "Transcript",
+        "notes": "Official transcripts"
+      },
+      {
+        "item": "Recommendations",
+        "count": 2,
+        "notes": "Two teacher recommendations"
+      },
+      {
+        "item": "Counselor Report",
+        "required": true
+      },
+      {
+        "item": "Essays",
+        "notes": "Hopkins-specific essays"
+      },
+      {
+        "item": "Interview",
+        "notes": "Optional - alumni interviews where available"
+      }
     ],
-    "test_policy": "Test-optional",
+    "test_policy": "Test-optional through 2025",
     "english_proficiency": {
       "required_for_international": true,
       "minimum_toefl": 100,
       "minimum_ielts": 7.0,
       "duolingo_accepted": true,
-      "minimum_duolingo": 120,
-      "waiver_conditions": "4+ years English instruction"
+      "minimum_duolingo": 125,
+      "waiver_conditions": "English as primary language of instruction"
     }
   },
   "academic_programs": {
-    "notable_majors": ["Computer Science", "Economics", "Biology"],
-    "unique_programs": ["TBD"],
-    "curriculum_structure": "Core + Major + Electives"
+    "notable_majors": [
+      "Biomedical Engineering (top-ranked)",
+      "Biology/Pre-Med",
+      "Public Health",
+      "Neuroscience",
+      "International Studies",
+      "Computer Science"
+    ],
+    "unique_programs": [
+      "Hopkins Hospital/Medical School access for undergrads",
+      "Woodrow Wilson Fellowship",
+      "Applied Physics Lab research",
+      "Baltimore community engagement programs"
+    ],
+    "curriculum_structure": "Distribution requirements + Major, flexible second major/minor"
   },
   "korean_student_specific": {
-    "korean_student_organizations": ["Korean Students Association"],
-    "korean_food_access": "TBD",
-    "korean_church_proximity": "TBD",
+    "korean_student_organizations": [
+      "Korean Students Association (KSA)",
+      "Hopkins Asian-American Alliance",
+      "Pre-Med Korean student support groups"
+    ],
+    "korean_food_access": "Baltimore Korean restaurants (20-30 min), DC H Mart (45 min)",
+    "korean_church_proximity": "Baltimore Korean Church (20 min)",
     "historical_admit_patterns": {
-      "korean_high_schools_commonly_admitted": [],
-      "common_profiles": "TBD"
+      "korean_high_schools_commonly_admitted": [
+        "Seoul International School",
+        "Korea International School",
+        "민족사관고등학교",
+        "대원외국어고등학교",
+        "외대부속외국어고등학교"
+      ],
+      "common_profiles": "STEM-focused, especially pre-med and research-oriented students"
     },
-    "korean_specific_advice": [],
-    "common_korean_applicant_mistakes": []
+    "korean_specific_advice": [
+      "Hopkins is THE pre-med school - if interested, highlight research and clinical experience",
+      "Research opportunities are unparalleled - mention specific labs/professors",
+      "The Baltimore community and service opportunities matter - show engagement",
+      "Can be competitive/intense - show you thrive in that environment",
+      "Biomedical engineering is flagship program - very Korean-popular"
+    ],
+    "common_korean_applicant_mistakes": [
+      "Only focusing on pre-med without showing broader interests",
+      "Not demonstrating genuine research experience or interest",
+      "Essays that seem too narrowly focused on med school admission",
+      "Not addressing Baltimore's challenges and opportunities",
+      "Appearing too competitive without collaborative spirit"
+    ]
   },
   "cost_and_aid": {
-    "tuition": 60000,
-    "room_and_board": 18000,
-    "total_cost_of_attendance": 82000,
+    "tuition": 63340,
+    "room_and_board": 18736,
+    "total_cost_of_attendance": 87076,
     "financial_aid_for_international": true,
     "need_blind_for_international": false,
-    "average_aid_package": 50000,
+    "average_aid_package": 55000,
     "percentage_receiving_aid": 50
   },
   "campus_life": {
-    "housing_guarantee": "4 years",
-    "popular_dorms": [],
-    "dining_options": "Multiple dining halls",
-    "safety_rating": "Good",
-    "nearby_attractions": "TBD"
+    "housing_guarantee": "2 years (freshmen and sophomores)",
+    "popular_dorms": [
+      "AMR I, II, III",
+      "Homewood"
+    ],
+    "dining_options": "Multiple dining halls, Charles Village restaurants nearby",
+    "safety_rating": "Good on campus - Blue Jay Shuttle, security escorts",
+    "nearby_attractions": "DC (45 min), Inner Harbor, Fells Point, Baltimore food scene"
   },
   "career_outcomes": {
-    "employment_rate_6_months": 90,
-    "average_starting_salary": 70000,
-    "top_employers": [],
-    "graduate_school_rate": 40,
-    "korean_alumni_network": "TBD"
+    "employment_rate_6_months": 92,
+    "average_starting_salary": 82000,
+    "top_employers": [
+      "Johns Hopkins Medicine",
+      "NIH",
+      "Google",
+      "Goldman Sachs",
+      "McKinsey"
+    ],
+    "graduate_school_rate": 55,
+    "korean_alumni_network": "Strong JHU Korean Alumni network, especially in medicine"
   },
-  "last_updated": "2024-12-01"
+  "last_updated": "2025-01-05"
 }

@@ -1,104 +1,184 @@
 {
   "university_id": "brown",
   "basic_info": {
-    "name": "University Name",
-    "name_short": "Short",
+    "name": "Brown University",
+    "name_short": "Brown",
     "location": {
-      "city": "City",
-      "state": "State",
-      "region": "Region",
-      "nearest_korean_community": "TBD",
-      "distance_to_korean_community": "TBD",
-      "climate": "TBD"
+      "city": "Providence",
+      "state": "Rhode Island",
+      "region": "Northeast",
+      "nearest_korean_community": "Boston Koreatown (45 min drive)",
+      "distance_to_korean_community": "45 min",
+      "climate": "Four seasons, cold winters (-4°C to 3°C), warm summers (18-28°C)"
     },
     "type": "Private Research",
-    "founded": 1900,
-    "website": "https://example.edu"
+    "founded": 1764,
+    "website": "https://www.brown.edu"
   },
   "enrollment": {
-    "total_undergraduate": 5000,
-    "total_graduate": 5000,
-    "international_percentage": 10.0,
-    "korean_student_estimate": 100,
-    "student_faculty_ratio": "10:1"
+    "total_undergraduate": 7200,
+    "total_graduate": 3200,
+    "international_percentage": 12.8,
+    "korean_student_estimate": 120,
+    "student_faculty_ratio": "6:1"
   },
   "admission_stats": {
-    "acceptance_rate": 10.0,
+    "acceptance_rate": 5.1,
     "early_action_rate": null,
-    "early_decision_rate": null,
-    "regular_decision_rate": 10.0,
-    "yield_rate": 50,
-    "total_applicants": 30000,
-    "total_admitted": 3000,
-    "international_applicants": 5000,
-    "international_admitted": 300,
+    "early_decision_rate": 13.8,
+    "regular_decision_rate": 3.6,
+    "yield_rate": 68,
+    "total_applicants": 51302,
+    "total_admitted": 2616,
+    "international_applicants": 6800,
+    "international_admitted": 380,
     "profile_ranges": {
-      "gpa_unweighted": { "25th": 3.8, "median": 3.9, "75th": 4.0 },
-      "sat_total": { "25th": 1400, "median": 1480, "75th": 1550 },
-      "sat_math": { "25th": 700, "median": 750, "75th": 790 },
-      "sat_reading": { "25th": 680, "median": 730, "75th": 770 },
-      "act_composite": { "25th": 31, "median": 33, "75th": 35 }
+      "gpa_unweighted": {
+        "25th": 3.92,
+        "median": 3.97,
+        "75th": 4.0
+      },
+      "sat_total": {
+        "25th": 1500,
+        "median": 1540,
+        "75th": 1570
+      },
+      "sat_math": {
+        "25th": 760,
+        "median": 780,
+        "75th": 800
+      },
+      "sat_reading": {
+        "25th": 730,
+        "median": 760,
+        "75th": 780
+      },
+      "act_composite": {
+        "25th": 33,
+        "median": 35,
+        "75th": 36
+      }
     }
   },
   "application_requirements": {
     "deadline_early": "November 1",
-    "deadline_regular": "January 1",
-    "application_platform": "Common App",
-    "application_fee": 75,
+    "deadline_regular": "January 5",
+    "application_platform": "Common App or Coalition App",
+    "application_fee": 85,
     "fee_waiver_available": true,
     "required_documents": [
-      { "item": "Transcript", "notes": "Official" },
-      { "item": "Recommendations", "count": 2 },
-      { "item": "Essays", "count": 2 }
+      {
+        "item": "Transcript",
+        "notes": "Official transcripts required"
+      },
+      {
+        "item": "Recommendations",
+        "count": 2,
+        "notes": "Two teacher recommendations"
+      },
+      {
+        "item": "Counselor Letter",
+        "required": true
+      },
+      {
+        "item": "Essays",
+        "count": 1,
+        "notes": "Brown supplement essay required"
+      }
     ],
-    "test_policy": "Test-optional",
+    "test_policy": "Test-optional (permanent policy)",
     "english_proficiency": {
       "required_for_international": true,
       "minimum_toefl": 100,
       "minimum_ielts": 7.0,
       "duolingo_accepted": true,
-      "minimum_duolingo": 120,
-      "waiver_conditions": "4+ years English instruction"
+      "minimum_duolingo": 125,
+      "waiver_conditions": "4+ years instruction in English"
     }
   },
   "academic_programs": {
-    "notable_majors": ["Computer Science", "Economics", "Biology"],
-    "unique_programs": ["TBD"],
-    "curriculum_structure": "Core + Major + Electives"
+    "notable_majors": [
+      "Computer Science",
+      "Economics",
+      "Applied Mathematics",
+      "Biology",
+      "International Relations",
+      "Neuroscience",
+      "History"
+    ],
+    "unique_programs": [
+      "Open Curriculum (no required courses outside major)",
+      "Brown-RISD Dual Degree Program",
+      "Program in Liberal Medical Education (PLME)",
+      "Undergraduate Teaching and Research Awards (UTRA)"
+    ],
+    "curriculum_structure": "Open Curriculum - no core requirements, students design their own path"
   },
   "korean_student_specific": {
-    "korean_student_organizations": ["Korean Students Association"],
-    "korean_food_access": "TBD",
-    "korean_church_proximity": "TBD",
+    "korean_student_organizations": [
+      "Korean Students at Brown (KSB)",
+      "Brown Asian American Students Association",
+      "Korean Christian Fellowship"
+    ],
+    "korean_food_access": "H Mart in Cranston (20 min), Korean restaurants on Thayer Street",
+    "korean_church_proximity": "Rhode Island Korean Church (15 min)",
     "historical_admit_patterns": {
-      "korean_high_schools_commonly_admitted": [],
-      "common_profiles": "TBD"
+      "korean_high_schools_commonly_admitted": [
+        "Seoul International School",
+        "Korea International School",
+        "민족사관고등학교",
+        "대원외국어고등학교",
+        "외대부속외국어고등학교"
+      ],
+      "common_profiles": "Independent thinkers with unique intellectual interests, students who thrive in self-directed learning"
     },
-    "korean_specific_advice": [],
-    "common_korean_applicant_mistakes": []
+    "korean_specific_advice": [
+      "Brown values intellectual curiosity and self-direction - show you can thrive without structure",
+      "The Open Curriculum is central - explain specific courses you'd create/combine",
+      "Show genuine passion for learning, not just achievement",
+      "Demonstrate how you'd contribute to Brown's collaborative, non-competitive culture",
+      "Essays should reveal intellectual risk-taking and creative thinking"
+    ],
+    "common_korean_applicant_mistakes": [
+      "Focusing too heavily on achievements without showing genuine curiosity",
+      "Not understanding or appreciating the Open Curriculum philosophy",
+      "Essays that are too structured/formulaic - Brown values unconventional thinking",
+      "Not demonstrating how you'll use the freedom Brown offers",
+      "Appearing too focused on grades/rankings rather than learning"
+    ]
   },
   "cost_and_aid": {
-    "tuition": 60000,
-    "room_and_board": 18000,
-    "total_cost_of_attendance": 82000,
+    "tuition": 66256,
+    "room_and_board": 17972,
+    "total_cost_of_attendance": 89804,
     "financial_aid_for_international": true,
     "need_blind_for_international": false,
-    "average_aid_package": 50000,
-    "percentage_receiving_aid": 50
+    "average_aid_package": 58000,
+    "percentage_receiving_aid": 51
   },
   "campus_life": {
-    "housing_guarantee": "4 years",
-    "popular_dorms": [],
-    "dining_options": "Multiple dining halls",
-    "safety_rating": "Good",
-    "nearby_attractions": "TBD"
+    "housing_guarantee": "4 years (housing lottery after first year)",
+    "popular_dorms": [
+      "Keeney Quad",
+      "Andrews Hall",
+      "Pembroke Campus"
+    ],
+    "dining_options": "Multiple dining halls (3 main), Ratty (Sharpe Refectory) most popular",
+    "safety_rating": "Good - Department of Public Safety, Blue Light phones",
+    "nearby_attractions": "Providence arts scene, RISD Museum, Thayer Street shops, Waterplace Park"
   },
   "career_outcomes": {
-    "employment_rate_6_months": 90,
-    "average_starting_salary": 70000,
-    "top_employers": [],
-    "graduate_school_rate": 40,
-    "korean_alumni_network": "TBD"
+    "employment_rate_6_months": 91,
+    "average_starting_salary": 80000,
+    "top_employers": [
+      "Google",
+      "Goldman Sachs",
+      "McKinsey",
+      "Morgan Stanley",
+      "Meta"
+    ],
+    "graduate_school_rate": 42,
+    "korean_alumni_network": "Active Brown Korean Alumni network with annual gatherings"
   },
-  "last_updated": "2024-12-01"
+  "last_updated": "2025-01-05"
 }
