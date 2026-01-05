@@ -1,104 +1,169 @@
 {
   "university_id": "wake-forest",
   "basic_info": {
-    "name": "University Name",
-    "name_short": "Short",
+    "name": "Wake Forest University",
+    "name_short": "Wake Forest",
     "location": {
-      "city": "City",
-      "state": "State",
-      "region": "Region",
-      "nearest_korean_community": "TBD",
-      "distance_to_korean_community": "TBD",
-      "climate": "TBD"
+      "city": "Winston-Salem",
+      "state": "North Carolina",
+      "region": "South",
+      "nearest_korean_community": "Charlotte (1.5 hours)",
+      "distance_to_korean_community": "1.5 hours",
+      "climate": "Mild (2-31°C), humid subtropical"
     },
     "type": "Private Research",
-    "founded": 1900,
-    "website": "https://example.edu"
+    "founded": 1834,
+    "website": "https://www.wfu.edu"
   },
   "enrollment": {
-    "total_undergraduate": 5000,
-    "total_graduate": 5000,
-    "international_percentage": 10.0,
-    "korean_student_estimate": 100,
+    "total_undergraduate": 5400,
+    "total_graduate": 3200,
+    "international_percentage": 8.0,
+    "korean_student_estimate": 40,
     "student_faculty_ratio": "10:1"
   },
   "admission_stats": {
-    "acceptance_rate": 10.0,
+    "acceptance_rate": 21.0,
     "early_action_rate": null,
-    "early_decision_rate": null,
-    "regular_decision_rate": 10.0,
-    "yield_rate": 50,
-    "total_applicants": 30000,
-    "total_admitted": 3000,
-    "international_applicants": 5000,
-    "international_admitted": 300,
+    "early_decision_rate": 45.0,
+    "regular_decision_rate": 17.0,
+    "yield_rate": 40,
+    "total_applicants": 17000,
+    "total_admitted": 3570,
+    "international_applicants": 1500,
+    "international_admitted": 180,
     "profile_ranges": {
-      "gpa_unweighted": { "25th": 3.8, "median": 3.9, "75th": 4.0 },
-      "sat_total": { "25th": 1400, "median": 1480, "75th": 1550 },
-      "sat_math": { "25th": 700, "median": 750, "75th": 790 },
-      "sat_reading": { "25th": 680, "median": 730, "75th": 770 },
-      "act_composite": { "25th": 31, "median": 33, "75th": 35 }
+      "gpa_unweighted": {
+        "25th": 3.7,
+        "median": 3.85,
+        "75th": 3.95
+      },
+      "sat_total": {
+        "25th": 1350,
+        "median": 1420,
+        "75th": 1490
+      },
+      "sat_math": {
+        "25th": 680,
+        "median": 720,
+        "75th": 760
+      },
+      "sat_reading": {
+        "25th": 670,
+        "median": 700,
+        "75th": 740
+      },
+      "act_composite": {
+        "25th": 30,
+        "median": 32,
+        "75th": 34
+      }
     }
   },
   "application_requirements": {
-    "deadline_early": "November 1",
+    "deadline_early": "November 15 (ED1) / January 1 (ED2)",
     "deadline_regular": "January 1",
     "application_platform": "Common App",
-    "application_fee": 75,
+    "application_fee": 85,
     "fee_waiver_available": true,
     "required_documents": [
-      { "item": "Transcript", "notes": "Official" },
-      { "item": "Recommendations", "count": 2 },
-      { "item": "Essays", "count": 2 }
+      {
+        "item": "Transcript",
+        "notes": "Official transcripts"
+      },
+      {
+        "item": "Recommendations",
+        "count": 2,
+        "notes": "Counselor + teacher"
+      },
+      {
+        "item": "Essays",
+        "notes": "Wake Forest essays"
+      }
     ],
-    "test_policy": "Test-optional",
+    "test_policy": "Test-optional since 2008",
     "english_proficiency": {
       "required_for_international": true,
       "minimum_toefl": 100,
       "minimum_ielts": 7.0,
       "duolingo_accepted": true,
       "minimum_duolingo": 120,
-      "waiver_conditions": "4+ years English instruction"
+      "waiver_conditions": "English instruction for 4+ years"
     }
   },
   "academic_programs": {
-    "notable_majors": ["Computer Science", "Economics", "Biology"],
-    "unique_programs": ["TBD"],
-    "curriculum_structure": "Core + Major + Electives"
+    "notable_majors": [
+      "Business",
+      "Communication",
+      "Politics",
+      "Economics",
+      "Psychology"
+    ],
+    "unique_programs": [
+      "Strong business school",
+      "D1 athletics culture (ACC)",
+      "Small classes focus",
+      "Pro Humanitate motto"
+    ],
+    "curriculum_structure": "Liberal arts core + Major"
   },
   "korean_student_specific": {
-    "korean_student_organizations": ["Korean Students Association"],
-    "korean_food_access": "TBD",
-    "korean_church_proximity": "TBD",
+    "korean_student_organizations": [
+      "Asian Student Interest Association"
+    ],
+    "korean_food_access": "Limited - Charlotte for major groceries",
+    "korean_church_proximity": "Limited Korean churches locally",
     "historical_admit_patterns": {
-      "korean_high_schools_commonly_admitted": [],
-      "common_profiles": "TBD"
+      "korean_high_schools_commonly_admitted": [
+        "Seoul International School"
+      ],
+      "common_profiles": "Well-rounded, Southern culture appreciators"
     },
-    "korean_specific_advice": [],
-    "common_korean_applicant_mistakes": []
+    "korean_specific_advice": [
+      "Wake Forest was test-optional pioneer (since 2008) - essays matter more",
+      "ED significantly boosts chances",
+      "Small school means community fit is important",
+      "Pro Humanitate (For Humanity) motto - show service orientation",
+      "Strong Greek life and Southern culture - be aware"
+    ],
+    "common_korean_applicant_mistakes": [
+      "Not understanding the Southern/Greek culture",
+      "Missing ED opportunity",
+      "Essays that don't show fit with small community",
+      "Not demonstrating Pro Humanitate values"
+    ]
   },
   "cost_and_aid": {
-    "tuition": 60000,
-    "room_and_board": 18000,
-    "total_cost_of_attendance": 82000,
+    "tuition": 62128,
+    "room_and_board": 17564,
+    "total_cost_of_attendance": 84692,
     "financial_aid_for_international": true,
     "need_blind_for_international": false,
-    "average_aid_package": 50000,
-    "percentage_receiving_aid": 50
+    "average_aid_package": 51000,
+    "percentage_receiving_aid": 40
   },
   "campus_life": {
-    "housing_guarantee": "4 years",
-    "popular_dorms": [],
-    "dining_options": "Multiple dining halls",
-    "safety_rating": "Good",
-    "nearby_attractions": "TBD"
+    "housing_guarantee": "2 years (freshmen + sophomores)",
+    "popular_dorms": [
+      "Dogwood",
+      "South",
+      "Collins"
+    ],
+    "dining_options": "Reynolda, Pit, food court options",
+    "safety_rating": "Excellent - safe suburban campus",
+    "nearby_attractions": "Old Salem, Blue Ridge Mountains (1 hour)"
   },
   "career_outcomes": {
-    "employment_rate_6_months": 90,
-    "average_starting_salary": 70000,
-    "top_employers": [],
-    "graduate_school_rate": 40,
-    "korean_alumni_network": "TBD"
+    "employment_rate_6_months": 93,
+    "average_starting_salary": 62000,
+    "top_employers": [
+      "Finance",
+      "Consulting",
+      "Healthcare",
+      "Business"
+    ],
+    "graduate_school_rate": 38,
+    "korean_alumni_network": "Small Wake Forest Korean alumni"
   },
-  "last_updated": "2024-12-01"
+  "last_updated": "2025-01-05"
 }

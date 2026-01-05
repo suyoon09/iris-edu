@@ -1,104 +1,168 @@
 {
   "university_id": "purdue",
   "basic_info": {
-    "name": "University Name",
-    "name_short": "Short",
+    "name": "Purdue University",
+    "name_short": "Purdue",
     "location": {
-      "city": "City",
-      "state": "State",
-      "region": "Region",
-      "nearest_korean_community": "TBD",
-      "distance_to_korean_community": "TBD",
-      "climate": "TBD"
+      "city": "West Lafayette",
+      "state": "Indiana",
+      "region": "Midwest",
+      "nearest_korean_community": "Indianapolis (1 hour)",
+      "distance_to_korean_community": "1 hour",
+      "climate": "Cold winters (-8°C to 3°C), warm summers (17-29°C)"
     },
-    "type": "Private Research",
-    "founded": 1900,
-    "website": "https://example.edu"
+    "type": "Public Research",
+    "founded": 1869,
+    "website": "https://www.purdue.edu"
   },
   "enrollment": {
-    "total_undergraduate": 5000,
-    "total_graduate": 5000,
-    "international_percentage": 10.0,
-    "korean_student_estimate": 100,
-    "student_faculty_ratio": "10:1"
+    "total_undergraduate": 38000,
+    "total_graduate": 14000,
+    "international_percentage": 20.0,
+    "korean_student_estimate": 1200,
+    "student_faculty_ratio": "13:1"
   },
   "admission_stats": {
-    "acceptance_rate": 10.0,
-    "early_action_rate": null,
+    "acceptance_rate": 53.0,
+    "early_action_rate": 65.0,
     "early_decision_rate": null,
-    "regular_decision_rate": 10.0,
-    "yield_rate": 50,
-    "total_applicants": 30000,
-    "total_admitted": 3000,
-    "international_applicants": 5000,
-    "international_admitted": 300,
+    "regular_decision_rate": 45.0,
+    "yield_rate": 35,
+    "total_applicants": 67000,
+    "total_admitted": 35510,
+    "international_applicants": 16000,
+    "international_admitted": 6500,
     "profile_ranges": {
-      "gpa_unweighted": { "25th": 3.8, "median": 3.9, "75th": 4.0 },
-      "sat_total": { "25th": 1400, "median": 1480, "75th": 1550 },
-      "sat_math": { "25th": 700, "median": 750, "75th": 790 },
-      "sat_reading": { "25th": 680, "median": 730, "75th": 770 },
-      "act_composite": { "25th": 31, "median": 33, "75th": 35 }
+      "gpa_unweighted": {
+        "25th": 3.5,
+        "median": 3.75,
+        "75th": 3.92
+      },
+      "sat_total": {
+        "25th": 1210,
+        "median": 1340,
+        "75th": 1450
+      },
+      "sat_math": {
+        "25th": 640,
+        "median": 720,
+        "75th": 790
+      },
+      "sat_reading": {
+        "25th": 570,
+        "median": 630,
+        "75th": 690
+      },
+      "act_composite": {
+        "25th": 26,
+        "median": 30,
+        "75th": 34
+      }
     }
   },
   "application_requirements": {
-    "deadline_early": "November 1",
-    "deadline_regular": "January 1",
-    "application_platform": "Common App",
-    "application_fee": 75,
+    "deadline_early": "November 1 (EA)",
+    "deadline_regular": "January 15",
+    "application_platform": "Common App, Coalition",
+    "application_fee": 60,
     "fee_waiver_available": true,
     "required_documents": [
-      { "item": "Transcript", "notes": "Official" },
-      { "item": "Recommendations", "count": 2 },
-      { "item": "Essays", "count": 2 }
+      {
+        "item": "Transcript",
+        "notes": "Official transcripts"
+      },
+      {
+        "item": "Essays",
+        "notes": "Purdue essays"
+      }
     ],
-    "test_policy": "Test-optional",
+    "test_policy": "Test-flexible (scores recommended for engineering)",
     "english_proficiency": {
       "required_for_international": true,
-      "minimum_toefl": 100,
-      "minimum_ielts": 7.0,
+      "minimum_toefl": 80,
+      "minimum_ielts": 6.5,
       "duolingo_accepted": true,
-      "minimum_duolingo": 120,
-      "waiver_conditions": "4+ years English instruction"
+      "minimum_duolingo": 110,
+      "waiver_conditions": "English instruction at US school 3+ years"
     }
   },
   "academic_programs": {
-    "notable_majors": ["Computer Science", "Economics", "Biology"],
-    "unique_programs": ["TBD"],
-    "curriculum_structure": "Core + Major + Electives"
+    "notable_majors": [
+      "Engineering (top 10 US)",
+      "Computer Science (top 20)",
+      "Aerospace (birthplace of astronauts)",
+      "Pharmacy",
+      "Agriculture"
+    ],
+    "unique_programs": [
+      "Astronaut birthplace (25+ astronauts)",
+      "Strong co-op programs",
+      "Krannert School of Business",
+      "Frozen tuition program (no increases)"
+    ],
+    "curriculum_structure": "Core requirements + Major"
   },
   "korean_student_specific": {
-    "korean_student_organizations": ["Korean Students Association"],
-    "korean_food_access": "TBD",
-    "korean_church_proximity": "TBD",
+    "korean_student_organizations": [
+      "Korean Student Association",
+      "Korean American Student Association"
+    ],
+    "korean_food_access": "Good - Korean restaurants near campus",
+    "korean_church_proximity": "Korean churches in Lafayette area",
     "historical_admit_patterns": {
-      "korean_high_schools_commonly_admitted": [],
-      "common_profiles": "TBD"
+      "korean_high_schools_commonly_admitted": [
+        "Seoul Science High School",
+        "Korea Science Academy",
+        "Seoul International School"
+      ],
+      "common_profiles": "Engineering-focused, STEM strong students"
     },
-    "korean_specific_advice": [],
-    "common_korean_applicant_mistakes": []
+    "korean_specific_advice": [
+      "Apply EA for engineering - much better chances",
+      "Engineering has separate, harder admission - be strategic",
+      "Frozen tuition is huge benefit - 4-year cost predictable",
+      "Must apply directly to major of interest",
+      "Aerospace legacy is significant if interested"
+    ],
+    "common_korean_applicant_mistakes": [
+      "Applying regular decision for engineering",
+      "Not understanding direct-to-major admission",
+      "Underestimating engineering competitiveness",
+      "Not mentioning frozen tuition awareness"
+    ]
   },
   "cost_and_aid": {
-    "tuition": 60000,
-    "room_and_board": 18000,
-    "total_cost_of_attendance": 82000,
+    "tuition": 31104,
+    "room_and_board": 11754,
+    "total_cost_of_attendance": 47858,
     "financial_aid_for_international": true,
     "need_blind_for_international": false,
-    "average_aid_package": 50000,
-    "percentage_receiving_aid": 50
+    "average_aid_package": 15000,
+    "percentage_receiving_aid": 40
   },
   "campus_life": {
-    "housing_guarantee": "4 years",
-    "popular_dorms": [],
-    "dining_options": "Multiple dining halls",
-    "safety_rating": "Good",
-    "nearby_attractions": "TBD"
+    "housing_guarantee": "Freshmen guaranteed",
+    "popular_dorms": [
+      "First Street Towers",
+      "Hillenbrand",
+      "Earhart"
+    ],
+    "dining_options": "Multiple dining courts",
+    "safety_rating": "Good - campus safe, small college town",
+    "nearby_attractions": "Indianapolis (1 hour), Chicago (2.5 hours)"
   },
   "career_outcomes": {
-    "employment_rate_6_months": 90,
-    "average_starting_salary": 70000,
-    "top_employers": [],
-    "graduate_school_rate": 40,
-    "korean_alumni_network": "TBD"
+    "employment_rate_6_months": 93,
+    "average_starting_salary": 68000,
+    "top_employers": [
+      "Boeing",
+      "SpaceX",
+      "Lockheed Martin",
+      "Amazon",
+      "Microsoft"
+    ],
+    "graduate_school_rate": 22,
+    "korean_alumni_network": "Very large Purdue Korean alumni in engineering"
   },
-  "last_updated": "2024-12-01"
+  "last_updated": "2025-01-05"
 }

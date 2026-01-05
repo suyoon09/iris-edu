@@ -1,104 +1,167 @@
 {
   "university_id": "ut-austin",
   "basic_info": {
-    "name": "University Name",
-    "name_short": "Short",
+    "name": "University of Texas at Austin",
+    "name_short": "UT Austin",
     "location": {
-      "city": "City",
-      "state": "State",
-      "region": "Region",
-      "nearest_korean_community": "TBD",
-      "distance_to_korean_community": "TBD",
-      "climate": "TBD"
+      "city": "Austin",
+      "state": "Texas",
+      "region": "Southwest",
+      "nearest_korean_community": "Austin Korean community (on campus area)",
+      "distance_to_korean_community": "On campus",
+      "climate": "Hot (8-35°C), mild winters, hot summers"
     },
-    "type": "Private Research",
-    "founded": 1900,
-    "website": "https://example.edu"
+    "type": "Public Research",
+    "founded": 1883,
+    "website": "https://www.utexas.edu"
   },
   "enrollment": {
-    "total_undergraduate": 5000,
-    "total_graduate": 5000,
-    "international_percentage": 10.0,
-    "korean_student_estimate": 100,
-    "student_faculty_ratio": "10:1"
+    "total_undergraduate": 41000,
+    "total_graduate": 11000,
+    "international_percentage": 11.0,
+    "korean_student_estimate": 500,
+    "student_faculty_ratio": "17:1"
   },
   "admission_stats": {
-    "acceptance_rate": 10.0,
+    "acceptance_rate": 29.0,
     "early_action_rate": null,
     "early_decision_rate": null,
-    "regular_decision_rate": 10.0,
-    "yield_rate": 50,
-    "total_applicants": 30000,
-    "total_admitted": 3000,
-    "international_applicants": 5000,
-    "international_admitted": 300,
+    "regular_decision_rate": 29.0,
+    "yield_rate": 44,
+    "total_applicants": 66000,
+    "total_admitted": 19140,
+    "international_applicants": 8000,
+    "international_admitted": 2000,
     "profile_ranges": {
-      "gpa_unweighted": { "25th": 3.8, "median": 3.9, "75th": 4.0 },
-      "sat_total": { "25th": 1400, "median": 1480, "75th": 1550 },
-      "sat_math": { "25th": 700, "median": 750, "75th": 790 },
-      "sat_reading": { "25th": 680, "median": 730, "75th": 770 },
-      "act_composite": { "25th": 31, "median": 33, "75th": 35 }
+      "gpa_unweighted": {
+        "25th": 3.75,
+        "median": 3.9,
+        "75th": 3.98
+      },
+      "sat_total": {
+        "25th": 1260,
+        "median": 1390,
+        "75th": 1490
+      },
+      "sat_math": {
+        "25th": 660,
+        "median": 730,
+        "75th": 790
+      },
+      "sat_reading": {
+        "25th": 600,
+        "median": 670,
+        "75th": 720
+      },
+      "act_composite": {
+        "25th": 27,
+        "median": 31,
+        "75th": 34
+      }
     }
   },
   "application_requirements": {
-    "deadline_early": "November 1",
-    "deadline_regular": "January 1",
-    "application_platform": "Common App",
+    "deadline_early": null,
+    "deadline_regular": "December 1 (priority)",
+    "application_platform": "Apply Texas, Common App",
     "application_fee": 75,
     "fee_waiver_available": true,
     "required_documents": [
-      { "item": "Transcript", "notes": "Official" },
-      { "item": "Recommendations", "count": 2 },
-      { "item": "Essays", "count": 2 }
+      {
+        "item": "Transcript",
+        "notes": "Official transcripts"
+      },
+      {
+        "item": "Essays",
+        "notes": "Apply Texas essays"
+      }
     ],
     "test_policy": "Test-optional",
     "english_proficiency": {
       "required_for_international": true,
-      "minimum_toefl": 100,
-      "minimum_ielts": 7.0,
+      "minimum_toefl": 79,
+      "minimum_ielts": 6.5,
       "duolingo_accepted": true,
-      "minimum_duolingo": 120,
-      "waiver_conditions": "4+ years English instruction"
+      "minimum_duolingo": 110,
+      "waiver_conditions": "English instruction 2+ years"
     }
   },
   "academic_programs": {
-    "notable_majors": ["Computer Science", "Economics", "Biology"],
-    "unique_programs": ["TBD"],
-    "curriculum_structure": "Core + Major + Electives"
+    "notable_majors": [
+      "Computer Science (top 10)",
+      "Engineering",
+      "Business (McCombs)",
+      "Communication",
+      "Liberal Arts"
+    ],
+    "unique_programs": [
+      "McCombs Business School (top)",
+      "Austin tech ecosystem",
+      "Plan II Honors",
+      "Strong CS and Engineering"
+    ],
+    "curriculum_structure": "Core requirements + Major"
   },
   "korean_student_specific": {
-    "korean_student_organizations": ["Korean Students Association"],
-    "korean_food_access": "TBD",
-    "korean_church_proximity": "TBD",
+    "korean_student_organizations": [
+      "Korean Student Association",
+      "Korean American Student Association"
+    ],
+    "korean_food_access": "Good - Korean restaurants on/near campus",
+    "korean_church_proximity": "Korean churches in Austin",
     "historical_admit_patterns": {
-      "korean_high_schools_commonly_admitted": [],
-      "common_profiles": "TBD"
+      "korean_high_schools_commonly_admitted": [
+        "Seoul International School",
+        "Texas Korean-American students"
+      ],
+      "common_profiles": "Tech-focused, entrepreneurial students"
     },
-    "korean_specific_advice": [],
-    "common_korean_applicant_mistakes": []
+    "korean_specific_advice": [
+      "Apply by Dec 1 priority deadline - very important",
+      "Must apply directly to major (CS/Engineering competitive)",
+      "Austin tech scene (Tesla, Google, Apple) is huge draw",
+      "Texas resident advantage - international more competitive",
+      "Hook 'em Horns school spirit is real"
+    ],
+    "common_korean_applicant_mistakes": [
+      "Applying after Dec 1 deadline",
+      "Not understanding direct-to-major admission",
+      "Underestimating CS/Engineering competition",
+      "Not showing fit with Texas/Austin culture"
+    ]
   },
   "cost_and_aid": {
-    "tuition": 60000,
-    "room_and_board": 18000,
-    "total_cost_of_attendance": 82000,
+    "tuition": 40996,
+    "room_and_board": 13458,
+    "total_cost_of_attendance": 59454,
     "financial_aid_for_international": true,
     "need_blind_for_international": false,
-    "average_aid_package": 50000,
-    "percentage_receiving_aid": 50
+    "average_aid_package": 12000,
+    "percentage_receiving_aid": 35
   },
   "campus_life": {
-    "housing_guarantee": "4 years",
-    "popular_dorms": [],
-    "dining_options": "Multiple dining halls",
-    "safety_rating": "Good",
-    "nearby_attractions": "TBD"
+    "housing_guarantee": "Not guaranteed (apply early)",
+    "popular_dorms": [
+      "Jester",
+      "San Jacinto",
+      "Kinsolving"
+    ],
+    "dining_options": "Jester City Limits, multiple dining halls",
+    "safety_rating": "Good - campus police, urban campus",
+    "nearby_attractions": "Downtown Austin, 6th Street, Barton Springs, Tech hub"
   },
   "career_outcomes": {
-    "employment_rate_6_months": 90,
-    "average_starting_salary": 70000,
-    "top_employers": [],
-    "graduate_school_rate": 40,
-    "korean_alumni_network": "TBD"
+    "employment_rate_6_months": 93,
+    "average_starting_salary": 72000,
+    "top_employers": [
+      "Tesla",
+      "Apple",
+      "Google",
+      "Dell",
+      "Oracle"
+    ],
+    "graduate_school_rate": 22,
+    "korean_alumni_network": "Growing UT Austin Korean alumni in tech"
   },
-  "last_updated": "2024-12-01"
+  "last_updated": "2025-01-05"
 }

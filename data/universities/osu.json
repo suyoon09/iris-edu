@@ -1,104 +1,167 @@
 {
   "university_id": "osu",
   "basic_info": {
-    "name": "University Name",
-    "name_short": "Short",
+    "name": "Ohio State University",
+    "name_short": "OSU",
     "location": {
-      "city": "City",
-      "state": "State",
-      "region": "Region",
-      "nearest_korean_community": "TBD",
-      "distance_to_korean_community": "TBD",
-      "climate": "TBD"
+      "city": "Columbus",
+      "state": "Ohio",
+      "region": "Midwest",
+      "nearest_korean_community": "Columbus Korean community (on campus)",
+      "distance_to_korean_community": "On campus",
+      "climate": "Cold winters (-6°C to 4°C), warm summers (16-29°C)"
     },
-    "type": "Private Research",
-    "founded": 1900,
-    "website": "https://example.edu"
+    "type": "Public Research",
+    "founded": 1870,
+    "website": "https://www.osu.edu"
   },
   "enrollment": {
-    "total_undergraduate": 5000,
-    "total_graduate": 5000,
-    "international_percentage": 10.0,
-    "korean_student_estimate": 100,
-    "student_faculty_ratio": "10:1"
+    "total_undergraduate": 47000,
+    "total_graduate": 15000,
+    "international_percentage": 12.0,
+    "korean_student_estimate": 600,
+    "student_faculty_ratio": "19:1"
   },
   "admission_stats": {
-    "acceptance_rate": 10.0,
-    "early_action_rate": null,
+    "acceptance_rate": 53.0,
+    "early_action_rate": 65.0,
     "early_decision_rate": null,
-    "regular_decision_rate": 10.0,
-    "yield_rate": 50,
-    "total_applicants": 30000,
-    "total_admitted": 3000,
-    "international_applicants": 5000,
-    "international_admitted": 300,
+    "regular_decision_rate": 45.0,
+    "yield_rate": 35,
+    "total_applicants": 65000,
+    "total_admitted": 34450,
+    "international_applicants": 10000,
+    "international_admitted": 3500,
     "profile_ranges": {
-      "gpa_unweighted": { "25th": 3.8, "median": 3.9, "75th": 4.0 },
-      "sat_total": { "25th": 1400, "median": 1480, "75th": 1550 },
-      "sat_math": { "25th": 700, "median": 750, "75th": 790 },
-      "sat_reading": { "25th": 680, "median": 730, "75th": 770 },
-      "act_composite": { "25th": 31, "median": 33, "75th": 35 }
+      "gpa_unweighted": {
+        "25th": 3.6,
+        "median": 3.8,
+        "75th": 3.95
+      },
+      "sat_total": {
+        "25th": 1240,
+        "median": 1350,
+        "75th": 1460
+      },
+      "sat_math": {
+        "25th": 630,
+        "median": 700,
+        "75th": 770
+      },
+      "sat_reading": {
+        "25th": 600,
+        "median": 660,
+        "75th": 710
+      },
+      "act_composite": {
+        "25th": 27,
+        "median": 30,
+        "75th": 33
+      }
     }
   },
   "application_requirements": {
-    "deadline_early": "November 1",
-    "deadline_regular": "January 1",
-    "application_platform": "Common App",
-    "application_fee": 75,
+    "deadline_early": "November 1 (EA)",
+    "deadline_regular": "February 1",
+    "application_platform": "Common App, Coalition",
+    "application_fee": 60,
     "fee_waiver_available": true,
     "required_documents": [
-      { "item": "Transcript", "notes": "Official" },
-      { "item": "Recommendations", "count": 2 },
-      { "item": "Essays", "count": 2 }
+      {
+        "item": "Transcript",
+        "notes": "Official transcripts"
+      },
+      {
+        "item": "Essays",
+        "notes": "OSU essays"
+      }
     ],
     "test_policy": "Test-optional",
     "english_proficiency": {
       "required_for_international": true,
-      "minimum_toefl": 100,
-      "minimum_ielts": 7.0,
+      "minimum_toefl": 79,
+      "minimum_ielts": 6.5,
       "duolingo_accepted": true,
-      "minimum_duolingo": 120,
-      "waiver_conditions": "4+ years English instruction"
+      "minimum_duolingo": 105,
+      "waiver_conditions": "English instruction at US school 4+ years"
     }
   },
   "academic_programs": {
-    "notable_majors": ["Computer Science", "Economics", "Biology"],
-    "unique_programs": ["TBD"],
-    "curriculum_structure": "Core + Major + Electives"
+    "notable_majors": [
+      "Business (Fisher)",
+      "Engineering",
+      "Nursing",
+      "Psychology",
+      "Biology"
+    ],
+    "unique_programs": [
+      "Fisher College of Business (strong)",
+      "D1 athletics (Big Ten football)",
+      "Large research university",
+      "Medical center on campus"
+    ],
+    "curriculum_structure": "GE requirements + Major"
   },
   "korean_student_specific": {
-    "korean_student_organizations": ["Korean Students Association"],
-    "korean_food_access": "TBD",
-    "korean_church_proximity": "TBD",
+    "korean_student_organizations": [
+      "Korean Student Association",
+      "Korean American Student Association"
+    ],
+    "korean_food_access": "Good - Korean restaurants on High Street",
+    "korean_church_proximity": "Korean churches in Columbus",
     "historical_admit_patterns": {
-      "korean_high_schools_commonly_admitted": [],
-      "common_profiles": "TBD"
+      "korean_high_schools_commonly_admitted": [
+        "Seoul International School",
+        "Korea International School"
+      ],
+      "common_profiles": "Well-rounded students, sports enthusiasts"
     },
-    "korean_specific_advice": [],
-    "common_korean_applicant_mistakes": []
+    "korean_specific_advice": [
+      "Apply EA for better chances",
+      "Very large school - emphasize what you'll contribute",
+      "Strong school spirit (Big Ten) - embrace if that appeals",
+      "Good value with good rankings",
+      "Direct admit to Fisher College for business is competitive"
+    ],
+    "common_korean_applicant_mistakes": [
+      "Not applying EA",
+      "Not showing how you'll stand out in large school",
+      "Generic essays",
+      "Not researching specific programs"
+    ]
   },
   "cost_and_aid": {
-    "tuition": 60000,
-    "room_and_board": 18000,
-    "total_cost_of_attendance": 82000,
+    "tuition": 35019,
+    "room_and_board": 13752,
+    "total_cost_of_attendance": 53771,
     "financial_aid_for_international": true,
     "need_blind_for_international": false,
-    "average_aid_package": 50000,
-    "percentage_receiving_aid": 50
+    "average_aid_package": 14000,
+    "percentage_receiving_aid": 42
   },
   "campus_life": {
-    "housing_guarantee": "4 years",
-    "popular_dorms": [],
-    "dining_options": "Multiple dining halls",
-    "safety_rating": "Good",
-    "nearby_attractions": "TBD"
+    "housing_guarantee": "Freshmen (on-campus living required)",
+    "popular_dorms": [
+      "Park-Stradley",
+      "Morrill Tower",
+      "Lincoln Tower"
+    ],
+    "dining_options": "Multiple dining halls, High Street restaurants",
+    "safety_rating": "Good - campus police, urban campus",
+    "nearby_attractions": "Downtown Columbus, Short North arts district"
   },
   "career_outcomes": {
-    "employment_rate_6_months": 90,
-    "average_starting_salary": 70000,
-    "top_employers": [],
-    "graduate_school_rate": 40,
-    "korean_alumni_network": "TBD"
+    "employment_rate_6_months": 91,
+    "average_starting_salary": 58000,
+    "top_employers": [
+      "Chase",
+      "Nationwide",
+      "Honda",
+      "P&G",
+      "Tech companies"
+    ],
+    "graduate_school_rate": 25,
+    "korean_alumni_network": "Active OSU Korean alumni in Ohio and beyond"
   },
-  "last_updated": "2024-12-01"
+  "last_updated": "2025-01-05"
 }

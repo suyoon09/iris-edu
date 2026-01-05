@@ -1,55 +1,85 @@
 {
   "university_id": "rochester",
   "basic_info": {
-    "name": "University Name",
-    "name_short": "Short",
+    "name": "University of Rochester",
+    "name_short": "Rochester",
     "location": {
-      "city": "City",
-      "state": "State",
-      "region": "Region",
-      "nearest_korean_community": "TBD",
-      "distance_to_korean_community": "TBD",
-      "climate": "TBD"
+      "city": "Rochester",
+      "state": "New York",
+      "region": "Northeast",
+      "nearest_korean_community": "Limited - NYC (5 hours)",
+      "distance_to_korean_community": "5 hours",
+      "climate": "Cold winters (-8°C to 0°C), mild summers (16-27°C)"
     },
     "type": "Private Research",
-    "founded": 1900,
-    "website": "https://example.edu"
+    "founded": 1850,
+    "website": "https://www.rochester.edu"
   },
   "enrollment": {
-    "total_undergraduate": 5000,
-    "total_graduate": 5000,
-    "international_percentage": 10.0,
-    "korean_student_estimate": 100,
+    "total_undergraduate": 6800,
+    "total_graduate": 5200,
+    "international_percentage": 24.0,
+    "korean_student_estimate": 150,
     "student_faculty_ratio": "10:1"
   },
   "admission_stats": {
-    "acceptance_rate": 10.0,
+    "acceptance_rate": 34.0,
     "early_action_rate": null,
-    "early_decision_rate": null,
-    "regular_decision_rate": 10.0,
-    "yield_rate": 50,
-    "total_applicants": 30000,
-    "total_admitted": 3000,
-    "international_applicants": 5000,
-    "international_admitted": 300,
+    "early_decision_rate": 55.0,
+    "regular_decision_rate": 30.0,
+    "yield_rate": 24,
+    "total_applicants": 22000,
+    "total_admitted": 7480,
+    "international_applicants": 5500,
+    "international_admitted": 1400,
     "profile_ranges": {
-      "gpa_unweighted": { "25th": 3.8, "median": 3.9, "75th": 4.0 },
-      "sat_total": { "25th": 1400, "median": 1480, "75th": 1550 },
-      "sat_math": { "25th": 700, "median": 750, "75th": 790 },
-      "sat_reading": { "25th": 680, "median": 730, "75th": 770 },
-      "act_composite": { "25th": 31, "median": 33, "75th": 35 }
+      "gpa_unweighted": {
+        "25th": 3.7,
+        "median": 3.85,
+        "75th": 3.95
+      },
+      "sat_total": {
+        "25th": 1370,
+        "median": 1450,
+        "75th": 1520
+      },
+      "sat_math": {
+        "25th": 710,
+        "median": 760,
+        "75th": 800
+      },
+      "sat_reading": {
+        "25th": 660,
+        "median": 700,
+        "75th": 740
+      },
+      "act_composite": {
+        "25th": 31,
+        "median": 33,
+        "75th": 35
+      }
     }
   },
   "application_requirements": {
-    "deadline_early": "November 1",
-    "deadline_regular": "January 1",
-    "application_platform": "Common App",
-    "application_fee": 75,
+    "deadline_early": "November 1 (ED)",
+    "deadline_regular": "January 5",
+    "application_platform": "Common App, Coalition",
+    "application_fee": 50,
     "fee_waiver_available": true,
     "required_documents": [
-      { "item": "Transcript", "notes": "Official" },
-      { "item": "Recommendations", "count": 2 },
-      { "item": "Essays", "count": 2 }
+      {
+        "item": "Transcript",
+        "notes": "Official transcripts"
+      },
+      {
+        "item": "Recommendations",
+        "count": 2,
+        "notes": "Counselor + teacher"
+      },
+      {
+        "item": "Essays",
+        "notes": "Rochester essays"
+      }
     ],
     "test_policy": "Test-optional",
     "english_proficiency": {
@@ -57,48 +87,84 @@
       "minimum_toefl": 100,
       "minimum_ielts": 7.0,
       "duolingo_accepted": true,
-      "minimum_duolingo": 120,
-      "waiver_conditions": "4+ years English instruction"
+      "minimum_duolingo": 125,
+      "waiver_conditions": "English instruction for 4+ years"
     }
   },
   "academic_programs": {
-    "notable_majors": ["Computer Science", "Economics", "Biology"],
-    "unique_programs": ["TBD"],
-    "curriculum_structure": "Core + Major + Electives"
+    "notable_majors": [
+      "Optics (top program)",
+      "Music (Eastman)",
+      "Engineering",
+      "Economics",
+      "Political Science"
+    ],
+    "unique_programs": [
+      "Eastman School of Music (top 5 conservatory)",
+      "Rochester Curriculum (no core requirements)",
+      "Take 5 Scholars (free 5th year)",
+      "Strong optics/physics program"
+    ],
+    "curriculum_structure": "Open Curriculum (clusters only) + Major"
   },
   "korean_student_specific": {
-    "korean_student_organizations": ["Korean Students Association"],
-    "korean_food_access": "TBD",
-    "korean_church_proximity": "TBD",
+    "korean_student_organizations": [
+      "Korean Student Association",
+      "Asian Students Union"
+    ],
+    "korean_food_access": "Limited - small Asian grocery stores",
+    "korean_church_proximity": "Korean churches in Rochester area",
     "historical_admit_patterns": {
-      "korean_high_schools_commonly_admitted": [],
-      "common_profiles": "TBD"
+      "korean_high_schools_commonly_admitted": [
+        "Seoul International School",
+        "Korea International School"
+      ],
+      "common_profiles": "Academic flexibility seekers, music students"
     },
-    "korean_specific_advice": [],
-    "common_korean_applicant_mistakes": []
+    "korean_specific_advice": [
+      "Open curriculum is a major draw - emphasize if you value flexibility",
+      "Eastman School is world-class for music students",
+      "ED significantly boosts chances",
+      "Take 5 program is unique benefit - mention interest",
+      "Remote location may be concern - address if relevant"
+    ],
+    "common_korean_applicant_mistakes": [
+      "Not mentioning appreciation for open curriculum",
+      "Overlooking due to location",
+      "Missing ED opportunity for better chances",
+      "Not researching unique programs like Take 5"
+    ]
   },
   "cost_and_aid": {
-    "tuition": 60000,
-    "room_and_board": 18000,
-    "total_cost_of_attendance": 82000,
+    "tuition": 62680,
+    "room_and_board": 18584,
+    "total_cost_of_attendance": 86264,
     "financial_aid_for_international": true,
     "need_blind_for_international": false,
     "average_aid_package": 50000,
-    "percentage_receiving_aid": 50
+    "percentage_receiving_aid": 55
   },
   "campus_life": {
-    "housing_guarantee": "4 years",
-    "popular_dorms": [],
-    "dining_options": "Multiple dining halls",
-    "safety_rating": "Good",
-    "nearby_attractions": "TBD"
+    "housing_guarantee": "2 years",
+    "popular_dorms": [
+      "Susan B. Anthony",
+      "Residential Quad"
+    ],
+    "dining_options": "Multiple dining halls, D'Lions Den",
+    "safety_rating": "Good - campus security",
+    "nearby_attractions": "Finger Lakes, Niagara Falls (2 hours)"
   },
   "career_outcomes": {
     "employment_rate_6_months": 90,
-    "average_starting_salary": 70000,
-    "top_employers": [],
+    "average_starting_salary": 65000,
+    "top_employers": [
+      "Healthcare",
+      "Tech",
+      "Finance",
+      "Consulting"
+    ],
     "graduate_school_rate": 40,
-    "korean_alumni_network": "TBD"
+    "korean_alumni_network": "Active Rochester Korean alumni network"
   },
-  "last_updated": "2024-12-01"
+  "last_updated": "2025-01-05"
 }

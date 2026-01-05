@@ -1,104 +1,165 @@
 {
   "university_id": "psu",
   "basic_info": {
-    "name": "University Name",
-    "name_short": "Short",
+    "name": "Penn State University",
+    "name_short": "Penn State",
     "location": {
-      "city": "City",
-      "state": "State",
-      "region": "Region",
-      "nearest_korean_community": "TBD",
-      "distance_to_korean_community": "TBD",
-      "climate": "TBD"
+      "city": "State College",
+      "state": "Pennsylvania",
+      "region": "Northeast",
+      "nearest_korean_community": "Philadelphia (3.5 hours)",
+      "distance_to_korean_community": "3.5 hours",
+      "climate": "Cold winters (-8°C to 3°C), mild summers (15-28°C)"
     },
-    "type": "Private Research",
-    "founded": 1900,
-    "website": "https://example.edu"
+    "type": "Public Research",
+    "founded": 1855,
+    "website": "https://www.psu.edu"
   },
   "enrollment": {
-    "total_undergraduate": 5000,
-    "total_graduate": 5000,
+    "total_undergraduate": 41000,
+    "total_graduate": 14000,
     "international_percentage": 10.0,
-    "korean_student_estimate": 100,
-    "student_faculty_ratio": "10:1"
+    "korean_student_estimate": 400,
+    "student_faculty_ratio": "15:1"
   },
   "admission_stats": {
-    "acceptance_rate": 10.0,
+    "acceptance_rate": 54.0,
     "early_action_rate": null,
     "early_decision_rate": null,
-    "regular_decision_rate": 10.0,
-    "yield_rate": 50,
-    "total_applicants": 30000,
-    "total_admitted": 3000,
-    "international_applicants": 5000,
-    "international_admitted": 300,
+    "regular_decision_rate": 54.0,
+    "yield_rate": 31,
+    "total_applicants": 77000,
+    "total_admitted": 41580,
+    "international_applicants": 10000,
+    "international_admitted": 4000,
     "profile_ranges": {
-      "gpa_unweighted": { "25th": 3.8, "median": 3.9, "75th": 4.0 },
-      "sat_total": { "25th": 1400, "median": 1480, "75th": 1550 },
-      "sat_math": { "25th": 700, "median": 750, "75th": 790 },
-      "sat_reading": { "25th": 680, "median": 730, "75th": 770 },
-      "act_composite": { "25th": 31, "median": 33, "75th": 35 }
+      "gpa_unweighted": {
+        "25th": 3.5,
+        "median": 3.7,
+        "75th": 3.9
+      },
+      "sat_total": {
+        "25th": 1200,
+        "median": 1310,
+        "75th": 1420
+      },
+      "sat_math": {
+        "25th": 600,
+        "median": 670,
+        "75th": 740
+      },
+      "sat_reading": {
+        "25th": 590,
+        "median": 650,
+        "75th": 700
+      },
+      "act_composite": {
+        "25th": 26,
+        "median": 29,
+        "75th": 32
+      }
     }
   },
   "application_requirements": {
-    "deadline_early": "November 1",
-    "deadline_regular": "January 1",
-    "application_platform": "Common App",
-    "application_fee": 75,
+    "deadline_early": null,
+    "deadline_regular": "Rolling (priority November 30)",
+    "application_platform": "Penn State Application, Common App",
+    "application_fee": 65,
     "fee_waiver_available": true,
     "required_documents": [
-      { "item": "Transcript", "notes": "Official" },
-      { "item": "Recommendations", "count": 2 },
-      { "item": "Essays", "count": 2 }
+      {
+        "item": "Transcript",
+        "notes": "Official transcripts"
+      },
+      {
+        "item": "Essays",
+        "notes": "Penn State essays"
+      }
     ],
     "test_policy": "Test-optional",
     "english_proficiency": {
       "required_for_international": true,
-      "minimum_toefl": 100,
-      "minimum_ielts": 7.0,
+      "minimum_toefl": 80,
+      "minimum_ielts": 6.5,
       "duolingo_accepted": true,
-      "minimum_duolingo": 120,
-      "waiver_conditions": "4+ years English instruction"
+      "minimum_duolingo": 110,
+      "waiver_conditions": "English instruction 4+ years"
     }
   },
   "academic_programs": {
-    "notable_majors": ["Computer Science", "Economics", "Biology"],
-    "unique_programs": ["TBD"],
-    "curriculum_structure": "Core + Major + Electives"
+    "notable_majors": [
+      "Engineering",
+      "Business (Smeal)",
+      "Information Sciences",
+      "Meteorology",
+      "Agriculture"
+    ],
+    "unique_programs": [
+      "Schreyer Honors College",
+      "World Campus (online)",
+      "Strong meteorology program (#1)",
+      "D1 athletics (Big Ten)"
+    ],
+    "curriculum_structure": "GE requirements + Major"
   },
   "korean_student_specific": {
-    "korean_student_organizations": ["Korean Students Association"],
-    "korean_food_access": "TBD",
-    "korean_church_proximity": "TBD",
+    "korean_student_organizations": [
+      "Korean Student Association"
+    ],
+    "korean_food_access": "Limited - some Asian options in State College",
+    "korean_church_proximity": "Limited locally",
     "historical_admit_patterns": {
-      "korean_high_schools_commonly_admitted": [],
-      "common_profiles": "TBD"
+      "korean_high_schools_commonly_admitted": [
+        "Seoul International School",
+        "Korea International School"
+      ],
+      "common_profiles": "Engineering students, Big Ten sports fans"
     },
-    "korean_specific_advice": [],
-    "common_korean_applicant_mistakes": []
+    "korean_specific_advice": [
+      "Apply by Nov 30 for best chances (rolling admission)",
+      "Schreyer Honors is very competitive but worth applying",
+      "Strong alumni network (huge 'We Are Penn State')",
+      "State College is remote - be prepared for college-town life",
+      "Good value for engineering education"
+    ],
+    "common_korean_applicant_mistakes": [
+      "Applying too late (rolling means earlier is better)",
+      "Not applying to Schreyer Honors if qualified",
+      "Not understanding remote location",
+      "Generic essays"
+    ]
   },
   "cost_and_aid": {
-    "tuition": 60000,
-    "room_and_board": 18000,
-    "total_cost_of_attendance": 82000,
+    "tuition": 38824,
+    "room_and_board": 13716,
+    "total_cost_of_attendance": 57540,
     "financial_aid_for_international": true,
     "need_blind_for_international": false,
-    "average_aid_package": 50000,
-    "percentage_receiving_aid": 50
+    "average_aid_package": 14000,
+    "percentage_receiving_aid": 38
   },
   "campus_life": {
-    "housing_guarantee": "4 years",
-    "popular_dorms": [],
+    "housing_guarantee": "Freshmen",
+    "popular_dorms": [
+      "East",
+      "Pollock",
+      "South"
+    ],
     "dining_options": "Multiple dining halls",
-    "safety_rating": "Good",
-    "nearby_attractions": "TBD"
+    "safety_rating": "Excellent - very safe college town",
+    "nearby_attractions": "Outdoors, foothills, campus activities"
   },
   "career_outcomes": {
     "employment_rate_6_months": 90,
-    "average_starting_salary": 70000,
-    "top_employers": [],
-    "graduate_school_rate": 40,
-    "korean_alumni_network": "TBD"
+    "average_starting_salary": 60000,
+    "top_employers": [
+      "Engineering firms",
+      "Finance",
+      "Tech companies",
+      "Government"
+    ],
+    "graduate_school_rate": 25,
+    "korean_alumni_network": "Active Penn State Korean alumni"
   },
-  "last_updated": "2024-12-01"
+  "last_updated": "2025-01-05"
 }

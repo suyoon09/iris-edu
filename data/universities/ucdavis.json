@@ -1,104 +1,167 @@
 {
   "university_id": "ucdavis",
   "basic_info": {
-    "name": "University Name",
-    "name_short": "Short",
+    "name": "University of California, Davis",
+    "name_short": "UC Davis",
     "location": {
-      "city": "City",
-      "state": "State",
-      "region": "Region",
-      "nearest_korean_community": "TBD",
-      "distance_to_korean_community": "TBD",
-      "climate": "TBD"
+      "city": "Davis",
+      "state": "California",
+      "region": "West Coast",
+      "nearest_korean_community": "Sacramento (20 min)",
+      "distance_to_korean_community": "20 min",
+      "climate": "Mediterranean (7-35°C), hot dry summers"
     },
-    "type": "Private Research",
-    "founded": 1900,
-    "website": "https://example.edu"
+    "type": "Public Research",
+    "founded": 1905,
+    "website": "https://www.ucdavis.edu"
   },
   "enrollment": {
-    "total_undergraduate": 5000,
-    "total_graduate": 5000,
-    "international_percentage": 10.0,
-    "korean_student_estimate": 100,
-    "student_faculty_ratio": "10:1"
+    "total_undergraduate": 31000,
+    "total_graduate": 9000,
+    "international_percentage": 14.0,
+    "korean_student_estimate": 400,
+    "student_faculty_ratio": "20:1"
   },
   "admission_stats": {
-    "acceptance_rate": 10.0,
+    "acceptance_rate": 37.0,
     "early_action_rate": null,
     "early_decision_rate": null,
-    "regular_decision_rate": 10.0,
-    "yield_rate": 50,
-    "total_applicants": 30000,
-    "total_admitted": 3000,
-    "international_applicants": 5000,
-    "international_admitted": 300,
+    "regular_decision_rate": 37.0,
+    "yield_rate": 22,
+    "total_applicants": 95000,
+    "total_admitted": 35150,
+    "international_applicants": 18000,
+    "international_admitted": 5000,
     "profile_ranges": {
-      "gpa_unweighted": { "25th": 3.8, "median": 3.9, "75th": 4.0 },
-      "sat_total": { "25th": 1400, "median": 1480, "75th": 1550 },
-      "sat_math": { "25th": 700, "median": 750, "75th": 790 },
-      "sat_reading": { "25th": 680, "median": 730, "75th": 770 },
-      "act_composite": { "25th": 31, "median": 33, "75th": 35 }
+      "gpa_unweighted": {
+        "25th": 3.75,
+        "median": 3.92,
+        "75th": 4.0
+      },
+      "sat_total": {
+        "25th": 1210,
+        "median": 1320,
+        "75th": 1430
+      },
+      "sat_math": {
+        "25th": 610,
+        "median": 680,
+        "75th": 750
+      },
+      "sat_reading": {
+        "25th": 590,
+        "median": 650,
+        "75th": 700
+      },
+      "act_composite": {
+        "25th": 26,
+        "median": 29,
+        "75th": 33
+      }
     }
   },
   "application_requirements": {
-    "deadline_early": "November 1",
-    "deadline_regular": "January 1",
-    "application_platform": "Common App",
-    "application_fee": 75,
+    "deadline_early": null,
+    "deadline_regular": "November 30",
+    "application_platform": "UC Application",
+    "application_fee": 70,
     "fee_waiver_available": true,
     "required_documents": [
-      { "item": "Transcript", "notes": "Official" },
-      { "item": "Recommendations", "count": 2 },
-      { "item": "Essays", "count": 2 }
+      {
+        "item": "Transcript",
+        "notes": "Self-reported, official later"
+      },
+      {
+        "item": "Essays",
+        "notes": "4 UC PIQs (Personal Insight Questions)"
+      }
     ],
-    "test_policy": "Test-optional",
+    "test_policy": "Test-free (no SAT/ACT)",
     "english_proficiency": {
       "required_for_international": true,
-      "minimum_toefl": 100,
-      "minimum_ielts": 7.0,
+      "minimum_toefl": 80,
+      "minimum_ielts": 6.5,
       "duolingo_accepted": true,
-      "minimum_duolingo": 120,
-      "waiver_conditions": "4+ years English instruction"
+      "minimum_duolingo": 110,
+      "waiver_conditions": "English instruction at US high school for 3+ years"
     }
   },
   "academic_programs": {
-    "notable_majors": ["Computer Science", "Economics", "Biology"],
-    "unique_programs": ["TBD"],
-    "curriculum_structure": "Core + Major + Electives"
+    "notable_majors": [
+      "Veterinary Science (#1 in US)",
+      "Agriculture",
+      "Biology",
+      "Engineering",
+      "Environmental Science"
+    ],
+    "unique_programs": [
+      "Top veterinary school",
+      "Agricultural and Environmental Sciences",
+      "Bike-friendly campus",
+      "Strong STEM research"
+    ],
+    "curriculum_structure": "GE requirements + Major"
   },
   "korean_student_specific": {
-    "korean_student_organizations": ["Korean Students Association"],
-    "korean_food_access": "TBD",
-    "korean_church_proximity": "TBD",
+    "korean_student_organizations": [
+      "Korean Student Association",
+      "Korean American Student Association"
+    ],
+    "korean_food_access": "Fair - Sacramento has Korean options",
+    "korean_church_proximity": "Sacramento Korean churches (20 min)",
     "historical_admit_patterns": {
-      "korean_high_schools_commonly_admitted": [],
-      "common_profiles": "TBD"
+      "korean_high_schools_commonly_admitted": [
+        "Seoul International School",
+        "Korea International School",
+        "California Korean-American high schoolers"
+      ],
+      "common_profiles": "STEM-focused, environmental/agricultural interests"
     },
-    "korean_specific_advice": [],
-    "common_korean_applicant_mistakes": []
+    "korean_specific_advice": [
+      "UC is test-free - focus on GPA and PIQs",
+      "PIQs are crucial - show unique perspectives",
+      "Veterinary program is world-class if interested",
+      "Davis is a college town - embrace the lifestyle",
+      "Apply to multiple UCs with one application"
+    ],
+    "common_korean_applicant_mistakes": [
+      "Generic PIQs that don't show personality",
+      "Not applying to multiple UC campuses",
+      "Ignoring unique programs like veterinary science",
+      "Not showing fit with college-town environment"
+    ]
   },
   "cost_and_aid": {
-    "tuition": 60000,
-    "room_and_board": 18000,
-    "total_cost_of_attendance": 82000,
-    "financial_aid_for_international": true,
+    "tuition": 44408,
+    "room_and_board": 18189,
+    "total_cost_of_attendance": 67597,
+    "financial_aid_for_international": false,
     "need_blind_for_international": false,
-    "average_aid_package": 50000,
-    "percentage_receiving_aid": 50
+    "average_aid_package": 22000,
+    "percentage_receiving_aid": 55
   },
   "campus_life": {
-    "housing_guarantee": "4 years",
-    "popular_dorms": [],
-    "dining_options": "Multiple dining halls",
-    "safety_rating": "Good",
-    "nearby_attractions": "TBD"
+    "housing_guarantee": "2 years",
+    "popular_dorms": [
+      "Tercero",
+      "Segundo",
+      "Cuarto"
+    ],
+    "dining_options": "Multiple dining commons",
+    "safety_rating": "Excellent - very safe college town",
+    "nearby_attractions": "Sacramento, San Francisco (1.5 hours), Napa Valley"
   },
   "career_outcomes": {
-    "employment_rate_6_months": 90,
-    "average_starting_salary": 70000,
-    "top_employers": [],
-    "graduate_school_rate": 40,
-    "korean_alumni_network": "TBD"
+    "employment_rate_6_months": 85,
+    "average_starting_salary": 58000,
+    "top_employers": [
+      "Tech companies",
+      "Agriculture industry",
+      "Healthcare",
+      "Government"
+    ],
+    "graduate_school_rate": 35,
+    "korean_alumni_network": "Active UC Davis Korean alumni in California"
   },
-  "last_updated": "2024-12-01"
+  "last_updated": "2025-01-05"
 }

@@ -1,104 +1,168 @@
 {
   "university_id": "ucsd",
   "basic_info": {
-    "name": "University Name",
-    "name_short": "Short",
+    "name": "University of California, San Diego",
+    "name_short": "UCSD",
     "location": {
-      "city": "City",
-      "state": "State",
-      "region": "Region",
-      "nearest_korean_community": "TBD",
-      "distance_to_korean_community": "TBD",
-      "climate": "TBD"
+      "city": "La Jolla",
+      "state": "California",
+      "region": "West Coast",
+      "nearest_korean_community": "San Diego Convoy District (15 min)",
+      "distance_to_korean_community": "15 min",
+      "climate": "Mediterranean (13-24°C), perfect weather year-round"
     },
-    "type": "Private Research",
-    "founded": 1900,
-    "website": "https://example.edu"
+    "type": "Public Research",
+    "founded": 1960,
+    "website": "https://ucsd.edu"
   },
   "enrollment": {
-    "total_undergraduate": 5000,
-    "total_graduate": 5000,
-    "international_percentage": 10.0,
-    "korean_student_estimate": 100,
-    "student_faculty_ratio": "10:1"
+    "total_undergraduate": 33000,
+    "total_graduate": 9000,
+    "international_percentage": 20.0,
+    "korean_student_estimate": 700,
+    "student_faculty_ratio": "19:1"
   },
   "admission_stats": {
-    "acceptance_rate": 10.0,
+    "acceptance_rate": 24.0,
     "early_action_rate": null,
     "early_decision_rate": null,
-    "regular_decision_rate": 10.0,
-    "yield_rate": 50,
-    "total_applicants": 30000,
-    "total_admitted": 3000,
-    "international_applicants": 5000,
-    "international_admitted": 300,
+    "regular_decision_rate": 24.0,
+    "yield_rate": 21,
+    "total_applicants": 130000,
+    "total_admitted": 31200,
+    "international_applicants": 28000,
+    "international_admitted": 5500,
     "profile_ranges": {
-      "gpa_unweighted": { "25th": 3.8, "median": 3.9, "75th": 4.0 },
-      "sat_total": { "25th": 1400, "median": 1480, "75th": 1550 },
-      "sat_math": { "25th": 700, "median": 750, "75th": 790 },
-      "sat_reading": { "25th": 680, "median": 730, "75th": 770 },
-      "act_composite": { "25th": 31, "median": 33, "75th": 35 }
+      "gpa_unweighted": {
+        "25th": 3.88,
+        "median": 3.97,
+        "75th": 4.0
+      },
+      "sat_total": {
+        "25th": 1310,
+        "median": 1420,
+        "75th": 1510
+      },
+      "sat_math": {
+        "25th": 680,
+        "median": 750,
+        "75th": 790
+      },
+      "sat_reading": {
+        "25th": 630,
+        "median": 680,
+        "75th": 730
+      },
+      "act_composite": {
+        "25th": 29,
+        "median": 32,
+        "75th": 35
+      }
     }
   },
   "application_requirements": {
-    "deadline_early": "November 1",
-    "deadline_regular": "January 1",
-    "application_platform": "Common App",
-    "application_fee": 75,
+    "deadline_early": null,
+    "deadline_regular": "November 30",
+    "application_platform": "UC Application",
+    "application_fee": 70,
     "fee_waiver_available": true,
     "required_documents": [
-      { "item": "Transcript", "notes": "Official" },
-      { "item": "Recommendations", "count": 2 },
-      { "item": "Essays", "count": 2 }
+      {
+        "item": "Transcript",
+        "notes": "Self-reported"
+      },
+      {
+        "item": "Essays",
+        "notes": "4 UC PIQs"
+      }
     ],
-    "test_policy": "Test-optional",
+    "test_policy": "Test-free",
     "english_proficiency": {
       "required_for_international": true,
-      "minimum_toefl": 100,
+      "minimum_toefl": 83,
       "minimum_ielts": 7.0,
       "duolingo_accepted": true,
-      "minimum_duolingo": 120,
-      "waiver_conditions": "4+ years English instruction"
+      "minimum_duolingo": 115,
+      "waiver_conditions": "3+ years English instruction at US school"
     }
   },
   "academic_programs": {
-    "notable_majors": ["Computer Science", "Economics", "Biology"],
-    "unique_programs": ["TBD"],
-    "curriculum_structure": "Core + Major + Electives"
+    "notable_majors": [
+      "Biology/Bioengineering (top)",
+      "Computer Science",
+      "Economics",
+      "Engineering",
+      "Political Science"
+    ],
+    "unique_programs": [
+      "Six residential colleges (unique system)",
+      "Bioengineering and Biotech (near Scripps)",
+      "Strong research opportunities",
+      "Jacobs School of Engineering"
+    ],
+    "curriculum_structure": "College-specific GE + Major (6 different colleges)"
   },
   "korean_student_specific": {
-    "korean_student_organizations": ["Korean Students Association"],
-    "korean_food_access": "TBD",
-    "korean_church_proximity": "TBD",
+    "korean_student_organizations": [
+      "Korean Student Association",
+      "Korean American Student Association",
+      "Korean Culture Night"
+    ],
+    "korean_food_access": "Excellent - Convoy District has many Korean restaurants",
+    "korean_church_proximity": "San Diego Korean churches nearby",
     "historical_admit_patterns": {
-      "korean_high_schools_commonly_admitted": [],
-      "common_profiles": "TBD"
+      "korean_high_schools_commonly_admitted": [
+        "Seoul International School",
+        "Korea International School",
+        "SoCal Korean-American students"
+      ],
+      "common_profiles": "STEM-focused, research-oriented students"
     },
-    "korean_specific_advice": [],
-    "common_korean_applicant_mistakes": []
+    "korean_specific_advice": [
+      "Choose your residential college wisely - each has different GE requirements",
+      "UCSD is known as 'UC Socially Dead' - be aware of campus culture",
+      "Biotech and pre-med tracks are very strong",
+      "Research opportunities are abundant - mention interest",
+      "La Jolla is beautiful but expensive"
+    ],
+    "common_korean_applicant_mistakes": [
+      "Not ranking colleges correctly (use the supplement)",
+      "Generic PIQs - very competitive pool",
+      "Not researching the college system beforehand",
+      "Underestimating STEM competition"
+    ]
   },
   "cost_and_aid": {
-    "tuition": 60000,
-    "room_and_board": 18000,
-    "total_cost_of_attendance": 82000,
-    "financial_aid_for_international": true,
+    "tuition": 44487,
+    "room_and_board": 17832,
+    "total_cost_of_attendance": 67319,
+    "financial_aid_for_international": false,
     "need_blind_for_international": false,
-    "average_aid_package": 50000,
-    "percentage_receiving_aid": 50
+    "average_aid_package": 22000,
+    "percentage_receiving_aid": 54
   },
   "campus_life": {
-    "housing_guarantee": "4 years",
-    "popular_dorms": [],
-    "dining_options": "Multiple dining halls",
-    "safety_rating": "Good",
-    "nearby_attractions": "TBD"
+    "housing_guarantee": "2 years",
+    "popular_dorms": [
+      "Revelle",
+      "Muir",
+      "Sixth College"
+    ],
+    "dining_options": "Each college has dining hall, Price Center food court",
+    "safety_rating": "Excellent - La Jolla is very safe",
+    "nearby_attractions": "La Jolla beaches, San Diego Zoo, downtown SD"
   },
   "career_outcomes": {
-    "employment_rate_6_months": 90,
+    "employment_rate_6_months": 88,
     "average_starting_salary": 70000,
-    "top_employers": [],
-    "graduate_school_rate": 40,
-    "korean_alumni_network": "TBD"
+    "top_employers": [
+      "Qualcomm",
+      "Illumina",
+      "Google",
+      "Biotech companies"
+    ],
+    "graduate_school_rate": 35,
+    "korean_alumni_network": "Large UCSD Korean alumni network in SD and beyond"
   },
-  "last_updated": "2024-12-01"
+  "last_updated": "2025-01-05"
 }

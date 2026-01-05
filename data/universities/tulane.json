@@ -1,104 +1,169 @@
 {
   "university_id": "tulane",
   "basic_info": {
-    "name": "University Name",
-    "name_short": "Short",
+    "name": "Tulane University",
+    "name_short": "Tulane",
     "location": {
-      "city": "City",
-      "state": "State",
-      "region": "Region",
-      "nearest_korean_community": "TBD",
-      "distance_to_korean_community": "TBD",
-      "climate": "TBD"
+      "city": "New Orleans",
+      "state": "Louisiana",
+      "region": "South",
+      "nearest_korean_community": "Limited - Houston (5 hours)",
+      "distance_to_korean_community": "5 hours",
+      "climate": "Hot, humid (12-33°C), subtropical"
     },
     "type": "Private Research",
-    "founded": 1900,
-    "website": "https://example.edu"
+    "founded": 1834,
+    "website": "https://tulane.edu"
   },
   "enrollment": {
-    "total_undergraduate": 5000,
+    "total_undergraduate": 8500,
     "total_graduate": 5000,
-    "international_percentage": 10.0,
-    "korean_student_estimate": 100,
-    "student_faculty_ratio": "10:1"
+    "international_percentage": 8.0,
+    "korean_student_estimate": 50,
+    "student_faculty_ratio": "8:1"
   },
   "admission_stats": {
-    "acceptance_rate": 10.0,
-    "early_action_rate": null,
-    "early_decision_rate": null,
-    "regular_decision_rate": 10.0,
-    "yield_rate": 50,
-    "total_applicants": 30000,
-    "total_admitted": 3000,
-    "international_applicants": 5000,
-    "international_admitted": 300,
+    "acceptance_rate": 11.0,
+    "early_action_rate": 18.0,
+    "early_decision_rate": 40.0,
+    "regular_decision_rate": 8.0,
+    "yield_rate": 38,
+    "total_applicants": 45000,
+    "total_admitted": 4950,
+    "international_applicants": 4000,
+    "international_admitted": 350,
     "profile_ranges": {
-      "gpa_unweighted": { "25th": 3.8, "median": 3.9, "75th": 4.0 },
-      "sat_total": { "25th": 1400, "median": 1480, "75th": 1550 },
-      "sat_math": { "25th": 700, "median": 750, "75th": 790 },
-      "sat_reading": { "25th": 680, "median": 730, "75th": 770 },
-      "act_composite": { "25th": 31, "median": 33, "75th": 35 }
+      "gpa_unweighted": {
+        "25th": 3.65,
+        "median": 3.8,
+        "75th": 3.92
+      },
+      "sat_total": {
+        "25th": 1360,
+        "median": 1430,
+        "75th": 1500
+      },
+      "sat_math": {
+        "25th": 680,
+        "median": 720,
+        "75th": 770
+      },
+      "sat_reading": {
+        "25th": 680,
+        "median": 710,
+        "75th": 740
+      },
+      "act_composite": {
+        "25th": 31,
+        "median": 33,
+        "75th": 34
+      }
     }
   },
   "application_requirements": {
-    "deadline_early": "November 1",
-    "deadline_regular": "January 1",
+    "deadline_early": "November 1 (EA) / November 15 (ED)",
+    "deadline_regular": "January 15",
     "application_platform": "Common App",
-    "application_fee": 75,
+    "application_fee": 0,
     "fee_waiver_available": true,
     "required_documents": [
-      { "item": "Transcript", "notes": "Official" },
-      { "item": "Recommendations", "count": 2 },
-      { "item": "Essays", "count": 2 }
+      {
+        "item": "Transcript",
+        "notes": "Official transcripts"
+      },
+      {
+        "item": "Recommendations",
+        "count": 1,
+        "notes": "Counselor or teacher"
+      },
+      {
+        "item": "Essays",
+        "notes": "Tulane-specific essays important"
+      }
     ],
     "test_policy": "Test-optional",
     "english_proficiency": {
       "required_for_international": true,
-      "minimum_toefl": 100,
-      "minimum_ielts": 7.0,
+      "minimum_toefl": 90,
+      "minimum_ielts": 6.5,
       "duolingo_accepted": true,
-      "minimum_duolingo": 120,
-      "waiver_conditions": "4+ years English instruction"
+      "minimum_duolingo": 115,
+      "waiver_conditions": "English instruction for 4+ years"
     }
   },
   "academic_programs": {
-    "notable_majors": ["Computer Science", "Economics", "Biology"],
-    "unique_programs": ["TBD"],
-    "curriculum_structure": "Core + Major + Electives"
+    "notable_majors": [
+      "Public Health",
+      "Business",
+      "Political Science",
+      "Architecture",
+      "Latin American Studies"
+    ],
+    "unique_programs": [
+      "Public Service requirement",
+      "Semester at Sea partnership",
+      "Strong public health program",
+      "New Orleans culture integration"
+    ],
+    "curriculum_structure": "Core curriculum + Public Service + Major"
   },
   "korean_student_specific": {
-    "korean_student_organizations": ["Korean Students Association"],
-    "korean_food_access": "TBD",
-    "korean_church_proximity": "TBD",
+    "korean_student_organizations": [
+      "Asian Pacific American Student Association"
+    ],
+    "korean_food_access": "Limited - small Asian options in NOLA",
+    "korean_church_proximity": "Very limited Korean churches",
     "historical_admit_patterns": {
-      "korean_high_schools_commonly_admitted": [],
-      "common_profiles": "TBD"
+      "korean_high_schools_commonly_admitted": [
+        "Seoul International School"
+      ],
+      "common_profiles": "Service-oriented, culturally curious students"
     },
-    "korean_specific_advice": [],
-    "common_korean_applicant_mistakes": []
+    "korean_specific_advice": [
+      "Tulane loves DEMONSTRATED INTEREST - visit or engage",
+      "Free application - apply as a target/safety",
+      "ED/EA significantly boost chances",
+      "Public service is required - show related experience",
+      "New Orleans culture is unique - show genuine interest"
+    ],
+    "common_korean_applicant_mistakes": [
+      "Not demonstrating interest (very important for Tulane)",
+      "Missing free application opportunity",
+      "Essays that don't show appreciation for NOLA culture",
+      "Not showing service orientation"
+    ]
   },
   "cost_and_aid": {
-    "tuition": 60000,
-    "room_and_board": 18000,
-    "total_cost_of_attendance": 82000,
+    "tuition": 63378,
+    "room_and_board": 18380,
+    "total_cost_of_attendance": 86758,
     "financial_aid_for_international": true,
     "need_blind_for_international": false,
-    "average_aid_package": 50000,
-    "percentage_receiving_aid": 50
+    "average_aid_package": 45000,
+    "percentage_receiving_aid": 48
   },
   "campus_life": {
-    "housing_guarantee": "4 years",
-    "popular_dorms": [],
-    "dining_options": "Multiple dining halls",
-    "safety_rating": "Good",
-    "nearby_attractions": "TBD"
+    "housing_guarantee": "2 years (freshmen required)",
+    "popular_dorms": [
+      "Wall",
+      "Sharp",
+      "Butler"
+    ],
+    "dining_options": "Bruff Commons, Boot restaurant area nearby",
+    "safety_rating": "Moderate - urban campus, TUPD active",
+    "nearby_attractions": "French Quarter, Garden District, Mardi Gras"
   },
   "career_outcomes": {
-    "employment_rate_6_months": 90,
-    "average_starting_salary": 70000,
-    "top_employers": [],
-    "graduate_school_rate": 40,
-    "korean_alumni_network": "TBD"
+    "employment_rate_6_months": 88,
+    "average_starting_salary": 58000,
+    "top_employers": [
+      "Healthcare",
+      "Business",
+      "Non-profits",
+      "Government"
+    ],
+    "graduate_school_rate": 35,
+    "korean_alumni_network": "Smaller Tulane Korean alumni network"
   },
-  "last_updated": "2024-12-01"
+  "last_updated": "2025-01-05"
 }

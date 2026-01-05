@@ -1,55 +1,85 @@
 {
   "university_id": "brandeis",
   "basic_info": {
-    "name": "University Name",
-    "name_short": "Short",
+    "name": "Brandeis University",
+    "name_short": "Brandeis",
     "location": {
-      "city": "City",
-      "state": "State",
-      "region": "Region",
-      "nearest_korean_community": "TBD",
-      "distance_to_korean_community": "TBD",
-      "climate": "TBD"
+      "city": "Waltham",
+      "state": "Massachusetts",
+      "region": "Northeast",
+      "nearest_korean_community": "Boston Koreatown (20 min)",
+      "distance_to_korean_community": "20 min",
+      "climate": "Four seasons, cold winters (-4°C to 3°C), warm summers (18-27°C)"
     },
     "type": "Private Research",
-    "founded": 1900,
-    "website": "https://example.edu"
+    "founded": 1948,
+    "website": "https://www.brandeis.edu"
   },
   "enrollment": {
-    "total_undergraduate": 5000,
-    "total_graduate": 5000,
-    "international_percentage": 10.0,
-    "korean_student_estimate": 100,
+    "total_undergraduate": 3600,
+    "total_graduate": 2400,
+    "international_percentage": 20.0,
+    "korean_student_estimate": 80,
     "student_faculty_ratio": "10:1"
   },
   "admission_stats": {
-    "acceptance_rate": 10.0,
+    "acceptance_rate": 34.0,
     "early_action_rate": null,
-    "early_decision_rate": null,
-    "regular_decision_rate": 10.0,
-    "yield_rate": 50,
-    "total_applicants": 30000,
-    "total_admitted": 3000,
-    "international_applicants": 5000,
-    "international_admitted": 300,
+    "early_decision_rate": 55.0,
+    "regular_decision_rate": 30.0,
+    "yield_rate": 28,
+    "total_applicants": 12000,
+    "total_admitted": 4080,
+    "international_applicants": 2500,
+    "international_admitted": 650,
     "profile_ranges": {
-      "gpa_unweighted": { "25th": 3.8, "median": 3.9, "75th": 4.0 },
-      "sat_total": { "25th": 1400, "median": 1480, "75th": 1550 },
-      "sat_math": { "25th": 700, "median": 750, "75th": 790 },
-      "sat_reading": { "25th": 680, "median": 730, "75th": 770 },
-      "act_composite": { "25th": 31, "median": 33, "75th": 35 }
+      "gpa_unweighted": {
+        "25th": 3.7,
+        "median": 3.85,
+        "75th": 3.95
+      },
+      "sat_total": {
+        "25th": 1350,
+        "median": 1420,
+        "75th": 1500
+      },
+      "sat_math": {
+        "25th": 680,
+        "median": 720,
+        "75th": 770
+      },
+      "sat_reading": {
+        "25th": 670,
+        "median": 700,
+        "75th": 730
+      },
+      "act_composite": {
+        "25th": 31,
+        "median": 33,
+        "75th": 34
+      }
     }
   },
   "application_requirements": {
-    "deadline_early": "November 1",
+    "deadline_early": "November 1 (ED1) / January 1 (ED2)",
     "deadline_regular": "January 1",
     "application_platform": "Common App",
-    "application_fee": 75,
+    "application_fee": 80,
     "fee_waiver_available": true,
     "required_documents": [
-      { "item": "Transcript", "notes": "Official" },
-      { "item": "Recommendations", "count": 2 },
-      { "item": "Essays", "count": 2 }
+      {
+        "item": "Transcript",
+        "notes": "Official transcripts"
+      },
+      {
+        "item": "Recommendations",
+        "count": 2,
+        "notes": "Counselor + teacher"
+      },
+      {
+        "item": "Essays",
+        "notes": "Brandeis essays"
+      }
     ],
     "test_policy": "Test-optional",
     "english_proficiency": {
@@ -58,47 +88,84 @@
       "minimum_ielts": 7.0,
       "duolingo_accepted": true,
       "minimum_duolingo": 120,
-      "waiver_conditions": "4+ years English instruction"
+      "waiver_conditions": "English instruction for 4+ years"
     }
   },
   "academic_programs": {
-    "notable_majors": ["Computer Science", "Economics", "Biology"],
-    "unique_programs": ["TBD"],
-    "curriculum_structure": "Core + Major + Electives"
+    "notable_majors": [
+      "Economics",
+      "Biology",
+      "Psychology",
+      "Politics",
+      "Computer Science"
+    ],
+    "unique_programs": [
+      "Heller School for Social Policy",
+      "Justice Brandeis Semester",
+      "Strong pre-med track",
+      "Interdisciplinary programs"
+    ],
+    "curriculum_structure": "Distribution requirements + Major"
   },
   "korean_student_specific": {
-    "korean_student_organizations": ["Korean Students Association"],
-    "korean_food_access": "TBD",
-    "korean_church_proximity": "TBD",
+    "korean_student_organizations": [
+      "Korean Students Association",
+      "Asian American Student Association"
+    ],
+    "korean_food_access": "Good - Boston area has many options",
+    "korean_church_proximity": "Boston area Korean churches",
     "historical_admit_patterns": {
-      "korean_high_schools_commonly_admitted": [],
-      "common_profiles": "TBD"
+      "korean_high_schools_commonly_admitted": [
+        "Seoul International School",
+        "Korea International School"
+      ],
+      "common_profiles": "Academically strong, socially conscious students"
     },
-    "korean_specific_advice": [],
-    "common_korean_applicant_mistakes": []
+    "korean_specific_advice": [
+      "Brandeis has strong Jewish heritage but welcomes all backgrounds",
+      "ED gives significant boost - consider if top choice",
+      "Social justice focus is important - show related activities",
+      "Small size means community matters - show fit",
+      "Pre-med and research opportunities are strong"
+    ],
+    "common_korean_applicant_mistakes": [
+      "Not understanding the social justice emphasis",
+      "Missing ED opportunity for higher acceptance",
+      "Generic essays without Brandeis-specific content",
+      "Not showing how you'll contribute to small community"
+    ]
   },
   "cost_and_aid": {
-    "tuition": 60000,
-    "room_and_board": 18000,
-    "total_cost_of_attendance": 82000,
+    "tuition": 62213,
+    "room_and_board": 17764,
+    "total_cost_of_attendance": 84977,
     "financial_aid_for_international": true,
     "need_blind_for_international": false,
-    "average_aid_package": 50000,
-    "percentage_receiving_aid": 50
+    "average_aid_package": 52000,
+    "percentage_receiving_aid": 55
   },
   "campus_life": {
-    "housing_guarantee": "4 years",
-    "popular_dorms": [],
-    "dining_options": "Multiple dining halls",
-    "safety_rating": "Good",
-    "nearby_attractions": "TBD"
+    "housing_guarantee": "2 years",
+    "popular_dorms": [
+      "Massell",
+      "East",
+      "Rosenthal"
+    ],
+    "dining_options": "Sherman Dining Hall, campus cafes",
+    "safety_rating": "Good - suburban campus",
+    "nearby_attractions": "Boston (20 min), Cambridge, Waltham town"
   },
   "career_outcomes": {
-    "employment_rate_6_months": 90,
-    "average_starting_salary": 70000,
-    "top_employers": [],
-    "graduate_school_rate": 40,
-    "korean_alumni_network": "TBD"
+    "employment_rate_6_months": 89,
+    "average_starting_salary": 60000,
+    "top_employers": [
+      "Healthcare",
+      "Finance",
+      "Non-profits",
+      "Tech"
+    ],
+    "graduate_school_rate": 42,
+    "korean_alumni_network": "Smaller but active Brandeis Korean alumni"
   },
-  "last_updated": "2024-12-01"
+  "last_updated": "2025-01-05"
 }

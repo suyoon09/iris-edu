@@ -1,104 +1,169 @@
 {
   "university_id": "uiuc",
   "basic_info": {
-    "name": "University Name",
-    "name_short": "Short",
+    "name": "University of Illinois Urbana-Champaign",
+    "name_short": "UIUC",
     "location": {
-      "city": "City",
-      "state": "State",
-      "region": "Region",
-      "nearest_korean_community": "TBD",
-      "distance_to_korean_community": "TBD",
-      "climate": "TBD"
+      "city": "Urbana-Champaign",
+      "state": "Illinois",
+      "region": "Midwest",
+      "nearest_korean_community": "Chicago Koreatown (2.5 hours)",
+      "distance_to_korean_community": "2.5 hours",
+      "climate": "Cold winters (-10°C to 2°C), warm summers (17-30°C)"
     },
-    "type": "Private Research",
-    "founded": 1900,
-    "website": "https://example.edu"
+    "type": "Public Research",
+    "founded": 1867,
+    "website": "https://illinois.edu"
   },
   "enrollment": {
-    "total_undergraduate": 5000,
-    "total_graduate": 5000,
-    "international_percentage": 10.0,
-    "korean_student_estimate": 100,
-    "student_faculty_ratio": "10:1"
+    "total_undergraduate": 35000,
+    "total_graduate": 18000,
+    "international_percentage": 22.0,
+    "korean_student_estimate": 1000,
+    "student_faculty_ratio": "20:1"
   },
   "admission_stats": {
-    "acceptance_rate": 10.0,
-    "early_action_rate": null,
+    "acceptance_rate": 45.0,
+    "early_action_rate": 60.0,
     "early_decision_rate": null,
-    "regular_decision_rate": 10.0,
-    "yield_rate": 50,
-    "total_applicants": 30000,
-    "total_admitted": 3000,
-    "international_applicants": 5000,
-    "international_admitted": 300,
+    "regular_decision_rate": 35.0,
+    "yield_rate": 32,
+    "total_applicants": 62000,
+    "total_admitted": 27900,
+    "international_applicants": 15000,
+    "international_admitted": 5500,
     "profile_ranges": {
-      "gpa_unweighted": { "25th": 3.8, "median": 3.9, "75th": 4.0 },
-      "sat_total": { "25th": 1400, "median": 1480, "75th": 1550 },
-      "sat_math": { "25th": 700, "median": 750, "75th": 790 },
-      "sat_reading": { "25th": 680, "median": 730, "75th": 770 },
-      "act_composite": { "25th": 31, "median": 33, "75th": 35 }
+      "gpa_unweighted": {
+        "25th": 3.6,
+        "median": 3.8,
+        "75th": 3.95
+      },
+      "sat_total": {
+        "25th": 1300,
+        "median": 1410,
+        "75th": 1510
+      },
+      "sat_math": {
+        "25th": 680,
+        "median": 750,
+        "75th": 800
+      },
+      "sat_reading": {
+        "25th": 620,
+        "median": 670,
+        "75th": 720
+      },
+      "act_composite": {
+        "25th": 28,
+        "median": 32,
+        "75th": 34
+      }
     }
   },
   "application_requirements": {
-    "deadline_early": "November 1",
-    "deadline_regular": "January 1",
-    "application_platform": "Common App",
-    "application_fee": 75,
+    "deadline_early": "November 1 (EA)",
+    "deadline_regular": "January 5",
+    "application_platform": "Common App, Coalition",
+    "application_fee": 50,
     "fee_waiver_available": true,
     "required_documents": [
-      { "item": "Transcript", "notes": "Official" },
-      { "item": "Recommendations", "count": 2 },
-      { "item": "Essays", "count": 2 }
+      {
+        "item": "Transcript",
+        "notes": "Official transcripts"
+      },
+      {
+        "item": "Essays",
+        "notes": "UIUC essays"
+      }
     ],
-    "test_policy": "Test-optional",
+    "test_policy": "Test-optional (but CS/Engineering prefer scores)",
     "english_proficiency": {
       "required_for_international": true,
-      "minimum_toefl": 100,
-      "minimum_ielts": 7.0,
+      "minimum_toefl": 80,
+      "minimum_ielts": 6.5,
       "duolingo_accepted": true,
-      "minimum_duolingo": 120,
-      "waiver_conditions": "4+ years English instruction"
+      "minimum_duolingo": 110,
+      "waiver_conditions": "English instruction at US school 2+ years"
     }
   },
   "academic_programs": {
-    "notable_majors": ["Computer Science", "Economics", "Biology"],
-    "unique_programs": ["TBD"],
-    "curriculum_structure": "Core + Major + Electives"
+    "notable_majors": [
+      "Computer Science (top 5 US)",
+      "Engineering (top 5)",
+      "Accounting",
+      "Business",
+      "Agriculture"
+    ],
+    "unique_programs": [
+      "CS + X (CS combined with any major)",
+      "Grainger Engineering",
+      "Gies Business School",
+      "Strong STEM research"
+    ],
+    "curriculum_structure": "GE requirements + Major (varies by college)"
   },
   "korean_student_specific": {
-    "korean_student_organizations": ["Korean Students Association"],
-    "korean_food_access": "TBD",
-    "korean_church_proximity": "TBD",
+    "korean_student_organizations": [
+      "Korean Student Association",
+      "Korean American Student Association",
+      "Korean Culture Night"
+    ],
+    "korean_food_access": "Good - multiple Korean restaurants near campus",
+    "korean_church_proximity": "Korean churches in Champaign-Urbana",
     "historical_admit_patterns": {
-      "korean_high_schools_commonly_admitted": [],
-      "common_profiles": "TBD"
+      "korean_high_schools_commonly_admitted": [
+        "Seoul Science High School",
+        "Korea Science Academy",
+        "Seoul International School"
+      ],
+      "common_profiles": "Strong STEM, especially CS oriented"
     },
-    "korean_specific_advice": [],
-    "common_korean_applicant_mistakes": []
+    "korean_specific_advice": [
+      "CS is EXTREMELY competitive - consider CS+X alternatives",
+      "Apply EA for engineering/CS - significantly helps",
+      "Must apply directly to major - cannot transfer into CS easily",
+      "Large Korean community on campus",
+      "Good value for top-tier CS education"
+    ],
+    "common_korean_applicant_mistakes": [
+      "Applying regular decision for competitive majors",
+      "Not having backup major plan (CS is very hard to get)",
+      "Underestimating how competitive CS/Engineering is",
+      "Not applying to CS+X programs as alternatives"
+    ]
   },
   "cost_and_aid": {
-    "tuition": 60000,
-    "room_and_board": 18000,
-    "total_cost_of_attendance": 82000,
+    "tuition": 37350,
+    "room_and_board": 13566,
+    "total_cost_of_attendance": 55916,
     "financial_aid_for_international": true,
     "need_blind_for_international": false,
-    "average_aid_package": 50000,
-    "percentage_receiving_aid": 50
+    "average_aid_package": 18000,
+    "percentage_receiving_aid": 45
   },
   "campus_life": {
-    "housing_guarantee": "4 years",
-    "popular_dorms": [],
-    "dining_options": "Multiple dining halls",
-    "safety_rating": "Good",
-    "nearby_attractions": "TBD"
+    "housing_guarantee": "Freshmen (not guaranteed for sophomores)",
+    "popular_dorms": [
+      "ISR",
+      "FAR",
+      "PAR"
+    ],
+    "dining_options": "Multiple dining halls, Green Street restaurants",
+    "safety_rating": "Good - campus police active",
+    "nearby_attractions": "Chicago (2.5 hours), campus activities"
   },
   "career_outcomes": {
-    "employment_rate_6_months": 90,
-    "average_starting_salary": 70000,
-    "top_employers": [],
-    "graduate_school_rate": 40,
-    "korean_alumni_network": "TBD"
+    "employment_rate_6_months": 92,
+    "average_starting_salary": 75000,
+    "top_employers": [
+      "Microsoft",
+      "Amazon",
+      "Google",
+      "Facebook",
+      "Caterpillar"
+    ],
+    "graduate_school_rate": 25,
+    "korean_alumni_network": "Very large UIUC Korean alumni, especially in tech"
   },
-  "last_updated": "2024-12-01"
+  "last_updated": "2025-01-05"
 }
