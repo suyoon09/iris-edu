@@ -8,7 +8,20 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 import type { Student } from "@/types/student";
-import type { StudentRoadmap, RoadmapItem } from "@/types/analysis";
+import type { RoadmapItem } from "@/types/analysis";
+
+interface StageResult {
+  stage: number;
+  completed_at: string;
+  elapsed_ms: number;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  result: any;
+}
+
+interface RoadmapState {
+  stage1?: StageResult;
+  stage2?: StageResult;
+}
 
 const categoryLabels: Record<string, string> = {
   academics: "학업",
@@ -34,17 +47,20 @@ const priorityColors: Record<string, string> = {
   low: "border-l-slate-300",
 };
 
+const STAGE_NAMES = ["", "준비 계획 분석 중...", "상세 로드맵 생성 중..."];
+
 export default function RoadmapPage() {
   const params = useParams();
   const router = useRouter();
   const studentId = params.id as string;
 
   const [student, setStudent] = useState<Student | null>(null);
-  const [roadmap, setRoadmap] = useState<StudentRoadmap | null>(null);
+  const [roadmapState, setRoadmapState] = useState<RoadmapState>({});
   const [isLoading, setIsLoading] = useState(true);
-  const [isGenerating, setIsGenerating] = useState(false);
+  const [currentStage, setCurrentStage] = useState(0);
   const [error, setError] = useState("");
   const [debugInfo, setDebugInfo] = useState<Record<string, unknown> | null>(null);
+  const [failedStage, setFailedStage] = useState<number | null>(null);
 
   useEffect(() => {
     fetchStudent();
@@ -63,79 +79,103 @@ export default function RoadmapPage() {
     }
   };
 
-  const generateRoadmap = async () => {
-    setIsGenerating(true);
-    setError("");
-    setDebugInfo(null);
-
-    // Use AbortController for timeout (Netlify has 26s limit)
+  const callStage = async (
+    stage: number,
+    context: Record<string, unknown>
+  ): Promise<StageResult | null> => {
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 55000); // 55s client timeout
+    const timeoutId = setTimeout(() => controller.abort(), 45000);
 
     try {
-      const response = await fetch("/api/roadmap", {
+      const response = await fetch("/api/roadmap/stage", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ student_id: studentId }),
+        body: JSON.stringify({ student_id: studentId, stage, context }),
         signal: controller.signal,
       });
 
       clearTimeout(timeoutId);
-
-      // Try to parse response, handling cases where it might fail
-      let data;
-      try {
-        data = await response.json();
-      } catch {
-        const text = await response.text().catch(() => "[Unable to read response]");
-        setError("서버 응답을 파싱할 수 없습니다.");
-        setDebugInfo({
-          parseError: true,
-          status: response.status,
-          statusText: response.statusText,
-          responsePreview: text.substring(0, 500),
-        });
-        return;
-      }
+      const data = await response.json();
 
       if (!response.ok) {
-        setError(data.error || "Roadmap generation failed");
-        if (data.debug) {
-          setDebugInfo(data.debug);
-        } else {
-          setDebugInfo({
-            status: response.status,
-            statusText: response.statusText,
-            errorData: data,
-          });
-        }
-        return;
+        throw new Error(data.error || `Stage ${stage} failed`);
       }
 
-      setRoadmap(data);
+      return data as StageResult;
     } catch (err) {
       clearTimeout(timeoutId);
       const errorMessage = err instanceof Error ? err.message : String(err);
       const isAborted = err instanceof Error && err.name === "AbortError";
-      const isTimeout = isAborted || errorMessage.includes("timeout") || errorMessage.includes("aborted");
 
-      if (isTimeout) {
-        setError("요청 시간이 초과되었습니다 (Netlify 서버 제한: 26초). AI 응답이 너무 길 수 있습니다.");
-      } else {
-        setError("로드맵 생성에 실패했습니다.");
+      if (isAborted) {
+        throw new Error(`Stage ${stage} 시간 초과`);
+      }
+      throw new Error(errorMessage);
+    }
+  };
+
+  const generateRoadmap = async () => {
+    setCurrentStage(1);
+    setError("");
+    setDebugInfo(null);
+    setFailedStage(null);
+    setRoadmapState({});
+
+    try {
+      // Stage 1: Core planning
+      setCurrentStage(1);
+      const stage1 = await callStage(1, {});
+      if (!stage1) throw new Error("Stage 1 returned no result");
+      setRoadmapState((prev) => ({ ...prev, stage1 }));
+
+      // Stage 2: Detailed roadmap
+      setCurrentStage(2);
+      const stage2 = await callStage(2, { stage1Result: stage1.result });
+      if (!stage2) throw new Error("Stage 2 returned no result");
+      setRoadmapState((prev) => ({ ...prev, stage2 }));
+
+      setCurrentStage(0);
+    } catch (err) {
+      const errorMessage = err instanceof Error ? err.message : String(err);
+      setError(errorMessage);
+      setFailedStage(currentStage);
+      setDebugInfo({
+        failedAtStage: currentStage,
+        message: errorMessage,
+        timestamp: new Date().toISOString(),
+      });
+      setCurrentStage(0);
+    }
+  };
+
+  const retryFromStage = async (stage: number) => {
+    setError("");
+    setDebugInfo(null);
+    setFailedStage(null);
+    setCurrentStage(stage);
+
+    try {
+      const context: Record<string, unknown> = {};
+      if (stage >= 2 && roadmapState.stage1) {
+        context.stage1Result = roadmapState.stage1.result;
       }
 
-      setDebugInfo({
-        networkError: true,
-        errorName: err instanceof Error ? err.name : "Unknown",
-        message: errorMessage,
-        isTimeout,
-        isAborted,
-        timestamp: new Date().toISOString(),
-        hint: isTimeout ? "Netlify 함수는 26초 제한이 있습니다. 프롬프트를 줄이거나 Pro 플랜으로 업그레이드하세요." : undefined,
-      });
-    } finally {
-      setIsGenerating(false);
+      for (let s = stage; s <= 2; s++) {
+        setCurrentStage(s);
+        const result = await callStage(s, context);
+        if (!result) throw new Error(`Stage ${s} returned no result`);
+
+        setRoadmapState((prev) => ({ ...prev, [`stage${s}`]: result }));
+
+        if (s === 1) context.stage1Result = result.result;
+      }
+
+      setCurrentStage(0);
+    } catch (err) {
+      const errorMessage = err instanceof Error ? err.message : String(err);
+      setError(errorMessage);
+      setFailedStage(currentStage);
+      setCurrentStage(0);
     }
   };
 
@@ -156,6 +196,10 @@ export default function RoadmapPage() {
     ];
     return months[month - 1];
   };
+
+  const hasAnyRoadmap = Object.keys(roadmapState).length > 0;
+  const isComplete = roadmapState.stage1 && roadmapState.stage2;
+  const isGenerating = currentStage > 0;
 
   if (isLoading) {
     return (
@@ -186,23 +230,64 @@ export default function RoadmapPage() {
                 {student?.name_korean} - 입시 로드맵
               </h1>
               <p className="text-slate-500 mt-1">
-                월별 입시 준비 계획을 AI가 생성합니다.
+                월별 입시 준비 계획을 AI가 2단계로 생성합니다.
               </p>
             </div>
             <div className="flex gap-2">
               <Button variant="outline" onClick={() => router.back()}>
                 돌아가기
               </Button>
-              <Button onClick={generateRoadmap} isLoading={isGenerating}>
-                {roadmap ? "다시 생성" : "로드맵 생성"}
+              <Button onClick={generateRoadmap} disabled={isGenerating}>
+                {hasAnyRoadmap ? "다시 생성" : "로드맵 생성"}
               </Button>
             </div>
           </div>
 
+          {/* Progress Indicator */}
+          {isGenerating && (
+            <Card className="mb-6 border-blue-200 bg-blue-50">
+              <CardContent className="py-4">
+                <div className="flex items-center gap-4">
+                  <div className="animate-spin h-6 w-6 border-3 border-blue-600 border-t-transparent rounded-full" />
+                  <div className="flex-1">
+                    <p className="font-medium text-blue-900">
+                      {STAGE_NAMES[currentStage]} ({currentStage}/2)
+                    </p>
+                    <div className="flex gap-1 mt-2">
+                      {[1, 2].map((s) => (
+                        <div
+                          key={s}
+                          className={`h-2 flex-1 rounded-full ${s < currentStage
+                              ? "bg-blue-600"
+                              : s === currentStage
+                                ? "bg-blue-400 animate-pulse"
+                                : "bg-blue-200"
+                            }`}
+                        />
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          )}
+
+          {/* Error Display */}
           {error && (
             <Card className="mb-6 border-red-200 bg-red-50">
               <CardContent className="py-4">
                 <p className="text-red-600 font-medium">{error}</p>
+                {failedStage && (
+                  <div className="mt-3">
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      onClick={() => retryFromStage(failedStage)}
+                    >
+                      Stage {failedStage}부터 다시 시도
+                    </Button>
+                  </div>
+                )}
                 {debugInfo && (
                   <div className="mt-4 p-3 bg-red-100 rounded text-xs font-mono overflow-x-auto">
                     <p className="font-bold text-red-800 mb-2">Debug Info:</p>
@@ -215,7 +300,8 @@ export default function RoadmapPage() {
             </Card>
           )}
 
-          {!roadmap && !isGenerating && (
+          {/* No Roadmap Yet */}
+          {!hasAnyRoadmap && !isGenerating && (
             <Card>
               <CardContent className="py-12 text-center">
                 <svg
@@ -237,31 +323,48 @@ export default function RoadmapPage() {
                 <p className="text-slate-500 mb-4">
                   학생의 목표와 현재 상황에 맞는 월별 입시 준비 계획을 생성합니다.
                 </p>
-                <Button onClick={generateRoadmap} isLoading={isGenerating}>
+                <Button onClick={generateRoadmap} disabled={isGenerating}>
                   로드맵 생성
                 </Button>
               </CardContent>
             </Card>
           )}
 
-          {isGenerating && (
-            <Card>
-              <CardContent className="py-12 text-center">
-                <div className="animate-spin h-12 w-12 border-4 border-blue-600 border-t-transparent rounded-full mx-auto mb-4" />
-                <h3 className="text-lg font-medium text-slate-900 mb-2">
-                  로드맵 생성 중...
-                </h3>
-                <p className="text-slate-500">
-                  학생의 프로필을 분석하여 맞춤형 계획을 만들고 있습니다.
-                </p>
+          {/* Stage 1: Key Priorities */}
+          {roadmapState.stage1 && (
+            <Card className="mb-6">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  핵심 우선순위
+                  <Badge variant="success">완료</Badge>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="p-4 bg-indigo-50 rounded-lg mb-4">
+                  <p className="text-sm text-indigo-600">
+                    현재 단계: <span className="font-medium">{roadmapState.stage1.result.current_phase}</span>
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-medium text-slate-900 mb-2">핵심 우선순위</h4>
+                  <ul className="space-y-2">
+                    {(roadmapState.stage1.result.key_priorities || []).map((p: string, i: number) => (
+                      <li key={i} className="flex items-start gap-2 text-sm text-slate-600">
+                        <span className="text-blue-500 font-bold">{i + 1}.</span>
+                        {p}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </CardContent>
             </Card>
           )}
 
-          {roadmap && !isGenerating && (
-            <div className="space-y-6">
+          {/* Stage 2: Monthly Roadmap */}
+          {roadmapState.stage2 && (
+            <>
               {/* Category Legend */}
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 mb-4">
                 {Object.entries(categoryLabels).map(([key, label]) => (
                   <Badge key={key} className={categoryColors[key]}>
                     {label}
@@ -271,57 +374,60 @@ export default function RoadmapPage() {
 
               {/* Monthly Roadmap */}
               <div className="space-y-6">
-                {groupItemsByMonth(roadmap.items).map(([monthKey, items]) => {
-                  const [year, month] = monthKey.split("-");
-                  return (
-                    <Card key={monthKey}>
-                      <CardHeader>
-                        <CardTitle>
-                          {year}년 {getMonthName(parseInt(month))}
-                        </CardTitle>
-                      </CardHeader>
-                      <CardContent>
-                        <div className="space-y-3">
-                          {items.map((item, i) => (
-                            <div
-                              key={i}
-                              className={`p-4 border-l-4 bg-slate-50 rounded-r-lg ${priorityColors[item.priority]}`}
-                            >
-                              <div className="flex items-start justify-between">
-                                <div>
-                                  <div className="flex items-center gap-2 mb-1">
-                                    <Badge className={categoryColors[item.category]}>
-                                      {categoryLabels[item.category]}
-                                    </Badge>
-                                    {item.priority === "high" && (
-                                      <Badge variant="error">중요</Badge>
-                                    )}
+                {groupItemsByMonth(roadmapState.stage2.result.items || []).map(
+                  ([monthKey, items]) => {
+                    const [year, month] = monthKey.split("-");
+                    return (
+                      <Card key={monthKey}>
+                        <CardHeader>
+                          <CardTitle>
+                            {year}년 {getMonthName(parseInt(month))}
+                          </CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                          <div className="space-y-3">
+                            {items.map((item, i) => (
+                              <div
+                                key={i}
+                                className={`p-4 border-l-4 bg-slate-50 rounded-r-lg ${priorityColors[item.priority] || priorityColors.low
+                                  }`}
+                              >
+                                <div className="flex items-start justify-between">
+                                  <div>
+                                    <div className="flex items-center gap-2 mb-1">
+                                      <Badge className={categoryColors[item.category] || categoryColors.academics}>
+                                        {categoryLabels[item.category] || item.category}
+                                      </Badge>
+                                      {item.priority === "high" && (
+                                        <Badge variant="error">중요</Badge>
+                                      )}
+                                    </div>
+                                    <h4 className="font-medium text-slate-900">
+                                      {item.title}
+                                    </h4>
+                                    <p className="text-sm text-slate-600 mt-1">
+                                      {item.description}
+                                    </p>
                                   </div>
-                                  <h4 className="font-medium text-slate-900">
-                                    {item.title}
-                                  </h4>
-                                  <p className="text-sm text-slate-600 mt-1">
-                                    {item.description}
-                                  </p>
+                                  {item.deadline && (
+                                    <span className="text-xs text-slate-500">
+                                      ~{new Date(item.deadline).toLocaleDateString("ko-KR")}
+                                    </span>
+                                  )}
                                 </div>
-                                {item.deadline && (
-                                  <span className="text-xs text-slate-500">
-                                    ~{new Date(item.deadline).toLocaleDateString("ko-KR")}
-                                  </span>
-                                )}
                               </div>
-                            </div>
-                          ))}
-                        </div>
-                      </CardContent>
-                    </Card>
-                  );
-                })}
+                            ))}
+                          </div>
+                        </CardContent>
+                      </Card>
+                    );
+                  }
+                )}
               </div>
 
               {/* Milestones */}
-              {roadmap.milestones && roadmap.milestones.length > 0 && (
-                <Card>
+              {(roadmapState.stage2.result.milestones || []).length > 0 && (
+                <Card className="mt-6">
                   <CardHeader>
                     <CardTitle>주요 마일스톤</CardTitle>
                   </CardHeader>
@@ -329,46 +435,52 @@ export default function RoadmapPage() {
                     <div className="relative">
                       <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-slate-200" />
                       <div className="space-y-4">
-                        {roadmap.milestones.map((milestone, i) => (
-                          <div key={i} className="relative pl-10">
-                            <div className="absolute left-0 w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center">
-                              <svg
-                                className="w-4 h-4 text-white"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth={2}
-                                  d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
-                                />
-                              </svg>
+                        {roadmapState.stage2.result.milestones.map(
+                          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                          (milestone: any, i: number) => (
+                            <div key={i} className="relative pl-10">
+                              <div className="absolute left-0 w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center">
+                                <svg
+                                  className="w-4 h-4 text-white"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth={2}
+                                    d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+                                  />
+                                </svg>
+                              </div>
+                              <div className="bg-white p-4 rounded-lg border border-slate-200">
+                                <p className="text-xs text-slate-500 mb-1">
+                                  {new Date(milestone.date).toLocaleDateString("ko-KR")}
+                                </p>
+                                <h4 className="font-medium text-slate-900">
+                                  {milestone.title}
+                                </h4>
+                                <p className="text-sm text-slate-600 mt-1">
+                                  {milestone.description}
+                                </p>
+                              </div>
                             </div>
-                            <div className="bg-white p-4 rounded-lg border border-slate-200">
-                              <p className="text-xs text-slate-500 mb-1">
-                                {new Date(milestone.date).toLocaleDateString("ko-KR")}
-                              </p>
-                              <h4 className="font-medium text-slate-900">
-                                {milestone.title}
-                              </h4>
-                              <p className="text-sm text-slate-600 mt-1">
-                                {milestone.description}
-                              </p>
-                            </div>
-                          </div>
-                        ))}
+                          )
+                        )}
                       </div>
                     </div>
                   </CardContent>
                 </Card>
               )}
+            </>
+          )}
 
-              <p className="text-xs text-slate-400 text-center">
-                로드맵 생성일: {new Date(roadmap.generated_at).toLocaleString("ko-KR")}
-              </p>
-            </div>
+          {/* Completion timestamp */}
+          {isComplete && (
+            <p className="text-xs text-slate-400 text-center mt-6">
+              로드맵 생성일: {new Date(roadmapState.stage2!.completed_at).toLocaleString("ko-KR")}
+            </p>
           )}
         </main>
       </div>
