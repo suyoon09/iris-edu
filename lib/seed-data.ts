@@ -2,6 +2,7 @@ import type { Counselor } from "@/types/counselor";
 import type { Student } from "@/types/student";
 import type { TimelineEvent } from "@/types/timeline";
 import type { University, UniversityListItem } from "@/types/university";
+import { allUniversityDetails } from "./university-data-all";
 
 // Counselors with bcrypt-hashed passwords
 // Passwords: admin123, counselor123, counselor123
@@ -938,8 +939,10 @@ function createUniversityDetail(item: UniversityListItem): University {
 // Generate university details from index, using complete data when available
 const universityDetails: Record<string, University> = {};
 universityIndex.forEach((item) => {
-  // Use complete data for key universities, minimal for others
-  if (completeUniversityDetails[item.university_id]) {
+  // Use consolidated data if available, otherwise fallback to basic detail
+  if (allUniversityDetails[item.university_id]) {
+    universityDetails[item.university_id] = allUniversityDetails[item.university_id];
+  } else if (completeUniversityDetails[item.university_id]) {
     universityDetails[item.university_id] = completeUniversityDetails[item.university_id];
   } else {
     universityDetails[item.university_id] = createUniversityDetail(item);
