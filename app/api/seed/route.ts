@@ -28,8 +28,34 @@ export async function POST(request: NextRequest) {
       });
     }
 
+    // Load all university details from JSON files to ensure complete data
+    let enrichedSeedData = { ...seedData };
+    try {
+      const { loadAllUniversitiesFromFiles } = await import("@/lib/university-loader");
+      const fullUniversityDetails = loadAllUniversitiesFromFiles();
+
+      if (fullUniversityDetails.length > 0) {
+        console.log(`Enriching seed data with ${fullUniversityDetails.length} university profiles`);
+        const detailsMap: Record<string, University> = { ...seedData.universities.details };
+
+        fullUniversityDetails.forEach(uni => {
+          detailsMap[uni.university_id] = uni;
+        });
+
+        enrichedSeedData = {
+          ...seedData,
+          universities: {
+            ...seedData.universities,
+            details: detailsMap
+          }
+        };
+      }
+    } catch (err) {
+      console.warn("Failed to load university details from files, using default seed data:", err);
+    }
+
     // Seed the database
-    const result = await seedDatabase(seedData);
+    const result = await seedDatabase(enrichedSeedData);
 
     return NextResponse.json({
       ...result,

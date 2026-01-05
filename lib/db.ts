@@ -365,7 +365,12 @@ export async function getUniversities(): Promise<UniversityListItem[]> {
 export async function getUniversityById(id: string): Promise<University | null> {
   // First try Netlify Blobs
   const blobData = await getJsonData<University>(STORES.UNIVERSITIES, id);
-  if (blobData) {
+
+  // Check if blobData exists and is NOT "minimal"
+  // Minimal data (from previous seeding) lacks detailed specific advice
+  const isMinimal = blobData && (!blobData.korean_student_specific || !blobData.korean_student_specific.korean_specific_advice || blobData.korean_student_specific.korean_specific_advice.length === 0);
+
+  if (blobData && !isMinimal) {
     return blobData;
   }
 
