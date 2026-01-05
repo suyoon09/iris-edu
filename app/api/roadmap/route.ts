@@ -45,8 +45,21 @@ export async function POST(request: NextRequest) {
       roadmapText = await generateRoadmap(prompt);
     } catch (apiError) {
       console.error("Claude API error:", apiError);
+      const errorMessage = apiError instanceof Error ? apiError.message : String(apiError);
+      const isTimeout = errorMessage.includes("timeout") || errorMessage.includes("ETIMEDOUT") || errorMessage.includes("ECONNRESET");
       return NextResponse.json(
-        { error: "AI 서비스 연결에 실패했습니다. API 키를 확인하세요." },
+        {
+          error: isTimeout
+            ? "AI 서비스 요청 시간이 초과되었습니다. 다시 시도해주세요."
+            : "AI 서비스 연결에 실패했습니다.",
+          debug: {
+            message: errorMessage,
+            type: apiError?.constructor?.name,
+            isTimeout,
+            apiKeySet: !!process.env.ANTHROPIC_API_KEY,
+            apiKeyPrefix: process.env.ANTHROPIC_API_KEY?.substring(0, 10) + "...",
+          }
+        },
         { status: 503 }
       );
     }
@@ -72,7 +85,13 @@ export async function POST(request: NextRequest) {
     if (!jsonString) {
       console.error("Failed to extract JSON from roadmap response:", roadmapText.substring(0, 500));
       return NextResponse.json(
-        { error: "로드맵 결과를 파싱하는데 실패했습니다. 다시 시도해주세요." },
+        {
+          error: "로드맵 결과를 파싱하는데 실패했습니다. 다시 시도해주세요.",
+          debug: {
+            message: "Failed to extract JSON from response",
+            responsePreview: roadmapText.substring(0, 300),
+          }
+        },
         { status: 500 }
       );
     }
@@ -81,9 +100,16 @@ export async function POST(request: NextRequest) {
     try {
       roadmap = JSON.parse(jsonString);
     } catch (parseError) {
-      console.error("JSON parse error:", parseError);
+      const parseErrorMessage = parseError instanceof Error ? parseError.message : String(parseError);
+      console.error("JSON parse error:", parseError, "JSON string:", jsonString.substring(0, 500));
       return NextResponse.json(
-        { error: "로드맵 결과 형식이 올바르지 않습니다. 다시 시도해주세요." },
+        {
+          error: "로드맵 결과 형식이 올바르지 않습니다. 다시 시도해주세요.",
+          debug: {
+            message: parseErrorMessage,
+            jsonPreview: jsonString.substring(0, 300),
+          }
+        },
         { status: 500 }
       );
     }
@@ -94,8 +120,21 @@ export async function POST(request: NextRequest) {
     });
   } catch (error) {
     console.error("Error generating roadmap:", error);
+    const errorMessage = error instanceof Error ? error.message : String(error);
+    const errorStack = error instanceof Error ? error.stack : undefined;
+    const isNetworkError = errorMessage.includes("fetch") || errorMessage.includes("network") || errorMessage.includes("ECONNREFUSED");
     return NextResponse.json(
-      { error: "로드맵 생성에 실패했습니다. 다시 시도해주세요." },
+      {
+        error: isNetworkError
+          ? "네트워크 연결에 실패했습니다. 인터넷 연결을 확인해주세요."
+          : "로드맵 생성에 실패했습니다.",
+        debug: {
+          message: errorMessage,
+          stack: errorStack,
+          type: error?.constructor?.name,
+          isNetworkError,
+        }
+      },
       { status: 500 }
     );
   }
