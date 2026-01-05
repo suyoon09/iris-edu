@@ -44,27 +44,71 @@ export default function AnalysisPage() {
     setError("");
     setDebugInfo(null);
 
+    // Use AbortController for timeout (Netlify has 26s limit)
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 55000); // 55s client timeout
+
     try {
       const response = await fetch("/api/analyze", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ student_id: studentId }),
+        signal: controller.signal,
       });
 
-      const data = await response.json();
+      clearTimeout(timeoutId);
+
+      // Try to parse response, handling cases where it might fail
+      let data;
+      try {
+        data = await response.json();
+      } catch {
+        setError("서버 응답을 파싱할 수 없습니다.");
+        setDebugInfo({
+          parseError: true,
+          status: response.status,
+          statusText: response.statusText,
+          hint: "서버가 유효한 JSON을 반환하지 않았습니다.",
+        });
+        return;
+      }
 
       if (!response.ok) {
         setError(data.error || "Analysis failed");
         if (data.debug) {
           setDebugInfo(data.debug);
+        } else {
+          setDebugInfo({
+            status: response.status,
+            statusText: response.statusText,
+            errorData: data,
+          });
         }
         return;
       }
 
       setAnalysis(data);
     } catch (err) {
-      setError(err instanceof Error ? err.message : "분석 생성에 실패했습니다.");
-      setDebugInfo({ networkError: true, message: String(err) });
+      clearTimeout(timeoutId);
+      const errorMessage = err instanceof Error ? err.message : String(err);
+      const isAborted = err instanceof Error && err.name === "AbortError";
+      const isTimeout = isAborted || errorMessage.includes("timeout") || errorMessage.includes("aborted");
+
+      if (isTimeout) {
+        setError("요청 시간이 초과되었습니다 (Netlify 서버 제한: 26초). AI 응답이 너무 길 수 있습니다.");
+      } else {
+        setError("분석 생성에 실패했습니다.");
+      }
+
+      setDebugInfo({
+        networkError: true,
+        errorName: err instanceof Error ? err.name : "Unknown",
+        message: errorMessage,
+        isTimeout,
+        isAborted,
+        timestamp: new Date().toISOString(),
+        hint: isTimeout ? "Netlify 함수는 26초 제한이 있습니다. 프롬프트를 줄이거나 Pro 플랜으로 업그레이드하세요." : undefined,
+      });
     } finally {
       setIsGenerating(false);
     }
@@ -243,8 +287,8 @@ export default function AnalysisPage() {
                                 uni.admission_probability.category === "safety"
                                   ? "success"
                                   : uni.admission_probability.category === "target"
-                                  ? "warning"
-                                  : "error"
+                                    ? "warning"
+                                    : "error"
                               }
                             >
                               {uni.admission_probability.category.toUpperCase()}

@@ -68,36 +68,71 @@ export default function RoadmapPage() {
     setError("");
     setDebugInfo(null);
 
+    // Use AbortController for timeout (Netlify has 26s limit)
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 55000); // 55s client timeout
+
     try {
       const response = await fetch("/api/roadmap", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ student_id: studentId }),
+        signal: controller.signal,
       });
 
-      const data = await response.json();
+      clearTimeout(timeoutId);
+
+      // Try to parse response, handling cases where it might fail
+      let data;
+      try {
+        data = await response.json();
+      } catch {
+        const text = await response.text().catch(() => "[Unable to read response]");
+        setError("서버 응답을 파싱할 수 없습니다.");
+        setDebugInfo({
+          parseError: true,
+          status: response.status,
+          statusText: response.statusText,
+          responsePreview: text.substring(0, 500),
+        });
+        return;
+      }
 
       if (!response.ok) {
         setError(data.error || "Roadmap generation failed");
         if (data.debug) {
           setDebugInfo(data.debug);
+        } else {
+          setDebugInfo({
+            status: response.status,
+            statusText: response.statusText,
+            errorData: data,
+          });
         }
         return;
       }
 
       setRoadmap(data);
     } catch (err) {
+      clearTimeout(timeoutId);
       const errorMessage = err instanceof Error ? err.message : String(err);
-      const isTimeout = errorMessage.includes("timeout") || errorMessage.includes("aborted");
-      setError(isTimeout
-        ? "요청 시간이 초과되었습니다. 다시 시도해주세요."
-        : "로드맵 생성에 실패했습니다."
-      );
+      const isAborted = err instanceof Error && err.name === "AbortError";
+      const isTimeout = isAborted || errorMessage.includes("timeout") || errorMessage.includes("aborted");
+
+      if (isTimeout) {
+        setError("요청 시간이 초과되었습니다 (Netlify 서버 제한: 26초). AI 응답이 너무 길 수 있습니다.");
+      } else {
+        setError("로드맵 생성에 실패했습니다.");
+      }
+
       setDebugInfo({
         networkError: true,
+        errorName: err instanceof Error ? err.name : "Unknown",
         message: errorMessage,
         isTimeout,
+        isAborted,
         timestamp: new Date().toISOString(),
+        hint: isTimeout ? "Netlify 함수는 26초 제한이 있습니다. 프롬프트를 줄이거나 Pro 플랜으로 업그레이드하세요." : undefined,
       });
     } finally {
       setIsGenerating(false);
