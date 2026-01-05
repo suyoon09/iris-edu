@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { seedDatabase, checkDatabaseInitialized } from "@/lib/db";
 import { seedData } from "@/lib/seed-data";
+import type { University } from "@/types/university";
 
 export async function POST(request: NextRequest) {
   try {
